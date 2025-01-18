@@ -45,6 +45,8 @@ html_short_title = "Arduino Tutorial"
 
 html_css_files = ["whole_code_block.css"]
 
+html_favicon = "_static/favicon.ico"
+
 # Grouping the document tree into LaTeX files. List of tuples
 # (source start file, target name, title,
 #  author, documentclass [howto, manual, or own class]).

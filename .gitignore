@@ -91,3 +91,6 @@ _.py
 
 # Build files
 /build/*
+
+# Mac OS Image Metadata Files
+.DS_Store
