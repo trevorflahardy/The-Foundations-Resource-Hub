@@ -75,7 +75,7 @@ complex structures, each with its own rules and limitations.
 
 Here are some of the most commonly used data types:
 
-1. ``int`` (**Integer**): Stores whole numbers, such as ``1``, ``42``,
+#. ``int`` (**Integer**): Stores whole numbers, such as ``1``, ``42``,
    or ``-7``.
 
    .. code:: cpp
@@ -95,7 +95,7 @@ Here are some of the most commonly used data types:
 
       int result = 5 / 2; // Stores 2, not 2.5
 
-2. ``float`` (**Floating-Point Number**): Stores numbers **with**
+#. ``float`` (**Floating-Point Number**): Stores numbers **with**
    decimals, such as ``3.14``, ``0.5``, or ``-2.718``.
 
    .. code:: cpp
@@ -107,7 +107,7 @@ Here are some of the most commonly used data types:
    useful for calculations that require precision. They can also hold
    whole numbers, but they may use more memory than ``int`` variables.
 
-3. ``String`` (**Text**): Stores a **sequence of characters**, such as
+#. ``String`` (**Text**): Stores a **sequence of characters**, such as
    ``"Hello"``, ``"Arduino"``, or ``"123"``.
 
    .. code:: cpp
@@ -121,7 +121,7 @@ Here are some of the most commonly used data types:
    Strings are useful for displaying messages, reading input, or storing
    text-based data. We'll cover these in more detail later.
 
-4. ``char`` (**Character**): Stores **a single character**, such as
+#. ``char`` (**Character**): Stores **a single character**, such as
    ``'A'``, ``'b'``, or ``'7'``.
 
    .. code:: cpp
@@ -134,7 +134,7 @@ Here are some of the most commonly used data types:
    it can only store a single character. These are not often used in the
    course, however, they may be important in some specific cases.
 
-5. ``bool`` (**Boolean**): Stores ``true`` or ``false`` values.
+#. ``bool`` (**Boolean**): Stores ``true`` or ``false`` values.
 
    .. code:: cpp
 
@@ -237,11 +237,8 @@ Common examples have shown a variable being defined and a value being
 assigned to it at the same time. However, this is not the only way to
 create a variable. You can either,
 
-1. Define a variable and assign it a value **at the same time**
-   (`Initialization`_). This is the most common way
-   to create variables and what you have seen so far.
-2. Define a variable **without** assigning it a value
-   (`Definition`_).
+#. Define a variable and assign it a value **at the same time** (`Initialization`_). This is the most common way to create variables and what you have seen so far.
+#. Define a variable **without** assigning it a value (`Definition`_).
 
 How do these two differ, and when should you use one over the other?
 

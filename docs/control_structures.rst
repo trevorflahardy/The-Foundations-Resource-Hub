@@ -34,8 +34,8 @@ Conditional statements allow your code to make decisions based on
 certain conditions, enabling more dynamic behavior. The three main
 components are ``if``, ``else if``, and ``else`` blocks.
 
-**``if`` Statements**
-~~~~~~~~~~~~~~~~~~~~~
+``if`` Statements
+~~~~~~~~~~~~~~~~~
 
 The ``if`` statement checks a boolean condition and executes the code
 inside its block only if the condition evaluates to ``true``. For
@@ -54,6 +54,9 @@ example,
 In this example, if the ``temperature`` is greater than 70, the message
 “Turn on the fan!” is printed to the Serial Monitor.
 
+``if`` Statement Syntax
+^^^^^^^^^^^^^^^^^^^^^^^
+
 The syntax for an ``if`` statement is:
 
 .. code:: cpp
@@ -70,8 +73,8 @@ statement.
 
 If statements can only check ``true`` or ``false`` conditions.
 
-**``else`` Statements**
-~~~~~~~~~~~~~~~~~~~~~~~
+``else`` Statements
+~~~~~~~~~~~~~~~~~~~
 
 What if the condition is ``false``, what if I want to do something else?
 This is where the ``else`` statement comes in. The ``else`` statement
@@ -92,6 +95,9 @@ runs a block of code if the ``if`` condition is ``false``. For example,
 In this example, if the temperature is neither above 90 nor below 10,
 the message “Temperature is just right!” is printed.
 
+``else`` Statement Syntax
+^^^^^^^^^^^^^^^^^^^^^^^^^
+
 The syntax for an ``else`` statement is:
 
 .. code:: cpp
@@ -106,8 +112,8 @@ The ``else`` block is executed only if the ``if`` condition is
 ``false``. This allows you to define an alternative action when the
 initial condition is not met.
 
-**``else if`` Statements**
-~~~~~~~~~~~~~~~~~~~~~~~~~~
+``else if`` Statements
+~~~~~~~~~~~~~~~~~~~~~~
 
 How can I check multiple conditions? This is where the ``else if``
 statement comes in. The ``else if`` statement allows you to check
@@ -130,6 +136,9 @@ additional conditions after the initial ``if`` statement. For example,
 In this example, if the temperature is below 10, the message “Turn on
 the heater!” is printed. The ``else if`` block is only executed if the
 initial ``if`` condition is false.
+
+``else if`` Statement Syntax
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 The syntax for an ``else if`` statement is:
 
@@ -179,15 +188,15 @@ Comparisons are at the heart of conditional statements. These are very
 similar to what you've seen in math class, but with a few differences.
 Here are the main comparison operators in Arduino:
 
-- **``==``**: Checks if two values are equal. Note that we use ``==``
+- ``==``: Checks if two values are equal. Note that we use ``==``
   instead of ``=`` to avoid confusion with the assignment operator when
   comparing values.
-- **``!=``**: Checks if two values are not equal.
-- **``<``**: Checks if the left value is less than the right value.
-- **``>``**: Checks if the left value is greater than the right value.
-- **``<=``**: Checks if the left value is less than or equal to the
+- ``!=``: Checks if two values are not equal.
+- ``<``: Checks if the left value is less than the right value.
+- ``>``: Checks if the left value is greater than the right value.
+- ``<=``: Checks if the left value is less than or equal to the
   right value.
-- **``>=``**: Checks if the left value is greater than or equal to the
+- ``>=``: Checks if the left value is greater than or equal to the
   right value.
 
 These operators are used to compare values and determine the flow of
@@ -216,15 +225,17 @@ It's common to do this when you need check the same condition multiple
 times in your program, or if a condition is complex and you want to
 break it down into simpler, easier-to-understand parts.
 
+.. _logical_operators:
+
 Logical (Boolean) Operators
 ---------------------------
 
 **Logical operators** allow you to combine multiple conditions in a
 single statement. The main logical operators are:
 
-- **``&&`` (AND)**: Returns true if **both** conditions are true.
-- **``||`` (OR)**: Returns true if **at least one** condition is true.
-- **``!`` (NOT)**: Reverses the logical state of a condition.
+- ``&&`` (**AND**): Returns true if **both** conditions are true.
+- ``||`` (**OR**): Returns true if **at least one** condition is true.
+- ``!`` (**NOT**): Reverses the logical state of a condition.
 
 These operators are used to create more complex conditions that can
 handle multiple scenarios.
@@ -235,7 +246,11 @@ handle multiple scenarios.
    Reference <https://docs.arduino.cc/language-reference/#structure>`__,
    however, you do not need to know all them for this course.
 
-For example:
+Logical Operators Examples
+~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+To help you understand how logical operators work, let's look at some
+examples in Arduino.
 
 .. code:: cpp
 
@@ -247,6 +262,8 @@ For example:
 In this example, the code inside the if block runs only if the
 temperature is above 90 degrees **and** the humidity is below 50%.
 
+-----
+
 .. code:: cpp
 
     if (buttonState == HIGH || switchState == LOW) {
@@ -256,6 +273,8 @@ temperature is above 90 degrees **and** the humidity is below 50%.
 
 In this example, the code inside the if block runs if the button is
 pressed **or** the switch is off.
+
+-----
 
 .. code:: cpp
 

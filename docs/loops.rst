@@ -69,10 +69,9 @@ How ``for`` Loops Work
 
 A ``for`` loop has 3 main parts:
 
-1. ``Initialization``: Sets a starting point for your loop.
-2. ``Condition``: Checks whether the loop should continue.
-3. ``Increment/Decrement``: Updates the loop variable after each
-   iteration.
+#. ``Initialization``: Sets a starting point for your loop.
+#. ``Condition``: Checks whether the loop should continue.
+#. ``Increment/Decrement``: Updates the loop variable after each iteration.
 
 For Loop Syntax
 ^^^^^^^^^^^^^^^
@@ -177,10 +176,8 @@ How ``while`` Loops Work
 
 A while loop has 2 main parts:
 
-1. **``Condition``**: The loop checks a condition before every
-   iteration. If the condition is false, the loop exits immediately.
-2. **``Repetition``**: If the condition is true, the code inside the
-   loop executes and then rechecks the condition.
+#. **``Condition``**: The loop checks a condition before every iteration. If the condition is false, the loop exits immediately.
+#. **``Repetition``**: If the condition is true, the code inside the loop executes and then rechecks the condition.
 
 While Loop Syntax
 ^^^^^^^^^^^^^^^^^

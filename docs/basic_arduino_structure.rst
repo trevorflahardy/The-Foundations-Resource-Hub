@@ -94,14 +94,10 @@ Why is Commenting Important?
 
 Comments serve several key purposes:
 
-1. **Improves Code Readability**: Comments make it easier to understand
-   what the code is doing, especially for complex sections.
-2. **Aids Debugging**: Well-placed comments help you locate issues or
-   make changes without breaking the program.
-3. **Facilitates Collaboration**: When you are working in a team,
-   comments ensure that others can understand and use your code.
-4. **Future-Proofing**: Even for your own code, comments can serve as
-   reminders for why you wrote something a certain way.
+#. **Improves Code Readability**: Comments make it easier to understand what the code is doing, especially for complex sections.
+#. **Aids Debugging**: Well-placed comments help you locate issues or make changes without breaking the program.
+#. **Facilitates Collaboration**: When you are working in a team, comments ensure that others can understand and use your code.
+#. **Future-Proofing**: Even for your own code, comments can serve as reminders for why you wrote something a certain way.
 
 In the examples throughout this book, comments are used to emphasize key
 points, explain code snippets, and provide additional context. As you
