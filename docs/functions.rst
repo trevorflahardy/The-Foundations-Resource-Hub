@@ -351,6 +351,8 @@ you'll use frequently:
 
       pinMode(7, OUTPUT); // Sets pin 7 as an output
 
+.. _special_built_in_functions:
+
 Special Built-in Functions
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
 

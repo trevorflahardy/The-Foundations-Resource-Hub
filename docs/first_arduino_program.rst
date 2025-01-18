@@ -38,8 +38,8 @@ the window to create a new sketch.
 
 You should have a new window with an empty sketch ready for you to write
 your code. In it, you'll see two functions: ``setup()`` and ``loop()``.
-As discussed in `special built in
-functions <#special-built-in-functions>`__, these functions are
+As discussed in :ref:`special built in
+functions <special_built_in_functions>`, these functions are
 automatically created for you when you create a new sketch. This is
 where you'll write your code.
 
@@ -47,7 +47,8 @@ Step 2: Write the Program
 -------------------------
 
 Let's write the code for our first Arduino program. Thinking back again
-to the `special built in functions <#special-built-in-functions>`__, we
+to the :ref:`special built in
+functions <special_built_in_functions>`, we
 know that we need to use the ``Serial`` functions to print messages to
 the Serial Monitor. Here's the code for our program:
 
@@ -71,7 +72,7 @@ Thus,
       Serial.println("Hello, Arduino!");
    }
 
-..
+.. tip::
 
    Remember: the comments we add do not affect our program. If you wish,
    you can remove them.
