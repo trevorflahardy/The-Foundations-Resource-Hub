@@ -49,7 +49,7 @@ Function Syntax
 
 To define a function, you use the following **syntax** in your code:
 
-.. code:: cpp
+.. code-block:: cpp
 
    <return type> <function name>(<parameter1>, <parameter2>, ...) {
       // Function body
@@ -57,7 +57,7 @@ To define a function, you use the following **syntax** in your code:
 
 Here's an example of a simple function:
 
-.. code:: cpp
+.. code-block:: cpp
 
    int addNumbers(int a, int b) {
        return a + b; // Returns the sum of a and b
@@ -81,7 +81,7 @@ When we **call** this function, or when we use it in our code, we
 provide the values for ``a`` and ``b`` and the function returns the sum
 of these values (an integer).
 
-.. code:: cpp
+.. code-block:: cpp
 
    addNumbers(5, 3); // Calls the function with 5 and 3
 
@@ -89,7 +89,7 @@ But wait! What happens when we call this function? How do we use the
 result of the function? Well, we can store the result of the function in
 a variable!
 
-.. code:: cpp
+.. code-block:: cpp
 
    int sum = addNumbers(5, 3); // Calls the function with 5 and 3.
 
@@ -108,7 +108,7 @@ together. But, we want to multiply two decimal numbers, not integers. We
 can do this by changing the data type of the parameters and return type
 of the function to use the ``float`` type (for decimal numbers).
 
-.. code:: cpp
+.. code-block:: cpp
 
    float multiply(float x, float y) {
       return x * y; // Returns the product of x and y
@@ -122,7 +122,7 @@ together and get a decimal result.
 
 We could also check if a number is positive:
 
-.. code:: cpp
+.. code-block:: cpp
 
    bool isPositive(int number) {
       // Check if this number is greater than 0 and store it in a variable.
@@ -160,7 +160,7 @@ Functions can also accept arrays as parameters, allowing you to pass
 multiple values to a function. For example, you could create a function
 to set the first element of an array to a specific value:
 
-.. code:: cpp
+.. code-block:: cpp
 
    void setFirstElement(int array[], int value) {
        array[0] = value; // Sets the first element of the array to the specified value
@@ -217,7 +217,7 @@ To call a function, you use the function name followed by parentheses
 parentheses. If the function returns a value, you can store it in a
 variable or use it directly in your code.
 
-.. code:: cpp
+.. code-block:: cpp
 
    int sum = addNumbers(5, 3); // Calls the function named ^addNumbers^ with 5 and 3
 
@@ -225,7 +225,7 @@ When you call a function, you must provide the required parameters in
 the correct order. For example, if a function expects two integers, you
 must pass two integers when calling it:
 
-.. code:: cpp
+.. code-block:: cpp
 
    int addNumbers(int a, int b) {
        return a + b;
@@ -446,7 +446,7 @@ see it displayed. You can use ``Serial.print()`` to output the text
 “Temperature: ” and then use ``Serial.println()`` to display the
 temperature value.
 
-.. code:: cpp
+.. code-block:: cpp
 
    Serial.print("Temperature: ");
    Serial.println(25);
@@ -459,7 +459,7 @@ Although the difference may seem subtle, the choice between
 ``Serial.print()`` and ``Serial.println()`` can affect how your output
 appears in the Serial Monitor.
 
-.. code:: cpp
+.. code-block:: cpp
 
    Serial.print("Arduino ");
    Serial.print("is ");
@@ -489,7 +489,7 @@ the Serial Monitor.
 ``Serial.begin()`` Example
 ''''''''''''''''''''''''''
 
-.. code:: cpp
+.. code-block:: cpp
 
    void setup() {
       Serial.begin(9600);  // Initialize Serial communication at 9600 baud

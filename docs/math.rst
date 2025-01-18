@@ -24,7 +24,7 @@ you already in this book, but they were never formally discussed. You
 use these operators the same as you do in conventional math. For
 example:
 
-.. code:: cpp
+.. code-block:: cpp
 
   int sum = 5 + 3; // 5 + 3 = 8
   int difference = 5 - 3; // 5 - 3 = 2
@@ -93,7 +93,7 @@ Two ``bool``\s can be compared using logical operators (e.g., ``&&``, ``||``), b
 
 A ``char`` can be added to or subtracted from another ``char`` or an ``int``, but not multiplied, divided, or have the modulus operator applied.
 
-.. code:: cpp
+.. code-block:: cpp
 
     char letter = 'A';
     char nextLetter = letter + 1; // 'A' + 1 = 'B'
@@ -124,7 +124,7 @@ You can concatenate a ``String`` with:
 Examples of String Concatenation:
 ''''''''''''''''''''''''''''''''''
 
-.. code:: cpp
+.. code-block:: cpp
 
   String stringOne = "Hello";
   String stringTwo = "World";
@@ -151,7 +151,7 @@ Adding Function Results
 
 You can also add the results of functions to strings. For example, if you have a function that returns an integer, you can add the result to a string:
 
-.. code:: cpp
+.. code-block:: cpp
 
   stringThree = stringOne + millis();  // E.g., "Hello12345" (if millis() = 12345)
   stringThree = stringOne + analogRead(A0);  // E.g., "Hello402" (if analogRead(A0) = 402)

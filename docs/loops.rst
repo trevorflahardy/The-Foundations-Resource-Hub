@@ -10,7 +10,7 @@ needed to perform this task multiple times? This is where loops come in.
 For example, imagine you want to blink an LED on and off 10 times. You
 might write something like this:
 
-.. code:: cpp
+.. code-block:: cpp
 
    digitalWrite(13, HIGH);
    delay(500);
@@ -38,7 +38,7 @@ repetitive grunt work so you can focus on the bigger picture.
 Using loops, we can easily repeat the blinking of an LED without having
 to write the same lines of code over and over:
 
-.. code:: cpp
+.. code-block:: cpp
 
    for (int i = 0; i < 10; i++) {
        digitalWrite(13, HIGH);
@@ -79,9 +79,9 @@ A ``for`` loop has 3 main parts:
 #. **Increment/Decrement**: Updates the loop variable after each iteration.
 
 ``for`` Loop Syntax
-^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^
 
-.. code:: cpp
+.. code-block:: cpp
 
    for (initialization; condition; increment/decrement) {
        // Code to execute
@@ -102,7 +102,7 @@ The loop variable is only available in the loop itself. Once the loop
 finishes, the variable is no longer accessible. Ie. the :ref:`scope <variable_scope>`
 of the loop variable is limited to the loop itself.
 
-.. code:: cpp
+.. code-block:: cpp
 
    for (int i = 0; i < 10; i++) {
       // `i` is only available within the loop
@@ -120,7 +120,7 @@ LED Example
 For example, you can use a ``for`` loop to turn an LED on and off 5
 times:
 
-.. code:: cpp
+.. code-block:: cpp
 
    // Turn on LEDs connected to pins 2 through 6
    for (int pin = 2; pin <= 6; pin++) {
@@ -141,7 +141,7 @@ As another example, let's say you wanted to add all the numbers in
 an array together. You could use a ``for`` loop to iterate through the
 array and add each number to a total:
 
-.. code:: cpp
+.. code-block:: cpp
 
    int numbers[] = {1, 2, 3, 4, 5};
    int total = 0;
@@ -160,7 +160,7 @@ Fibonacci Example
 
 What if you wanted to store the first 10 fibonacci numbers in an array. You could use a ``for`` loop to iterate through the array and calculate each number instead of manually writing each number:
 
-.. code:: cpp
+.. code-block:: cpp
 
    int fibonacci[10];
    fibonacci[0] = 0;
@@ -185,7 +185,7 @@ What if you wanted to store the first 10 fibonacci numbers in an array. You coul
 But what if the amount of fibonacci numbers you wanted to calculate changes to 20? What if it changed to 50? You can update your program to automatically account for this by changing the size of an array and the loop condition with
 a common variable.
 
-.. code:: cpp
+.. code-block:: cpp
 
    const int total_fib_numbers = 30; // Constant variable to store the total number of fibonacci numbers to calculate
 
@@ -235,7 +235,7 @@ A while loop has 2 main parts:
 While Loop Syntax
 ^^^^^^^^^^^^^^^^^
 
-.. code:: cpp
+.. code-block:: cpp
 
    while (condition) {
       // Code to execute
@@ -251,7 +251,7 @@ a button press before continuing with our program. We can use a
 For this example, assume that the button is connected to pin 7, and we
 want to wait until the button is pressed before moving on.
 
-.. code:: cpp
+.. code-block:: cpp
 
    int buttonState = LOW;
 
@@ -379,7 +379,7 @@ Let's say we wanted to continue looping until we found a specific
 number, then exit the loop early. We can use the ``break`` statement to
 do this.
 
-.. code:: cpp
+.. code-block:: cpp
 
    int number_to_find = 5;
 
@@ -401,7 +401,7 @@ found!” and “Loop finished!”.
 
 So, when you run this program, you'll see:
 
-.. code:: cpp
+.. code-block:: cpp
 
    0
    1
@@ -420,7 +420,7 @@ skip to the next loop iteration instead of stopping the loop. Let's say
 that we hate **ANY** number that ends in ``5``. We can use the ``continue``
 to skip any number that ends in ``5``.
 
-.. code:: cpp
+.. code-block:: cpp
 
    int number_we_hate = 5;
 
@@ -436,7 +436,7 @@ to skip any number that ends in ``5``.
 This program will print every number from ``0`` to ``9``, except for
 ``5``. When you run this program, you'll see:
 
-.. code:: cpp
+.. code-block:: cpp
 
    0
    1

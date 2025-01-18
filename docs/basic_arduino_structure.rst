@@ -83,7 +83,7 @@ Multi-line comments start with ``/*`` and end with ``*/``. They can span
 multiple lines and are useful for longer explanations or temporarily
 disabling blocks of code:
 
-.. code:: cpp
+.. code-block:: cpp
 
    /* This is a multi-line comment
       that spans multiple lines. */

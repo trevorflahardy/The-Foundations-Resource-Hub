@@ -12,7 +12,7 @@ work with multiple values.
 For example, instead of creating separate variables for multiple sensor
 readings:
 
-.. code:: cpp
+.. code-block:: cpp
 
    int sensor1 = 100;
    int sensor2 = 200;
@@ -20,7 +20,7 @@ readings:
 
 You can use an array to store all the readings in a single variable:
 
-.. code:: cpp
+.. code-block:: cpp
 
    int sensorReadings[3] = {100, 200, 300};
 
@@ -31,7 +31,7 @@ calculating averages or finding the maximum value.
 
 Let's say that we had 100 sensor readings:
 
-.. code:: cpp
+.. code-block:: cpp
 
    int sensor1 = 100;
    int sensor2 = 200;
@@ -60,13 +60,13 @@ Array Syntax
 To define an array, you need to specify the data type, array name, and
 (sometimes) size. To do this, you use the following **syntax** in your code:
 
-.. code:: cpp
+.. code-block:: cpp
 
    <variable type> <array name>[<size>?] = {<value1>, <value2>, ...};
 
 For instance:
 
-.. code:: cpp
+.. code-block:: cpp
 
    int ledStates[5] = {1, 0, 1, 1, 0}; // Array of LED states
 
@@ -74,7 +74,7 @@ The question mark (``?``) after “size” in the syntax means that if you
 initialize the array with values, the size can be determined
 automatically:
 
-.. code:: cpp
+.. code-block:: cpp
 
    int sensorReadings[] = {100, 200, 300, 400}; // Automatically sized. Can only hold 4 items.
 
@@ -92,13 +92,13 @@ When you define an array, you can initialize it with values. The values
 are enclosed in curly braces (``{}``) and separated by commas. The
 number of values must match the array's size. For example:
 
-.. code:: cpp
+.. code-block:: cpp
 
    int sensorReadings[5] = {100, 200, 300, 400, 500}; // Array of 5 sensor readings
 
 Or, our super long example with 100 sensor readings:
 
-.. code:: cpp
+.. code-block:: cpp
 
    int sensorReadings[100] = {100, 200, 300, 400, 500, ...}; // Array of 100 sensor readings
 
@@ -108,7 +108,7 @@ Array Definition
 You can also define an array without initializing it. In this case, the
 array elements will contain **garbage values**.
 
-.. code:: cpp
+.. code-block:: cpp
 
    int sensorReadings[5]; // Array of 5 sensor readings with garbage values
 
@@ -140,7 +140,7 @@ element is at index ``4``.
 
 So for example, in the array ``sensorReadings[5]``:
 
-.. code:: cpp
+.. code-block:: cpp
 
    int firstReading = sensorReadings[0]; // Accesses the first element (100)
    sensorReadings[2] = 400; // Changes the third element to 400

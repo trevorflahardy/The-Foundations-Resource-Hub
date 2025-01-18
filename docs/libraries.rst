@@ -45,7 +45,7 @@ easily control, as you can guess, servos. Your project kit has a servo.
 Let's say you wanted to control a servo monitor. In your code, you have
 to **include** the ``Servo`` library to your code.
 
-.. code:: cpp
+.. code-block:: cpp
 
    #include <Servo.h>
 
@@ -73,14 +73,14 @@ Including a Library in Arduino
 
 The syntax for including a library is:
 
-.. code:: cpp
+.. code-block:: cpp
 
    #include <LibraryName.h>
 
 These ``#include`` statements always go at the top of your sketch file,
 before **any** other code.
 
-.. code:: cpp
+.. code-block:: cpp
 
    #include <LibraryName.h>
 
@@ -108,6 +108,8 @@ them.
 For this course, however, **you will be linked to the specific library
 documentation when you need it, or directly told the library's functions
 of interest for a given assignment.**
+
+.. _using_the_servo_library:
 
 Example: Using the ``Servo`` Library
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

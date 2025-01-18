@@ -21,7 +21,7 @@ be any example, not necessarily a motor). You might use a variable to
 store the speed value, which can then be adjusted during the program's
 execution.
 
-.. code:: cpp
+.. code-block:: cpp
 
    int motorSpeed = 100; // Variable to store the motor speed
 
@@ -32,7 +32,7 @@ assigns it a value of ``100``.
 
 To define a variable in Arduino, you use the following syntax:
 
-.. code:: cpp
+.. code-block:: cpp
 
    <variable type> <variable name> = <value>;
 
@@ -52,7 +52,7 @@ To change the value of a variable, you assign a new value to it. For example,
 you could change the value of ``motorSpeed`` later in the program, allowing you to
 control the motor's speed dynamically:
 
-.. code:: cpp
+.. code-block:: cpp
 
    // This variable's value can change.
    int speed = 100;
@@ -208,7 +208,7 @@ Defining a ``const`` Variable
 
 To define a constant variable, you use the following syntax:
 
-.. code:: cpp
+.. code-block:: cpp
 
    const <variable type> <variable name> = <value>;
 
@@ -216,7 +216,7 @@ For example, let's say you wanted to define a pin number for an LED that is conn
 to pin 13 on your Arduino board. This pin does not change during the execution
 of your code so it's a good candidate for a constant.
 
-.. code:: cpp
+.. code-block:: cpp
 
    const int LED_PIN = 13; // Defines a constant for the LED pin
 
@@ -225,7 +225,7 @@ will not change** as a ``const``. This is because it is good practice to
 make sure that you do not accidentally change the value of a variable
 that should not be changed.
 
-.. code:: cpp
+.. code-block:: cpp
 
    const int LED_PIN = 13; // Defines a constant for the LED pin
    LED_PIN = 10; // Error! You cannot change the value of a constant.
@@ -277,7 +277,7 @@ behavior.
 
 For example,
 
-.. code:: cpp
+.. code-block:: cpp
 
    int x = 5; // Variable 'x' is defined and initialized to 5
 
@@ -306,7 +306,7 @@ leaving its value indeterminate until it is explicitly assigned later in
 the code. Using an uninitialized variable can lead to unpredictable
 behavior or errors in your program.
 
-.. code:: cpp
+.. code-block:: cpp
 
    int y; // Variable 'y' is defined but not initialized
 
@@ -322,12 +322,12 @@ and then assign it a value later in the program. However, **You should
 initialize variables whenever possible** to ensure they have a valid
 value before being used.
 
-.. code:: cpp
+.. code-block:: cpp
 
    // Initialization:
    int a = 10;  // Variable 'a' is defined and initialized to 10
 
-.. code:: cpp
+.. code-block:: cpp
 
    // Definition:
    // Variable 'b' is defined but not initialized.
@@ -389,7 +389,7 @@ When working with Arduino pins, these constants allow you to control
 devices like LEDs, relays, or other components in an easy-to-read
 manner:
 
-.. code:: cpp
+.. code-block:: cpp
 
    digitalWrite(13, HIGH); // Turns on an LED connected to pin 13
    digitalWrite(13, LOW);  // Turns off the LED
@@ -410,7 +410,7 @@ input or writing output.
 - ``OUTPUT``: Sets a pin as an **output**, enabling your code to send
   signals to external devices like LEDs, motors, or relays.
 
-.. code:: cpp
+.. code-block:: cpp
 
    pinMode(2, INPUT);  // Sets pin 2 as an input
    pinMode(13, OUTPUT); // Sets pin 13 as an output
@@ -466,6 +466,16 @@ In this example, ``counter`` is accessible throughout the entire
 program. However, overusing global variables can make debugging
 difficult, as changes in one part of the code may unintentionally affect
 another.
+
+.. note::
+
+   Typically global variables are defined using ``UPPER_SNAKE_CASE`` to
+   distinguish them from local variables. This is a common convention in
+   programming.
+
+   .. code:: cpp
+
+      int GLOBAL_VARIABLE = 0;
 
 Local Scope
 ~~~~~~~~~~~

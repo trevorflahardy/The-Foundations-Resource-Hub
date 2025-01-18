@@ -41,7 +41,7 @@ The ``if`` statement checks a boolean condition and executes the code
 inside its block only if the condition evaluates to ``true``. For
 example,
 
-.. code:: cpp
+.. code-block:: cpp
 
     int temperature = 90; // Temperature value
 
@@ -59,7 +59,7 @@ In this example, if the ``temperature`` is greater than 70, the message
 
 The syntax for an ``if`` statement is:
 
-.. code:: cpp
+.. code-block:: cpp
 
     if (condition) {
         // Code to run if the condition is true
@@ -80,7 +80,7 @@ What if the condition is ``false``, what if I want to do something else?
 This is where the ``else`` statement comes in. The ``else`` statement
 runs a block of code if the ``if`` condition is ``false``. For example,
 
-.. code:: cpp
+.. code-block:: cpp
 
     int temperature = 20; // Temperature value
 
@@ -100,7 +100,7 @@ the message “Temperature is just right!” is printed.
 
 The syntax for an ``else`` statement is:
 
-.. code:: cpp
+.. code-block:: cpp
 
     if (condition) {
         // Code to run if the condition is true
@@ -119,7 +119,7 @@ How can I check multiple conditions? This is where the ``else if``
 statement comes in. The ``else if`` statement allows you to check
 additional conditions after the initial ``if`` statement. For example,
 
-.. code:: cpp
+.. code-block:: cpp
 
     int temperature = 5; // Temperature value
 
@@ -142,7 +142,7 @@ initial ``if`` condition is false.
 
 The syntax for an ``else if`` statement is:
 
-.. code:: cpp
+.. code-block:: cpp
 
     if (condition1) {
         // Code to run if condition1 is true
@@ -160,7 +160,7 @@ You can have as many ``else if`` blocks as you need to handle different
 scenarios. The ``else`` block is optional and runs only if all preceding
 conditions are false.
 
-.. code:: cpp
+.. code-block:: cpp
 
     int temperature = 20; // Temperature value
 
@@ -204,7 +204,7 @@ your program based on the results.
 
 For example:
 
-.. code:: cpp
+.. code-block:: cpp
 
     if (buttonState == HIGH) {
         // Code to run when the button is pressed
@@ -213,7 +213,7 @@ For example:
 
 You can also assign the result of a comparison to a variable:
 
-.. code:: cpp
+.. code-block:: cpp
 
     bool isButtonPressed = buttonState == HIGH;
     if (isButtonPressed) {
@@ -252,7 +252,7 @@ Logical Operators Examples
 To help you understand how logical operators work, let's look at some
 examples in Arduino.
 
-.. code:: cpp
+.. code-block:: cpp
 
     if (temperature > 90 && humidity < 50) {
         // Code to run when the temperature is above 90
@@ -264,7 +264,7 @@ temperature is above 90 degrees **and** the humidity is below 50%.
 
 -----
 
-.. code:: cpp
+.. code-block:: cpp
 
     if (buttonState == HIGH || switchState == LOW) {
         // Code to run when the button is pressed
@@ -276,7 +276,7 @@ pressed **or** the switch is off.
 
 -----
 
-.. code:: cpp
+.. code-block:: cpp
 
     if (!(temperature > 90)) {
         // Code to run when the temperature is not above 90
@@ -286,7 +286,7 @@ In this example, the code inside the if block runs if the temperature is
 **not** above 90 degrees. That example can be confusing, so let's break
 it down by splitting the ``!`` operator into a separate variable:
 
-.. code:: cpp
+.. code-block:: cpp
 
     bool temperatureGreaterThan30 = temperature > 90;
     bool notGreaterThan30 = !temperatureGreaterThan30;
