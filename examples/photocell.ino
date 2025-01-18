@@ -15,7 +15,6 @@
  * in the dark.
  */
 
-const int LED_PIN = 13;        // Connect the positive leg of an LED to this pin
 const int PHOTO_CELL_PIN = A0; // Connect the positive leg of a photocell to the A0 pin
 
 // When reading from the photocell, a higher value
@@ -35,7 +34,7 @@ void setup()
 
     // We are sending 5V to the LED when the photocell is in the dark,
     // so we need to set the pin mode to OUTPUT.
-    pinMode(LED_PIN, OUTPUT);
+    pinMode(LED_BUILTIN, OUTPUT);
 }
 
 void loop()
@@ -50,7 +49,7 @@ void loop()
         // If the photocell value is less than or equal to the
         // DARK_THRESHOLD, turn on the LED because it must be
         // dark.
-        digitalWrite(LED_PIN, HIGH);
+        digitalWrite(LED_BUILTIN, HIGH);
         Serial.print("It's DARK, turn on the LED: ");
         Serial.println(photocell_value);
     }
@@ -58,7 +57,7 @@ void loop()
     {
         // If the photocell value is greater than the DARK_THRESHOLD,
         // turn off the LED because it must be light.
-        digitalWrite(LED_PIN, LOW);
+        digitalWrite(LED_BUILTIN, LOW);
         Serial.print("It's LIGHT, turn off the LED: ");
         Serial.println(photocell_value);
     }
