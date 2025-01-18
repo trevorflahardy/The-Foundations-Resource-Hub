@@ -78,7 +78,7 @@ A ``for`` loop has 3 main parts:
 #. **Condition**: Checks whether the loop should continue.
 #. **Increment/Decrement**: Updates the loop variable after each iteration.
 
-For Loop Syntax
+``for`` Loop Syntax
 ^^^^^^^^^^^^^^^
 
 .. code:: cpp
@@ -98,8 +98,21 @@ In this syntax:
   iteration. This is where you increase or decrease the loop variable to
   move the loop forward.
 
-`for` Loop Example
-^^^^^^^^^^^^^^^^^^
+The loop variable is only available in the loop itself. Once the loop
+finishes, the variable is no longer accessible. Ie. the :ref:`scope <variable_scope>`
+of the loop variable is limited to the loop itself.
+
+.. code:: cpp
+
+   for (int i = 0; i < 10; i++) {
+      // `i` is only available within the loop
+      Serial.println(i);
+   }
+
+   Serial.println(i);  // This will cause an error because `i` is not available here
+
+``for`` Loop Example
+^^^^^^^^^^^^^^^^^^^^^
 
 LED Example
 """"""""""""

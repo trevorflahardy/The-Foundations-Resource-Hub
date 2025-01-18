@@ -95,6 +95,28 @@ Here are some of the most commonly used data types:
 
       int result = 5 / 2; // Stores 2, not 2.5
 
+#. ``long``: An ``int`` can only store numbers up to a certain size. If
+   you need to store larger numbers, you can use a ``long``. A ``long``
+   can store larger numbers than an ``int``.
+
+   .. code:: cpp
+
+      long bigNumber = 1000000L; // Stores a large number
+
+   Notice the ``L`` at the end of the number. This tells the compiler
+   that the number is a ``long``. If you don't include the ``L``, the
+   number will be treated as an ``int``.
+
+   A ``long`` is useful when you need to store numbers that are too large
+   for an ``int``. It can store numbers up to ``2,147,483,647``. ``long``\s can
+   only store whole numbers, not decimals.
+
+   .. note::
+
+      The ``long`` type is not used as often as ``int`` in this course.
+      However, it is important to know that it exists as some :ref:`libraries <libraries>`
+      may require it. More on this later, though.
+
 #. ``float`` (**Floating-Point Number**): Stores numbers **with**
    decimals, such as ``3.14``, ``0.5``, or ``-2.718``.
 
@@ -403,6 +425,8 @@ input or writing output.
 
    These variables will be used extensively in your Arduino projects. Don't
    worry about memorizing them now; you'll become familiar with them over time.
+
+.. _variable_scope:
 
 Variable Scope
 --------------
