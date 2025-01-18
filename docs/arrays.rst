@@ -3,10 +3,11 @@
 Arrays
 ======
 
-An array is a collection of variables of the same type, stored under one
-name in one variable. Arrays are useful when you need to store multiple values, such as
-sensor readings or a list of LED states, and access them using a single
-variable name.
+An array is a special variable type that allows you to store multiple
+values under a single variable name. Arrays are useful when you need to
+store a collection of related data, such as sensor readings or LED
+states. They help organize data, simplify code, and make it easier to
+work with multiple values.
 
 For example, instead of creating separate variables for multiple sensor
 readings:
