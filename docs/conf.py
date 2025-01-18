@@ -20,7 +20,7 @@ release = "1.0.0"
 # -- General configuration ---------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
 
-extensions = ["myst_parser", "whole_code_block"]
+extensions = ["whole_code_block"]
 
 templates_path = ["_templates"]
 
