@@ -20,7 +20,6 @@
  */
 
 const int IR_SENSOR_PIN = 9; // The IR sensor is connected to pin 9
-const int LED_PIN = 13;      // The onboard LED is connected to pin 13
 
 void setup()
 {
@@ -32,7 +31,7 @@ void setup()
 
     // The LED will be sent 5V when we detect an object
     // with the IR sensor, so we need to set it as an OUTPUT.
-    pinMode(LED_PIN, OUTPUT);
+    pinMode(LED_BUILTIN, OUTPUT);
 }
 
 void loop()
@@ -45,7 +44,7 @@ void loop()
     {
         // This IR sensor is detecting an object. Turn OFF the LED
         // because the object is too close.
-        digitalWrite(LED_PIN, LOW);
+        digitalWrite(LED_BUILTIN, LOW);
 
         // Print a message to the Serial Monitor.
         Serial.println("Object detected! LED OFF.");
@@ -54,7 +53,7 @@ void loop()
     {
         // This IR sensor is not detecting an object. Turn ON the LED
         // because the object is too far away.
-        digitalWrite(LED_PIN, HIGH);
+        digitalWrite(LED_BUILTIN, HIGH);
 
         // Print a message to the Serial Monitor.
         Serial.println("No object detected! LED ON.");

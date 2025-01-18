@@ -416,6 +416,20 @@ input or writing output.
    pinMode(13, OUTPUT); // Sets pin 13 as an output
 
 
+``LED_BUILTIN``
+~~~~~~~~~~~~~~~
+
+``LED_BUILTIN`` is a constant that represents the built-in LED on most
+Arduino boards, including your Arduino Uno. This constant is useful when
+you want to control the built-in LED without specifying a pin number.
+
+.. code-block:: cpp
+
+   digitalWrite(LED_BUILTIN, HIGH); // Turns on the built-in LED
+   digitalWrite(LED_BUILTIN, LOW);  // Turns off the built-in LED
+
+----
+
 .. tip::
 
    ``HIGH`` / ``LOW`` and ``INPUT`` / ``OUTPUT`` will be covered in more detail when
