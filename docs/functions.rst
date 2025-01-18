@@ -166,13 +166,14 @@ to set the first element of an array to a specific value:
        array[0] = value; // Sets the first element of the array to the specified value
    }
 
-   int myArray[3] = {1, 2, 3}; // Array to modify
-   setFirstElement(myArray, 10); // Sets the first element to 10
+   int my_array[3] = {1, 2, 3}; // Array to modify
+   setFirstElement(my_array, 10); // Sets the first element to 10
+   >>> my_array[0] == 10
 
    // We can use this function as many times as we want! So,
    // if we wanted to overwrite the first element with 20, we can do that too!
-   setFirstElement(myArray, 20); // Sets the first element to 20
-   >>> myArray == 20
+   setFirstElement(my_array, 20); // Sets the first element to 20
+   >>> my_array[0] == 20
 
 Hold on! There are two important things in the ``setFirstElement`` function:
 
@@ -193,13 +194,14 @@ Hold on! There are two important things in the ``setFirstElement`` function:
          i_can_name_this_array_anything[0] = new_value;
       }
 
-      int myArray[3] = {1, 2, 3}; // Array to modify
-      setFirstElement(myArray, 10); // Sets the first element to 10
+      int my_array[3] = {1, 2, 3}; // Array to modify
+      setFirstElement(my_array, 10); // Sets the first element to 10
+      >>> my_array[0] == 10
 
       // We can use this function as many times as we want! So,
       // if we wanted to overwrite the first element with 20, we can do that too!
-      setFirstElement(myArray, 20); // Sets the first element to 20
-      >>> myArray == 20
+      setFirstElement(my_array, 20); // Sets the first element to 20
+      >>> my_array[0] == 20
 
 
 Calling a Function
