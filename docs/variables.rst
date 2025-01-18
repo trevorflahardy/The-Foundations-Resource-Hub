@@ -133,11 +133,13 @@ Here are some of the most commonly used data types:
 
 --------------
 
-**Note** the distinction between a ``char`` and a ``String``. A ``char``
-stores a single character and uses ``''`` (**single quotes**), while a
-``String`` stores multiple characters and uses ``""`` (**double
-quotes**). ``char``\ s can **only hold a single character**, while
-``String``\ s can hold **multiple characters**. Thus,
+.. important::
+
+   **Note** the distinction between a ``char`` and a ``String``. A ``char``
+   stores a single character and uses ``''`` (**single quotes**), while a
+   ``String`` stores multiple characters and uses ``""`` (**double
+   quotes**). ``char``\ s can **only hold a single character**, while
+   ``String``\ s can hold **multiple characters**. Thus,
 
 .. code:: cpp
 

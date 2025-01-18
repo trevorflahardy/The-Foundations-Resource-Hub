@@ -59,6 +59,8 @@ that are defined in a library. The library's creator names the header
 file; all you have to do is include it in your code to access the
 library's functionality.
 
+.. note::
+
    Note that the header file name is not always the same as the
    library's name. Sometimes, you install a library under a different
    name from which you import it. How do you know which header file to

@@ -41,4 +41,6 @@ The Arduino programming language is based on a widely used programming language 
 
 By learning the Arduino Programming Language, you're not just learning to code—you're learning to connect the digital world to the physical one, turning abstract concepts into real-world results.
 
-    **Advanced Note: An Programmer's Introduction to Arduino [OPTIONAL]**: In essence, the Arduino programming language is a subset of C++. Due to this, Arduino abstracts many C++ concepts and provides a simplified framework for working with hardware. This framework includes built-in functions and libraries that handle low-level tasks, such as reading sensor data or controlling motors. The skills you already know in C++ apply, making it easier to transition between the two.
+.. note::
+
+    **Advanced: An Programmer's Introduction to Arduino [OPTIONAL]**: In essence, the Arduino programming language is a subset of C++. Due to this, Arduino abstracts many C++ concepts and provides a simplified framework for working with hardware. This framework includes built-in functions and libraries that handle low-level tasks, such as reading sensor data or controlling motors. The skills you already know in C++ apply, making it easier to transition between the two.

@@ -129,7 +129,9 @@ an ``int``, and returns a ``bool`` (true or false) value. The function
 checks if the number is greater than ``0`` and returns ``true`` if it
 is, and ``false`` otherwise.
 
-   **Advanced Note: Shorthand [OPTIONAL]**: You should shorthand the
+.. note::
+
+   **Advanced: Shorthand [OPTIONAL]**: You should shorthand the
    isPositive function as common practice,
 
    \```cpp bool isPositive(int number) { return number > 0; };
@@ -369,7 +371,9 @@ the Arduino and the Serial Monitor.
 
 ..
 
-   **Advanced Note: Baud Rate (Optional)**: The ``9600`` in
+.. note::
+
+   **Advanced: Baud Rate (Optional)**: The ``9600`` in
    ``Serial.begin(9600)`` specifies the baud rate—the speed of
    communication. Both the Arduino and the Serial Monitor must use the
    same baud rate to communicate correctly. The default baud rate for

@@ -347,7 +347,7 @@ This program will print every number from ``0`` to ``9``, except for
    8
    9
 
-..
+.. note::
 
    Note how the use of the modulus (``%``) operator is used here. As
    mentioned in `Math Operations <#math-operations>`__, the modulus

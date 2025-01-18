@@ -134,9 +134,10 @@ Key Rules and Limitations
      int numbers[3] = {1, 2, 3};
      int invalidAccess = numbers[5]; // Not good! This array only has 3 elements.
 
-..
 
-   **Advanced Note: Parallel Arrays [OPTIONAL]:** If you need to
+.. note::
+
+   **Advanced: Parallel Arrays [OPTIONAL]:** If you need to
    associate data of different types (e.g., sensor IDs and readings),
    consider using **parallel arrays**. Parallel arrays are separate
    arrays that share a relationship through their indices:

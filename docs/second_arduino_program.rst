@@ -127,7 +127,7 @@ Well, you asked for it!
       delay(1000);
    }
 
-..
+.. note::
 
    Note that the comments from the original code have been removed to
    make the code easier to read. You can keep the comments in your code
