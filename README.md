@@ -1,4 +1,4 @@
-![The Arduino Guide Header](./docs/images/the_arduino_guide.png)
+![The Arduino Guide Header](./docs/_static/the_arduino_guide.png)
 
 # The Arduino Guide
 

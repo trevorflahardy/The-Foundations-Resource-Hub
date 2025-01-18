@@ -46,7 +46,7 @@ html_theme_options = {
     },
 }
 
-html_logo = "_static/logo.png"
+html_logo = "_static/the_arduino_guide.png"
 
 html_static_path = ["_static", "images"]
 
@@ -55,7 +55,7 @@ html_static_path = ["_static", "images"]
 html_title = "The Arduino Guide"
 
 # A shorter title for the navigation bar.  Default is the same as html_title.
-html_short_title = "Arduino Tutorial"
+html_short_title = "Arduino Guide"
 
 html_css_files = ["whole_code_block.css"]
 
