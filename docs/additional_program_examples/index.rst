@@ -22,3 +22,4 @@ Table of Contents
    servo_motor_control
    hc_sr04_ultrasonic_sensor_control
    photocell
+   ir_sensor
