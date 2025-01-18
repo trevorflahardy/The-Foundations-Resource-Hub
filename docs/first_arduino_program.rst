@@ -100,6 +100,8 @@ Click on it to open the Serial Monitor window.
 
    Serial Monitor Open
 
+.. _example_1_upload_and_run_the_program:
+
 Step 4. Upload and Run the Program
 ----------------------------------
 

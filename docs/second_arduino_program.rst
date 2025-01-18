@@ -12,8 +12,8 @@ earlier: ``digitalWrite()`` and ``delay()``.
 Step 1. Change the Code
 -----------------------
 
-Let's edit the code you already have from `your first Arduino
-program <#your-first-arduino-program>`__.
+Let's edit the code you already have from :ref:`your first Arduino
+program <#first_arduino_program>`.
 
 You know that the ``loop()`` function runs continuously, so we can use
 it to turn the LED on and off. Here's the updated code:
@@ -69,8 +69,8 @@ every second.
 Step 2. Upload and Run the Program
 ----------------------------------
 
-This step is the same as in the `example
-before <#step-4-upload-and-run-the-program>`__, except this time, you're
+This step is the same as in the :ref:`example
+before <example_1_upload_and_run_the_program>`, except this time, you're
 controlling the onboard LED on your Arduino board and not printing
 messages to the Serial Monitor.
 
@@ -85,21 +85,9 @@ Monitor when the LED turns on and off. This will help you understand the
 relationship between the code you write and the actions you see on your
 Arduino board.
 
-.. raw:: html
+----
 
-   <details open>
-
-.. raw:: html
-
-   <summary>
-
-Want to see the solution?
-
-.. raw:: html
-
-   </summary>
-
-Well, you asked for it!
+Here's the updated code:
 
 .. whole-code-block:: cpp
 
@@ -129,10 +117,6 @@ Well, you asked for it!
 
 .. note::
 
-   Note that the comments from the original code have been removed to
-   make the code easier to read. You can keep the comments in your code
+   Note that the comments from the original code have been removed so you
+   can see what was easily updated. You can keep the comments in your code
    to help you understand what each part does, if you wish.
-
-.. raw:: html
-
-   </details>
