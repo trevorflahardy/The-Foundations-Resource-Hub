@@ -20,12 +20,9 @@ code that someone else has written to save you time and effort.**
 Why Use Libraries?
 ------------------
 
-- **Saves Time**: Avoid reinventing the wheel; libraries provide
-  ready-made solutions. **- Simplifies Code**: Libraries abstract away
-  the complex details, making your code cleaner and easier to read.
-- **Enables Advanced Features**: Use libraries to control hardware
-  components or implement communication protocols without needing
-  in-depth knowledge of how they work internally.
+- **Saves Time**: Avoid reinventing the wheel; libraries provide ready-made solutions.
+- **Simplifies Code**: Libraries abstract away the complex details, making your code cleaner and easier to read.
+- **Enables Advanced Features**: Use libraries to control hardware components or implement communication protocols without needing in-depth knowledge of how they work internally.
 
 How to Use a Library
 --------------------
@@ -63,17 +60,18 @@ library's functionality.
 
    Note that the header file name is not always the same as the
    library's name. Sometimes, you install a library under a different
-   name from which you import it. How do you know which header file to
-   include? The library's documentation will tell you. We will go over
-   this in the next section.
+   name from which you import it.
+
+   How do you know which header file to include? The library's documentation will tell you. We will go over this in the next section.
 
 In this case, the ``Servo`` library provides a custom ``Servo`` type and
 functions like ``attach()`` and ``write()`` to control the position of
 the servo motor.
 
---------------
+Including a Library in Arduino
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Thus, the syntax for including a library is:
+The syntax for including a library is:
 
 .. code:: cpp
 
@@ -99,10 +97,9 @@ Using Library Functions
 ~~~~~~~~~~~~~~~~~~~~~~~
 
 Once you've included a library in your sketch, you can use its functions
-to perform specific tasks. But how do I know which functions the library
-has?
+to perform specific tasks.
 
-By reading the library's documentation! The `Arduino Library
+You know what functions a library has by reading the library's documentation! The `Arduino Library
 Reference <https://www.arduino.cc/reference/en/libraries/>`__ is a great
 place to start. It provides detailed information on each library you can
 use on your Arduino, including the functions it contains and how to use
@@ -142,5 +139,5 @@ connect the servo motor to a specific pin on the Arduino board.
 
    Servo Library Attach Method
 
-To see the use of the ``Servo`` library's methods, see `Servo Motor
-Control <#servo-motor-control>`__.
+To see the use of the ``Servo`` library's methods, see :ref:`Servo Motor
+Control <servo_motor_control>`.

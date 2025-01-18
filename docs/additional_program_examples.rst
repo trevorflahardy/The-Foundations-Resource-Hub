@@ -3,6 +3,8 @@
 Additional Program Examples
 ===========================
 
+.. _servo_motor_control:
+
 Servo Motor Control
 -------------------
 

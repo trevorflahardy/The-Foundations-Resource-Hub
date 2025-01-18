@@ -13,7 +13,7 @@ Step 1. Change the Code
 -----------------------
 
 Let's edit the code you already have from :ref:`your first Arduino
-program <#first_arduino_program>`.
+program <first_arduino_program>`.
 
 You know that the ``loop()`` function runs continuously, so we can use
 it to turn the LED on and off. Here's the updated code:

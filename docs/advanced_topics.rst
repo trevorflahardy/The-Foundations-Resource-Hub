@@ -3,6 +3,11 @@
 Advanced Topics
 ===============
 
+The topics in this section **are completely optional** and are intended
+for those who want to deepen their understanding of Arduino programming
+and explore more advanced concepts. **You do not need to master these
+topics to create a successful Arduino program in this course.**
+
 .. _macros-and-preprocessor-directives:
 
 Macros and Preprocessor Directives
@@ -10,7 +15,7 @@ Macros and Preprocessor Directives
 
 Macros and preprocessor directives allow you to manage constants, create
 reusable code snippets, and optimize your program's performance. The
-#define directive is particularly useful in Arduino programming for
+``#define`` directive is particularly useful in Arduino programming for
 simplifying hardware interaction and creating readable, maintainable
 code. Here, we expand the section with practical, real-world examples
 that demonstrate its utility.
