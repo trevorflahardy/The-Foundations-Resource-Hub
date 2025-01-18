@@ -145,8 +145,6 @@ quotes**). ``char``\ s can **only hold a single character**, while
    String word = "Hello"; // Correct
 
    char word = "Hello"; // Incorrect! "" is a String
-   char word = 'Hello'; // Incorrect! A char can only hold one character.
-   String word = 'Hello'; // Incorrect! '' is a char
 
 Variable Qualifiers
 -------------------
