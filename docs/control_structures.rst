@@ -229,6 +229,8 @@ single statement. The main logical operators are:
 These operators are used to create more complex conditions that can
 handle multiple scenarios.
 
+.. seealso::
+
    You can find all these operators on the `Arduino Language
    Reference <https://docs.arduino.cc/language-reference/#structure>`__,
    however, you do not need to know all them for this course.

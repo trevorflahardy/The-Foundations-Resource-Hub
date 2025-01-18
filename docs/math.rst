@@ -1,3 +1,5 @@
+.. _math-operations:
+
 Math Operations
 ===============
 

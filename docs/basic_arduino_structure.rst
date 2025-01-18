@@ -8,11 +8,14 @@ Arduino Programming Language Overview
 
 The Arduino programming language is based on C++, with a simplified structure to make it beginner-friendly. It has a few key conventions and rules that you should know before diving into coding. Here's an overview of the foundational *ideas* of Arduino syntax:
 
-   *Do not worry about the code examples below just yet, focus on the concepts.*
-
 Basic Syntax Rules
 ------------------
-#. **Case Sensitivity**: Arduino code is case-sensitive. This means `PinMode`, `pinmode`, and `pinMode` are all treated as different terms. Always pay attention to capitalization.
+
+.. hint::
+
+   Do not worry about the code examples below just yet, focus on the concepts.
+
+#. **Case Sensitivity**: Arduino code is case-sensitive. This means ``PinMode``, ``pinmode``, and ``pinMode`` are all treated as different terms. Always pay attention to capitalization.
 
    .. code:: cpp
 
@@ -53,7 +56,7 @@ Basic Syntax Rules
 Comments and Code Readability
 -----------------------------
 
-Before diving into programming concepts, it's essential to understand
+It's also essential to understand
 how to document your thoughts within your code—comments are the first
 step in bridging the gap between your ideas and the logic you build.
 Comments are a critical part of writing clean, maintainable code. They
@@ -89,8 +92,7 @@ disabling blocks of code:
 Why is Commenting Important?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Why is commenting so important in programming and why am I learning it
-before anything else? Well, they serve several key purposes:
+Comments serve several key purposes:
 
 1. **Improves Code Readability**: Comments make it easier to understand
    what the code is doing, especially for complex sections.

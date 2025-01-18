@@ -3,6 +3,8 @@
 Advanced Topics
 ===============
 
+.. _macros-and-preprocessor-directives:
+
 Macros and Preprocessor Directives
 ----------------------------------
 

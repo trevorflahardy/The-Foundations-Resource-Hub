@@ -97,6 +97,9 @@ In this syntax:
 For Loop Example
 ^^^^^^^^^^^^^^^^
 
+LED Example
+""""""""""""
+
 For example, you can use a ``for`` loop to turn an LED on and off 5
 times:
 
@@ -110,6 +113,48 @@ times:
 
 Here, the for loop iterates (cycles) through pin numbers ``2`` to ``6``,
 turning on each LED.
+
+.. _for_loop_summing_numbers_example:
+
+Summing Numbers Example
+"""""""""""""""""""""""
+
+As another example, let's say you wanted to add all the numbers in
+an array together. You could use a ``for`` loop to iterate through the
+array and add each number to a total:
+
+.. code:: cpp
+
+   int numbers[] = {1, 2, 3, 4, 5};
+   int total = 0;
+
+   for (int i = 0; i < 5; i++) {
+      total += numbers[i];  // Add the current number to the total
+   }
+
+   Serial.println(total);  // Print the total
+   >>> 15
+
+.. _for_loop_fibonacci_example:
+
+Fibonacci Example
+"""""""""""""""""
+
+Let's say you wanted to store the first 10 fibonacci numbers in an array. You could use a ``for`` loop to iterate through the array and calculate each number instead of manually writing each number:
+
+.. code:: cpp
+
+   int fibonacci[10];
+   fibonacci[0] = 0;
+   fibonacci[1] = 1;
+
+   for (int i = 2; i < 10; i++) {
+      fibonacci[i] = fibonacci[i - 1] + fibonacci[i - 2];
+   }
+
+   for (int i = 0; i < 10; i++) {
+      Serial.println(fibonacci[i]);
+   }
 
 ``while`` loops
 ~~~~~~~~~~~~~~~
