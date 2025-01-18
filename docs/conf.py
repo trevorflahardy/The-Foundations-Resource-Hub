@@ -44,6 +44,7 @@ html_theme_options = {
         "color-brand-primary": "#009374",
         "color-brand-content": "#009374",
     },
+    "sidebar_hide_name": True,
 }
 
 html_logo = "_static/the_arduino_guide.png"
