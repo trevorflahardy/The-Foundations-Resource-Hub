@@ -1,4 +1,4 @@
-.. _math-operations:
+.. _math_operations:
 
 Math Operations
 ===============

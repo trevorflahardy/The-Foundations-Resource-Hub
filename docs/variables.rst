@@ -117,7 +117,7 @@ Here are some of the most commonly used data types:
    A ``String`` is how you store messages, words, or sentences in code.
    When creating a string, it **must** be enclosed in double quotes
    (``"``). In Arduino, you can manipulate strings, such as combining
-   them or extracting parts of them (covered in :ref:`math-operations` later).
+   them or extracting parts of them (covered in :ref:`math_operations` later).
    Strings are useful for displaying messages, reading input, or storing
    text-based data. We'll cover these in more detail later.
 

@@ -3,7 +3,10 @@
 Loops
 =====
 
-What if we needed to repeat the same task over and over in your code?
+Already, you've learned how to write functions that can be reused
+to perform a specific task without repeating code. But, what if you
+needed to perform this task multiple times? This is where loops come in.
+
 For example, imagine you want to blink an LED on and off 10 times. You
 might write something like this:
 
@@ -25,7 +28,9 @@ times? Or change the timing later? You'd have to rewrite or modify the
 same lines repeatedly, which makes your code harder to manage and more
 prone to errors.
 
-This is where ``loops`` come in. Loops let you write the repetitive part
+----
+
+**Loops** let you write the repetitive part
 of your program once and have the Arduino handle the repetition for you.
 They're like your code's personal assistant, taking care of the
 repetitive grunt work so you can focus on the bigger picture.
@@ -69,9 +74,9 @@ How ``for`` Loops Work
 
 A ``for`` loop has 3 main parts:
 
-#. ``Initialization``: Sets a starting point for your loop.
-#. ``Condition``: Checks whether the loop should continue.
-#. ``Increment/Decrement``: Updates the loop variable after each iteration.
+#. **Initialization**: Sets a starting point for your loop.
+#. **Condition**: Checks whether the loop should continue.
+#. **Increment/Decrement**: Updates the loop variable after each iteration.
 
 For Loop Syntax
 ^^^^^^^^^^^^^^^
@@ -84,17 +89,17 @@ For Loop Syntax
 
 In this syntax:
 
-- **``Initialization``**: Sets the loop variable to an initial value.
+- **Initialization**: Sets the loop variable to an initial value.
   This is usually where you create the loop variable and set its
   starting value.
-- **``Condition``**: Checks whether the loop should continue. If the
+- **Condition**: Checks whether the loop should continue. If the
   condition is true, the loop runs; if it's false, the loop stops.
-- **``Increment/Decrement``**: Updates the loop variable after each
+- **Increment/Decrement**: Updates the loop variable after each
   iteration. This is where you increase or decrease the loop variable to
   move the loop forward.
 
-For Loop Example
-^^^^^^^^^^^^^^^^
+`for` Loop Example
+^^^^^^^^^^^^^^^^^^
 
 LED Example
 """"""""""""
@@ -106,8 +111,9 @@ times:
 
    // Turn on LEDs connected to pins 2 through 6
    for (int pin = 2; pin <= 6; pin++) {
-       digitalWrite(pin, HIGH);  // Turn on the LED
-       delay(500);               // Wait for half a second
+      digitalWrite(pin, HIGH);  // Turn on the LED
+      delay(500);               // Wait for half a second
+      digitalWrite(pin, LOW);   // Turn off the LED
    }
 
 Here, the for loop iterates (cycles) through pin numbers ``2`` to ``6``,
@@ -139,7 +145,7 @@ array and add each number to a total:
 Fibonacci Example
 """""""""""""""""
 
-Let's say you wanted to store the first 10 fibonacci numbers in an array. You could use a ``for`` loop to iterate through the array and calculate each number instead of manually writing each number:
+What if you wanted to store the first 10 fibonacci numbers in an array. You could use a ``for`` loop to iterate through the array and calculate each number instead of manually writing each number:
 
 .. code:: cpp
 
@@ -154,6 +160,40 @@ Let's say you wanted to store the first 10 fibonacci numbers in an array. You co
    for (int i = 0; i < 10; i++) {
       Serial.println(fibonacci[i]);
    }
+
+   >>> 0
+   >>> 1
+   >>> 1
+   >>> 2
+   >>> 3
+   >>> 5
+   >>> ...
+
+But what if the amount of fibonacci numbers you wanted to calculate changes to 20? What if it changed to 50? You can update your program to automatically account for this by changing the size of an array and the loop condition with
+a common variable.
+
+.. code:: cpp
+
+   const int total_fib_numbers = 30; // Constant variable to store the total number of fibonacci numbers to calculate
+
+   int fibonacci[total_fib_numbers];
+   fibonacci[0] = 0;
+   fibonacci[1] = 1;
+
+   for (int i = 2; i < total_fib_numbers; i++) {
+      fibonacci[i] = fibonacci[i - 1] + fibonacci[i - 2];
+   }
+
+   for (int i = 0; i < total_fib_numbers; i++) {
+      Serial.println(fibonacci[i]);
+   }
+
+   >>> 0
+   >>> 1
+   >>> 1
+   >>> 2
+   >>> 3
+   >>> ...
 
 ``while`` loops
 ~~~~~~~~~~~~~~~
@@ -176,8 +216,8 @@ How ``while`` Loops Work
 
 A while loop has 2 main parts:
 
-#. **``Condition``**: The loop checks a condition before every iteration. If the condition is false, the loop exits immediately.
-#. **``Repetition``**: If the condition is true, the code inside the loop executes and then rechecks the condition.
+#. **Condition**: The loop checks a condition before every iteration. If the condition is false, the loop exits immediately.
+#. **Repetition**: If the condition is true, the code inside the loop executes and then rechecks the condition.
 
 While Loop Syntax
 ^^^^^^^^^^^^^^^^^
@@ -185,7 +225,7 @@ While Loop Syntax
 .. code:: cpp
 
    while (condition) {
-       // Code to execute
+      // Code to execute
    }
 
 While Loop Example 1: Waiting for a Button Press
@@ -204,15 +244,13 @@ want to wait until the button is pressed before moving on.
 
    // Keep looping until the button is pressed:
    while (buttonState == LOW) {
-       buttonState = digitalRead(7); // Check the button state on pin 7
+      buttonState = digitalRead(7); // Check the button state on pin 7
 
-       if (buttonState == LOW) {
-           // If the buttonState is LOW (ie. no one has pressed it),
-           // then let the user know we're waiting for a button press.
-           Serial.println("Waiting for button press...");
-       }
-
-       delay(100); // Small delay to reduce rapid checking
+      if (buttonState == LOW) {
+         // If the buttonState is LOW (ie. no one has pressed it),
+         // then let the user know we're waiting for a button press.
+         Serial.println("Waiting for button press...");
+      }
    }
 
    Serial.println("Button pressed!");
@@ -228,31 +266,37 @@ While Loop Example 2: Countdown Timer
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 We can also use a ``while`` loop to create a countdown timer. For
-example, let's count down from 10 to 1, printing each number to the
-Serial Monitor and then printing “Liftoff!” when the countdown reaches
-0.
+example, let's count down from ``10`` to ``1``, printing each number to the
+Serial Monitor and then printing ``“Liftoff!”`` when the countdown reaches
+``0``.
 
-.. code:: cpp
+.. whole-code-block:: cpp
 
-   int countdown = 10;
+   void start() {
+      Serial.begin(9600);
 
-   while (countdown > 0) {              // Keep looping until the countdown reaches 0
-       Serial.println(countdown);       // Print the current countdown value
-       delay(1000);                     // Wait 1 second
-       countdown--;                     // Decrease the countdown by 1
+      // A variable denoting where we start our countdown.
+      int countdown = 10;
+
+      while (countdown > 0) {             // Keep looping until the countdown reaches 0
+         Serial.println(countdown);       // Print the current countdown value
+         delay(1000);                     // Wait 1 second
+         countdown--;                     // Decrease the countdown by 1
+      }
+
+      Serial.println("Liftoff!");
    }
 
-   Serial.println("Liftoff!");
+   void loop() {
+      // Nothing to do here
+   }
 
 Here:
 
-- The loop starts with ``countdown = 10`` and repeats until
-  ``countdown > 0`` is false.
+- The loop starts with ``countdown = 10`` and repeats until ``countdown > 0`` is false.
 - On each iteration, the value of ``countdown`` decreases by 1.
 
-When you run this program, you'll see the countdown from 10 to 1, with
-each **iteration** taking 1 second, followed by “Liftoff!” when the
-countdown reaches 0. The program will run for 10 seconds in total.
+.. tip::
 
    If you haven't noticed, this example can also be done with a ``for``
    loop! The choice between ``for`` and ``while`` loops depends on the
@@ -273,12 +317,15 @@ While Loop Key Points
 
   .. code:: cpp
 
-     while (true) {
-         // This will run forever unless you break the loop manually
-     }
+      while (true) {
+         // This will run forever unless you break the loop manually.
+         // Our program won't do anything else until you reset it.
+      }
 
 - Use a delay or modify the condition inside the loop to prevent
   unnecessary CPU usage or infinite looping.
+
+----
 
 With ``while`` loops, you have flexibility for dynamic, real-time
 decision-making, making them powerful for tasks like waiting for an
@@ -301,12 +348,12 @@ Break and Continue Statements
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Sometimes you need to break out of a loop early or skip an iteration
-based on a specific condition. This is where **``break``** and
-**``continue``** statements come in.
+based on a specific condition. This is where ``break`` and
+``continue`` statements come in.
 
-- **``break``**: Exits the loop immediately, regardless of the loop
+- **break**: Exits the loop immediately, regardless of the loop
   condition.
-- **``continue``**: Skips the rest of the current iteration and moves to
+- **continue**: Skips the rest of the current iteration and moves to
   the next one.
 
 These statements give you more control over the flow of your loops,
@@ -335,7 +382,7 @@ do this.
    Serial.println("Loop finished!");
 
 In this example, the loop is set to run from ``0`` to ``9``, printing
-each number. When ``i`` equals ``number_to_find`` (5), the loop exits
+each number. When ``i`` equals ``number_to_find`` (``5``), the loop exits
 early with the ``break`` statement. The program then prints “Number
 found!” and “Loop finished!”.
 
@@ -357,7 +404,7 @@ Continue Statement Example
 
 ``continue`` is similar to ``break``, however, ``continue`` will simply
 skip to the next loop iteration instead of stopping the loop. Let's say
-that we hate ANY number that ends in ``5``. We can use the ``continue``
+that we hate **ANY** number that ends in ``5``. We can use the ``continue``
 to skip any number that ends in ``5``.
 
 .. code:: cpp
@@ -392,49 +439,65 @@ This program will print every number from ``0`` to ``9``, except for
 .. note::
 
    Note how the use of the modulus (``%``) operator is used here. As
-   mentioned in `Math Operations <#math-operations>`__, the modulus
+   mentioned in :ref:`Math Operations <math_operations>`, the modulus
    operator returns the remainder of a division operation. Consider if
    we made the loop go all the way to 20 instead of 10. When we hit 15,
    ``15 % 10`` is ``5``, so the program would skip printing ``15`` as
    well. The same would happen for ``25``, ``35``, etc.
 
---------------
 
-You can use ``continue`` and ``break`` with both ``for`` and ``while``
+You can use ``continue`` and ``break`` with **both** ``for`` and ``while``
 loops. These statements give you more control over the flow of your
 loops, allowing you to fine-tune your code based on specific conditions.
 
-Loops vs. ``loop()``
+Loops vs. ``loop()``
 ~~~~~~~~~~~~~~~~~~~~
 
-The loop() function and for/while loops serve different purposes in
+The loop() function and ``for`` / ``while`` loops serve different purposes in
 Arduino programming.
 
-- The ``loop()`` function is a special system function that runs
-  indefinitely on your Arduino board, cycling through its code block as
-  long as the board has power. It handles the overarching repetition of
-  your program.
+- The ``loop()`` function is a special system function that runs indefinitely on your Arduino board, cycling through its code block as long as the board has power. It handles the overarching repetition of your program.
+
+  .. code-block:: cpp
+
+     void loop() {
+        // This is the `loop()` function that runs indefinitely.
+     }
+
 - A ``for`` or ``while`` loop, on the other hand, performs controlled
   repetitions of specific tasks within the ``loop()`` function or
   elsewhere in your code.
 
-.. code:: cpp
+  .. code:: cpp
 
-   void loop() {
-       // This is the `loop()` function that runs indefinitely.
+      void some_other_function() {
+         // This is a separate function that you can call from `loop()`
+         for (int i = 0; i < 3; i++) {
+            Serial.println(i);  // Prints 0, 1, 2
+         }
+      }
 
-       // Example of a `for` loop within `loop()`
-       for (int i = 0; i < 3; i++) {
-           Serial.println(i);  // Prints 0, 1, 2
-       }
+      void loop() {
+         // This is the `loop()` function that runs indefinitely.
 
-       // Example of a `while` loop within `loop()`
-       int x = 0;
-       while (x < 3) {
-           Serial.println(x);  // Prints 0, 1, 2
-           x++;
-       }
-   }
+         // We can call `some_other_function()` here that has a `for` loop
+         some_other_function();
 
-**Remember**: Think of loop() as your program's big picture cycle, while
-for and while loops handle specific, smaller repetitions inside it.
+         // We can also have a `for` loop directly within `loop()`
+
+         // Example of a `for` loop within `loop()`
+         for (int i = 0; i < 3; i++) {
+            Serial.println(i);  // Prints 0, 1, 2
+         }
+
+         // Example of a `while` loop within `loop()`
+         int x = 0;
+         while (x < 3) {
+            Serial.println(x);  // Prints 0, 1, 2
+            x++;
+         }
+      }
+
+.. important::
+
+   Think of ``loop()`` as your program's big picture cycle, while ``for`` and ``while`` loops handle specific, smaller repetitions inside it.
