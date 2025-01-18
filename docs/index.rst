@@ -40,4 +40,4 @@ Table of Contents
    loops
    libraries
    advanced_topics
-   additional_program_examples
+   additional_program_examples/index

@@ -451,7 +451,7 @@ code (e.g., inside ``{}``). They are only accessible within that
 specific function or block.
 
 Example: Local Variable
-'''''''''''''''''''''''
+^^^^^^^^^^^^^^^^^^^^^^^
 
 .. whole-code-block:: cpp
 
@@ -479,7 +479,7 @@ functions. This allows for modular code while maintaining the scope of
 variables within individual functions.
 
 Example: Nested Function Calls
-''''''''''''''''''''''''''''''
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. whole-code-block:: cpp
 

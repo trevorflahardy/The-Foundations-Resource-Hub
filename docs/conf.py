@@ -12,6 +12,11 @@ import os
 sys.path.insert(0, os.path.abspath(".."))
 sys.path.append(os.path.abspath("extensions"))
 
+# Append the examples directory (in the parent of this one) such that the
+# examples can be included in the documentation.
+examples_path = os.path.abspath("../examples")
+sys.path.append(examples_path)
+
 project = "The Arduino Guide"
 copyright = "2025, Trevor Flahardy"
 author = "Trevor Flahardy"
@@ -47,6 +52,8 @@ html_theme_options = {
     "sidebar_hide_name": True,
 }
 
+html_extra_path = [examples_path]
+
 html_logo = "_static/the_arduino_guide.png"
 
 html_static_path = ["_static", "images"]
@@ -77,3 +84,6 @@ latex_documents = [
         "manual",
     ),
 ]
+
+
+nitpicky = True

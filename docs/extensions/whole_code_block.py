@@ -24,14 +24,10 @@ SOFTWARE.
 
 from __future__ import annotations
 
-from typing import ClassVar
 
 from docutils.nodes import Element, Node, TextElement
-from docutils.parsers.rst import directives
 from sphinx.application import Sphinx
-from sphinx.directives import optional_int
-from sphinx.directives.code import CodeBlock
-from sphinx.util.typing import OptionSpec
+from sphinx.directives.code import CodeBlock, LiteralInclude
 from sphinx.writers.html5 import HTML5Translator
 
 
@@ -115,16 +111,35 @@ class WholeCodeBlock(CodeBlock):
     has_content = True
     required_arguments = 1
 
-    option_spec: ClassVar[OptionSpec] = {
-        "force": directives.flag,
-        "linenos": directives.flag,
-        "dedent": optional_int,
-        "lineno-start": int,
-        "emphasize-lines": directives.unchanged_required,
-        "caption": directives.unchanged_required,
-        "class": directives.class_option,
-        "name": directives.unchanged,
-    }
+    def run(self) -> list[Node]:
+        # Create the main node that holds the code block and warning
+        root = WholeCodeBlockNode()
+
+        code_block: list[Node] = super().run()
+        root += code_block
+
+        # Create the underlying warning node
+        warning = WholeCodeBlockWarning()
+        root.append(warning)
+
+        # The underlying warning text
+        notification_text_raw = "This is a whole code block. It can be used by itself."
+        warning_text = WholeCodeBlockWarningText(
+            notification_text_raw, notification_text_raw
+        )
+        warning.append(warning_text)
+
+        return [root]
+
+
+class WholeLiteralInclude(LiteralInclude):
+    """A custom Sphinx directive that acts the same as WholeCodeBlock except
+    this is a literal include. This is such that an example can be included
+    and still circled with the notification that it is a whole code block.
+    """
+
+    has_content = True
+    required_arguments = 1
 
     def run(self) -> list[Node]:
         # Create the main node that holds the code block and warning
@@ -166,6 +181,7 @@ def setup(app: Sphinx):
     )
 
     app.add_directive("whole-code-block", WholeCodeBlock)
+    app.add_directive("whole-literal-include", WholeLiteralInclude)
 
     # Tell sphinx that it is okay for the exception hierarchy to be used in parallel
     return {
