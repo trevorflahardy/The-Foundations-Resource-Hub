@@ -17,6 +17,14 @@
  * - IN3: Connect this pin to digital pin 4 on the Arduino.
  * - IN4: Connect this pin to digital pin 5 on the Arduino.
  *
+ * It also has two pins for each motor to control the speed. These pins are
+ * controlled using PWM (Pulse Width Modulation) signals, so the pins
+ * they are connected to should be PWM pins on the Arduino. These are denoted
+ * using a '~' symbol next to the pin number on the Arduino board. In this example,
+ * we will use the following pins:
+ * - ENA: Connect this pin to pin 9 on the Arduino
+ * - ENB: Connect this pin to pin 10 on the Arduino
+ *
  * The L298N H-Bridge works by sending signals to the IN1 and IN2 pins
  * to control the direction of the motor. Sending the following signals
  * to the IN1 and IN2 pins, or the IN3 and IN4 pins respectively, will result
@@ -32,18 +40,26 @@
  * - Spin Motor 2 Backward: IN3 = LOW, IN4 = HIGH
  * - Stop Motor 2: IN3 = LOW, IN4 = LOW
  *
+ * When controlling speed, you can use the 'analogWrite()' function to
+ * send a PWM signal to the ENA and ENB pins. The higher the value you
+ * pass to 'analogWrite()', the faster the motor will spin. The range
+ * of values you can pass to 'analogWrite()' is between 0 and 255, with
+ * 0 being the slowest speed and 255 being the fastest speed.
+ *
  * This example assumes you have two DC motors connected to the L298N
  * H-Bridge. If you only have one motor, you can simply remove the
  * sections that control the second motor.
  */
 
-// Control for one motor, has two pins:
+// Control for one motor, has two pins for control and one for speed:
 const int H_BRIDGE_IN1 = 2;
 const int H_BRIDGE_IN2 = 3;
+const int H_BRIDGE_ENA = 9; // Speed control pin
 
-// Control for the other motor, has two pins:
+// Control for the other motor, has two pins for control and one for speed:
 const int H_BRIDGE_IN3 = 4;
 const int H_BRIDGE_IN4 = 5;
+const int H_BRIDGE_ENB = 10; // Speed control pin
 
 void setup()
 {
@@ -59,6 +75,11 @@ void setup()
     pinMode(H_BRIDGE_IN2, OUTPUT);
     pinMode(H_BRIDGE_IN3, OUTPUT);
     pinMode(H_BRIDGE_IN4, OUTPUT);
+
+    // The 'H_BRIDGE_ENA' and 'H_BRIDGE_ENB' pins are used to
+    // control the speed of the motor, so they are 'OUTPUT's as well.
+    pinMode(H_BRIDGE_ENA, OUTPUT);
+    pinMode(H_BRIDGE_ENB, OUTPUT);
 }
 
 /**
@@ -99,14 +120,19 @@ void stop(int in1, int in2)
     digitalWrite(in2, LOW);
 }
 
+void setSpeed(int speed, int en)
+{
+    analogWrite(en, speed);
+}
+
 /**
  * In this `loop()` function, the motors are engaged to follow
  * the same repeating pattern (with a 2s delay in between):
  *
- * 1. Move the first motor forward while the second motor is stopped
- * 2. Stop the first motor and move the second motor forward
+ * 1. Move the first motor forward at full speed while the second motor is stopped
+ * 2. Stop the first motor and move the second motor forward at full speed
  * 3. Stop all the motors
- * 4. Make both the motors spin opposite direction (backward)
+ * 4. Make both the motors spin half speed in the opposite direction (backward)
  * 5. Stop all the motors
  *
  * We defined functions for moving the motors forward, backward,
@@ -116,13 +142,15 @@ void stop(int in1, int in2)
  */
 void loop()
 {
-    // 1. Move the first motor forward while the second motor is stopped
+    // 1. Move the first motor forward at full speed while the second motor is stopped
+    setSpeed(255, H_BRIDGE_ENA);
     forward(H_BRIDGE_IN1, H_BRIDGE_IN2);
 
     delay(2000); // Wait for 2 seconds
 
-    // 2. Stop the first motor and move the second motor forward
+    // 2. Stop the first motor and move the second motor forward at full speed
     stop(H_BRIDGE_IN1, H_BRIDGE_IN2);
+    setSpeed(255, H_BRIDGE_ENB);
     forward(H_BRIDGE_IN3, H_BRIDGE_IN4);
 
     delay(2000); // Wait for 2 seconds
@@ -131,7 +159,9 @@ void loop()
     stop(H_BRIDGE_IN1, H_BRIDGE_IN2);
     delay(2000); // Wait for 2 seconds
 
-    // 4. Make both the motors spin opposite direction (backward).
+    // 4. Make both the motors spin opposite direction (backward) at half speed
+    setSpeed(127, H_BRIDGE_ENA);
+    setSpeed(127, H_BRIDGE_ENB);
     backward(H_BRIDGE_IN1, H_BRIDGE_IN2);
     backward(H_BRIDGE_IN3, H_BRIDGE_IN4);
 
