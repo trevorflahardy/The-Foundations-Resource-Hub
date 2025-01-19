@@ -23,3 +23,4 @@ Table of Contents
    hc_sr04_ultrasonic_sensor_control
    photocell
    ir_sensor
+   h_bridge

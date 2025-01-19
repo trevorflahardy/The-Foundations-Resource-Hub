@@ -1,7 +1,7 @@
 .. _servo_motor_control:
 
-Servo Motor Control
-===================
+Servo Motor Control Example
+===========================
 
 This example walks through how to control a Servo motor using an Arduino
 board. Your project kit has a Servo. Servo motors are small devices that

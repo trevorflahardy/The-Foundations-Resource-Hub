@@ -1,7 +1,7 @@
 .. _ir_sensor:
 
-IR Sensor
-=========
+IR Sensor Example
+=================
 
 .. whole-literal-include:: ../../examples/ir_sensor.ino
     :language: cpp

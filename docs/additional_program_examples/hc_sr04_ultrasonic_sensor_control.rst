@@ -1,7 +1,7 @@
 .. _hc_sr04_ultrasonic_sensor_control:
 
-HC-SR04 Ultrasonic Sensor Control
-=================================
+HC-SR04 Ultrasonic Sensor Control Example
+=========================================
 
 This example walks through how to control an HC-SR04 Ultrasonic Sensor
 using an Arduino board. Your project kit has an HC-SR04 Ultrasonic Sensor.
