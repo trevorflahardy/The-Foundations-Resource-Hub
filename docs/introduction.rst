@@ -38,10 +38,66 @@ When you write code for an Arduino board, you create a **sketch**. An Arduino sk
 Arduino Board Pin Types
 ~~~~~~~~~~~~~~~~~~~~~~~~
 
-Arduino boards have different types of pins that serve specific purposes. Understanding these pin types is essential for connecting components to the board and writing code to control them. Here are the main types of pins you will encounter:
+Arduino boards have different types of pins, each serving specific purposes. Understanding these pin types is crucial for connecting components to the board and writing code to control them effectively. Below are the main types of pins you’ll encounter:
 
-#. **Digital Pins**: Digital pins can be set to either ``HIGH`` (5V) or ``LOW`` (0V). They are used for digital input and output operations. Digital pins can only read or write digital signals, which are binary values (0 or 1), unlike:
+#. **Digital Pins**:
 
-#. **Analog Pins**: Analog pins can read analog signals and convert them to digital values. This means that they can read a range of values between 0 and 5V. Analog pins are used for sensors that provide continuous data.
+   Digital pins can be set to either ``HIGH`` (``5V``) or ``LOW`` (``0V``). These pins are used for digital input and output operations, meaning they work with binary signals: either ``ON`` (``HIGH``) or ``OFF`` (``LOW``).
 
-In your code, you will use these pins to interact with components like LEDs, motors, sensors, and more. By controlling the pins, you can control the behavior of these components and create interactive projects. As you progress through this book, you'll learn how to use these pins effectively to build exciting projects.
+   Digital pins can interact with components like:
+
+   - Buttons (to detect presses as ``HIGH`` or ``LOW``)
+   - LEDs (to turn them ON or OFF)
+   - Relays (to control power to devices)
+
+   **PWM (Pulse Width Modulation):**
+
+   Some digital pins on Arduino boards are marked with a ``~`` symbol (e.g., ``~3``, ``~5``, ``~6``). These are PWM-enabled pins. PWM allows you to simulate an analog output using a digital signal.
+
+   - **How PWM Works**: PWM rapidly toggles a digital pin between HIGH and LOW at a specific frequency. By adjusting the proportion of time the pin stays HIGH (called the pulse width), you can simulate different output voltages.
+   - **Common Uses**: PWM is commonly used to:
+     - Dim LEDs by controlling their brightness.
+     - Control motor speed.
+     - Generate audio signals for buzzers or speakers.
+
+#. **Analog Pins**:
+
+Analog pins are used to read analog signals and convert them to digital values through a process called analog-to-digital conversion (ADC). These pins can detect a range of voltages (typically ``0-5V`` on most boards) and return a value between 0 and 1023.
+
+**When to Use Analog Pins:**
+
+Reading data from sensors like temperature, light, or potentiometers, which provide varying voltage outputs.
+
+Analog vs. PWM: What's the Difference?
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Consider the following image:
+
+.. image:: ./images/pwm_vs_analog.png
+   :alt: PWM vs Analog Pins
+   :align: center
+
+In **blue** you see the ``Analog`` signal. This signal is continuous and can take any value within a range (e.g., ``0-5V``). Analog pins are used to read these continuous signals and convert them to digital values.
+
+In **black**, you see the ``PWM`` signal. This signal is digital and can only take two values: ``HIGH`` or ``LOW``. However, by adjusting the pulse width (the proportion of time the signal stays ``HIGH``), you can simulate different output voltages. PWM pins are used to control components that require variable output voltages, like LEDs or motors.
+
+To sum this:
+
+.. list-table::
+    :header-rows: 1
+
+    * - Feature
+      - Analog Pins
+      - PWM Pins
+    * - Purpose
+      - Reads continuous voltage.
+      - Simulates variable output voltage.
+    * - Type
+      - Input only
+      - Output only (digital signal).
+    * - range
+      - ``0-1023`` (based on ``0-5V``).
+      - ``0-255`` (based on pulse width).
+    * - Use Cases
+      - Reading sensor data.
+      - Controlling brightness or audio signals.
