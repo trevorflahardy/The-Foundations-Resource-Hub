@@ -10,6 +10,12 @@ ultrasonic sound waves and measuring the time it takes for the sound waves
 to bounce back. In this example, we will learn how to control an HC-SR04
 Ultrasonic Sensor using an Arduino board.
 
+.. seealso::
+
+    For more information on the HC-SR04 Ultrasonic Sensor, see the YouTube tutorial on
+    `Using a Proximity Sensor with the Arduino <https://www.youtube.com/watch?v=-IeotpELSC4>`_
+    , a guide developed specifically for USF students.
+
 --------------
 
 .. whole-literal-include:: ../../examples/hc_sr04_ultrasonic_sensor.ino
