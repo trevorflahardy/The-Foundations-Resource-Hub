@@ -3,9 +3,6 @@
 Basic Arduino Structure
 ========================
 
-Arduino Programming Language Overview
---------------------------------------
-
 The Arduino programming language is based on C++, with a simplified structure to make it beginner-friendly. It has a few key conventions and rules that you should know before diving into coding. Here's an overview of the foundational *ideas* of Arduino syntax:
 
 Basic Syntax Rules
@@ -13,7 +10,7 @@ Basic Syntax Rules
 
 .. hint::
 
-   Do not worry about the code examples below just yet, focus on the concepts.
+   Focus on the concepts and structure of the code, rather than the specific details. We will cover each of these elements in more detail as we progress through the book.
 
 #. **Case Sensitivity**: Arduino code is case-sensitive. This means ``PinMode``, ``pinmode``, and ``pinMode`` are all treated as different terms. Always pay attention to capitalization.
 
