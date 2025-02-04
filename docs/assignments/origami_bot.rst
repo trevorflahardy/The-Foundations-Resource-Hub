@@ -1,14 +1,10 @@
 .. _origami_bot:
 
-Origami Bot
-===========
+The Origami Bot
+===============
 
 The Origami Bot is an introduction to building your first robot in Foundations of Engineering.
-It is a simple robot that can move forward, backward, and turn. The robot is built using a
-**differential steering** design, which is when a robot's motors are aligned and inverted.
-
-Throughout this document, you will learn about the materials needed to construct the robot, how
-the robot works, and common issues that may arise when building the robot.
+It is a simple robot that can move forward, backward, and turn. Throughout this document, you will learn about the materials needed to construct the robot, how the robot works, and common issues that may arise when building the robot.
 
 .. figure:: ../images/origami_bot_example.png
     :alt: Origami Bot
