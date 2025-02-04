@@ -184,7 +184,7 @@ Can I Use a 3D Printer or Other Chassis Type?
 As fun as that would be, the assignment is locked regarding the chassis type. You can use paper or cardboard to build your chassis, but you cannot use a 3D printer or other materials.
 
 Origami Bot Code
-=================
+----------------
 
 An updated version of the Origami Bot code is provided below. This has been expanded to include
 additional comments about what the code is doing, as well as align with The Arduino Guide's
