@@ -16,7 +16,10 @@ It is a simple robot that can move forward, backward, and turn. Throughout this 
 Building the Origami Bot
 -------------------------
 
-For specific chassis building instructions, refer to the Origami Bot Instructions PDF on Canvas. However,
+For specific chassis building instructions, refer to the Origami Bot Instructions PDF on Canvas and/or
+the `Dr. Freidkes's Building the Origami Robot <https://www.youtube.com/watch?v=yOe0VYiVKno>`_ YouTube video.
+
+However,
 we will detail the materials and electronics needed to build the robot below, as well as important information that may help you when building the robot.
 
 Materials
@@ -182,6 +185,20 @@ Can I Use a 3D Printer or Other Chassis Type?
 """""""""""""""""""""""""""""""""""""""""""""
 
 As fun as that would be, the assignment is locked regarding the chassis type. You can use paper or cardboard to build your chassis, but you cannot use a 3D printer or other materials.
+
+Additional Resources
+--------------------
+
+For additional resources on building the Origami Bot, refer to the following:
+
+- The **Origami Bot Instructions** PDF on Canvas.
+- Dr. Freidkes's **Building the Origami Robot** `YouTube video <https://www.youtube.com/watch?v=yOe0VYiVKno>`_.
+- `Dr. Schlaf's video <https://youtu.be/j6D9-GKhAyc?si=DjsJl7CnlX8HYTyr&t=959>`_ demonstrating how to use the h-bridge motor controller, you may start watching from ``15.59" - end``.
+- The :ref:`Origami Bot Code <origami_bot_code>` below.
+- The :ref:`H-Bridge Control Example <h_bridge>` in The Arduino Guide for more information on controlling DC motors with an H-Bridge.
+
+
+.. _origami_bot_code:
 
 Origami Bot Code
 ----------------
