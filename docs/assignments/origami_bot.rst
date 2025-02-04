@@ -19,8 +19,7 @@ Building the Origami Bot
 For specific chassis building instructions, refer to the Origami Bot Instructions PDF on Canvas and/or
 the `Dr. Freidkes's Building the Origami Robot <https://www.youtube.com/watch?v=yOe0VYiVKno>`_ YouTube video.
 
-However,
-we will detail the materials and electronics needed to build the robot below, as well as important information that may help you when building the robot.
+However, we will detail the materials and electronics needed to build the robot below, as well as important information that may help you when building the robot.
 
 Materials
 ^^^^^^^^^
@@ -59,6 +58,10 @@ The schematic for the Origami Bot is shown below:
     :alt: Origami Bot Schematic
 
     The schematic for the Origami Bot. Follow the wire connections to connect the H-Bridge, Arduino, and motors together.
+
+.. note::
+
+    You do not need the blue wire in this schematic, but it will not hurt the circuit if you include it.
 
 Note how the H-bridge and Arduino power and ground are connected to the breadboard. An Arduino Uno
 can only supply ``5V`` of power. But, the four ``AA`` batteries can supply 6V of power (``1.5V * 4V = 6V``).
