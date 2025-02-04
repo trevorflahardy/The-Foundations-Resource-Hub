@@ -17,7 +17,7 @@ Building the Origami Bot
 -------------------------
 
 For specific chassis building instructions, refer to the Origami Bot Instructions PDF on Canvas. However,
-we will detail the materials and electronics needed to build the robot below.
+we will detail the materials and electronics needed to build the robot below, as well as important information that may help you when building the robot.
 
 Materials
 ^^^^^^^^^
