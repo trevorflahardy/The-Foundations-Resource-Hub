@@ -41,3 +41,4 @@ Table of Contents
    libraries
    advanced_topics
    additional_program_examples/index
+   assignments/index
