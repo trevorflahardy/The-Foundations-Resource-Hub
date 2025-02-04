@@ -63,6 +63,12 @@ The schematic for the Origami Bot is shown below:
 
     You do not need the blue wire in this schematic, but it will not hurt the circuit if you include it.
 
+.. important::
+
+    This schematic shows the use of the ``6V`` power supply. You can also use a ``9V`` battery and the included adapter in your Project kit.
+
+    Additionally, you can power the robot using the USB cable connected to your computer. However, this requires you to change the wiring on your circuit. The Foundations TAs can help you with this if needed, but the ``6V`` or ``9V`` power supply is recommended.
+
 Note how the H-bridge and Arduino power and ground are connected to the breadboard. An Arduino Uno
 can only supply ``5V`` of power. But, the four ``AA`` batteries can supply 6V of power (``1.5V * 4V = 6V``).
 
