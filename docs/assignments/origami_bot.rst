@@ -221,6 +221,7 @@ An updated version of the Origami Bot code is provided below. This has been expa
 additional comments about what the code is doing, as well as align with The Arduino Guide's
 standards.
 
+Upload the code to your Arduino, and then test your robot using its power supply to check if it is working correctly. You do not need to keep the Arduino plugged into your computer to test the robot.
 
 .. whole-literal-include:: ../../examples/assignments/origami_bot.ino
     :language: cpp
