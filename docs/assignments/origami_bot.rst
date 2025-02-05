@@ -13,6 +13,10 @@ It is a simple robot that can move forward, backward, and turn. Throughout this 
 
     An example of the Origami Bot. Ths robot is built using orange weighted card stock paper and has a personalized design on the front.
 
+.. note::
+
+    Note that this section does **not** detail the full assembly instructions, nor is it a complete guide to finishing your assignment. This document is meant to provide additional information and resources to help you build the robot.
+
 Building the Origami Bot
 -------------------------
 
