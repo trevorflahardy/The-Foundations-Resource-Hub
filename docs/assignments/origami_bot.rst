@@ -59,9 +59,14 @@ The schematic for the Origami Bot is shown below:
 
     The schematic for the Origami Bot. Follow the wire connections to connect the H-Bridge, Arduino, and motors together.
 
-.. note::
+.. warning::
 
-    You do not need the blue wire in this schematic, but it will not hurt the circuit if you include it.
+    The **Origami Bot PDF** on Canvas does **not** use this schematic. Instead, it removes the breadboard by supplying power directly from the battery pack to the H-Bridge. The H-Bridge then supplies power to the Arduino.
+
+    This is a more advanced setup, you can use whichever schematic/setup you prefer. The Foundations TAs can help you with either setup. To remove the breadboard, do the following:
+
+    - Supply the power and ground from the battery pack to the H-Bridge, noting that the power from the battery must be plugged into the ``12V`` terminal on the H-Bridge.
+    - Supply power to the Arduino from the H-Bridge using the ``5V`` terminal on the H-Bridge into the ``VIN`` pin on the Arduino. This will power the Arduino.
 
 .. important::
 
