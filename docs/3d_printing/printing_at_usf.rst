@@ -4,14 +4,14 @@
 ===================
 
 - **printing-workflow-at-usf**
-  - Booking a printer (if needed)
   - Rules & etiquette in the makerspace
+  - Dos and don'ts when printing (e.g., no food/drink, checking for filament in printer, etc)
 - **starting-your-first-print**
-  - Loading filament
   - Starting and monitoring your print
 - **troubleshooting-basics**
   - Bed adhesion, clogged nozzle, layer shifts
   - When to pause, cancel, or restart
 - **safety-first**
+  - DFX training
   - What not to touch
   - Fire safety, mechanical cautions

@@ -6,7 +6,7 @@
 
 - **intro-to-3d-modeling**
   - What is a 3D model?
-  - File types: STL, OBJ, STEP
+  - File types: STL, OBJ, STEP, 3MF
 - **design-thinking-for-printing**
   - Thinking in layers: how printers interpret shapes
   - Overhangs, bridging, supports

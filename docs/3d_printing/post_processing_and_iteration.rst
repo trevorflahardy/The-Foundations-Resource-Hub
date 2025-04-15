@@ -9,6 +9,3 @@ Post Processing and Iteration
 - **iterating-your-design**
   - Learning from print failures
   - Design-test-repeat mindset
-- **recycling-and-sustainability**
-  - Waste management in 3D printing
-  - Using PLA, reusing filament spools
