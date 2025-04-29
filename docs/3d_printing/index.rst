@@ -1,7 +1,8 @@
 .. _3d_printing_training:
 
+#####################
 3D Printing Training
-=====================
+#####################
 
 Here, we'll walk you through a complete guide from zero to hero on everything you
 need to know about 3D printers and 3D printing to effectively design, prepare, and
