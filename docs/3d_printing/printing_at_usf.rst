@@ -15,3 +15,4 @@
   - DFX training
   - What not to touch
   - Fire safety, mechanical cautions
+  - If something goes wrong: how to get help (emergency stop, contact TA/staff immediately)

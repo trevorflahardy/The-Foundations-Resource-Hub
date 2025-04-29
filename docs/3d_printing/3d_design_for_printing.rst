@@ -10,6 +10,7 @@
 - **design-thinking-for-printing**
   - Thinking in layers: how printers interpret shapes
   - Overhangs, bridging, supports
+  - Common beginner mistakes (thin walls, unsupported features, tiny details)
 - **tools-for-3d-modeling**
   - Tinkercad (for USF students)
   - How to export for printing
