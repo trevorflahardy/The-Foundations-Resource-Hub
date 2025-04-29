@@ -51,3 +51,30 @@ Glossary of 3D Printing Terms
 
   G-code
     A language used to instruct CNC machines, including 3D printers, on how to move and operate.
+
+  3D Model
+    A digital representation of a physical object used in 3D printing.
+
+  STL (Stereolithography)
+    A file format representing 3D models as a mesh of triangles, commonly used in 3D printing.
+
+  OBJ (Object File)
+    A file format that includes 3D geometry, color, and texture information.
+
+  STEP (Standard for the Exchange of Product Model Data)
+    A file format used for sharing complex 3D models between different CAD programs.
+
+  3MF (3D Manufacturing Format)
+    A modern file format that includes comprehensive data for 3D printing, such as color, material, and metadata.
+
+  Overhang
+    A part of a 3D model that extends outward without support beneath, potentially requiring additional structures during printing.
+
+  Bridging
+    The process of printing a horizontal span between two points without support beneath.
+
+  Supports
+    Temporary structures added during 3D printing to support overhangs and bridges, removed after printing.
+
+  Tinkercad
+    An online, beginner-friendly CAD tool for creating 3D models.
