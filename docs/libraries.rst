@@ -143,3 +143,8 @@ connect the servo motor to a specific pin on the Arduino board.
 
 To see the use of the ``Servo`` library's methods, see :ref:`Servo Motor
 Control <servo_motor_control>`.
+
+Quiz
+----
+
+.. quizdown:: quizzes/libraries_quiz.md

@@ -141,3 +141,8 @@ that we printed in our code.
 Congrats! You've just written and run your first Arduino program. This
 is a simple example, but it's a great starting point for learning more
 about programming and working with Arduino.
+
+Quiz
+----
+
+.. quizdown:: quizzes/first_program_quiz.md

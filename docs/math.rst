@@ -231,3 +231,8 @@ These shorthand operators are useful for updating variables in a single
 step, reducing the amount of code you need to write. You should use
 these operators when you want to increment, decrement, or modify a
 variable's value quickly and efficiently.
+
+Quiz
+----
+
+.. quizdown:: quizzes/math_quiz.md
