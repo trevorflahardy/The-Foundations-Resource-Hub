@@ -73,6 +73,10 @@ The USF 3D Printers - What We Use & Why
 
 At the University of South Florida, we utilize **FlashForge Adventurer 5M** 3D printers. These **FDM printers** are chosen for their reliability, user-friendly interface, and suitability for educational environments. They provide a practical platform for students to learn the fundamentals of 3D printing.
 
+.. image:: /images/3d_printing/ad5m_preview.png
+  :align: center
+  :alt: Image of Adventurer 5M 3D Printer
+
 
 Anatomy of a 3D Printer
 ========================
