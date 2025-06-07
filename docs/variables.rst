@@ -577,3 +577,5 @@ By carefully managing variable scope, you can write cleaner, more
 efficient, and less error-prone programs. Aim to use global variables
 sparingly and rely on local variables whenever possible for modular,
 maintainable code.
+
+.. quizdown:: quizzes/variables_quiz.md

@@ -514,3 +514,5 @@ Arduino programming.
 .. important::
 
    Think of ``loop()`` as your program's big picture cycle, while ``for`` and ``while`` loops handle specific, smaller repetitions inside it.
+
+.. quizdown:: quizzes/loops_quiz.md

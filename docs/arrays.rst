@@ -197,3 +197,5 @@ Key Rules and Limitations
 
 Arrays are a critical part of programming in Arduino, enabling efficient
 and organized management of related data.
+
+.. quizdown:: quizzes/arrays_quiz.md
