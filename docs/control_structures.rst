@@ -293,3 +293,5 @@ it down by splitting the ``!`` operator into a separate variable:
     if (notGreaterThan30) {
         // Code to run when the temperature is not above 30
     }
+
+.. quizdown:: quizzes/control_structures_quiz.md

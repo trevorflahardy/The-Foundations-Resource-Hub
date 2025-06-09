@@ -508,3 +508,6 @@ How Are User-Defined Functions Different from Built-In Functions?
   organize and encapsulate tasks specific to your program. They allow
   you to implement behaviors that are not directly available through
   built-in functions.
+
+.. quizdown:: quizzes/functions_quiz.md
+
