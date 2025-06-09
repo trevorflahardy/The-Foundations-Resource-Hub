@@ -1,0 +1,14 @@
+{
+    "name": "The Arduino Guide",
+    "build": {
+        "dockerfile": "Dockerfile"
+    },
+    "settings": {
+        "python.analysis.typeCheckingMode": "strict"
+    },
+    "extensions": [
+        "ms-python.python",
+        "ms-python.vscode-pylance"
+    ],
+    "postCreateCommand": "pip install -r requirements.txt && npm install -g pyright"
+}
