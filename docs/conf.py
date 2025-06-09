@@ -25,7 +25,25 @@ release = "1.0.0"
 # -- General configuration ---------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
 
-extensions = ["whole_code_block"]
+extensions = [
+    "whole_code_block",
+    "sphinxcontrib.quizdown",
+]
+
+# -- Quizdown integration -------------------------------------------------
+html_css_files = [
+    "whole_code_block.css",
+]
+
+# Global configuration for sphinxcontrib-quizdown
+quizdown_config = {
+    "start_on_load": True,
+    "shuffle_answers": True,
+    "shuffle_questions": False,
+    "primary_color": "#FF851B",
+    "secondary_color": "#DDDDDD",
+    "text_color": "black",
+}
 
 templates_path = ["_templates"]
 
@@ -65,7 +83,6 @@ html_title = "The Arduino Guide"
 # A shorter title for the navigation bar.  Default is the same as html_title.
 html_short_title = "Arduino Guide"
 
-html_css_files = ["whole_code_block.css"]
 
 html_favicon = "_static/favicon.ico"
 

@@ -171,8 +171,9 @@ Key Rules and Limitations
   .. code:: cpp
 
      int numbers[3] = {1, 2, 3};
-     int invalidAccess = numbers[5]; // Not good! This array only has 3 elements.
+    int invalidAccess = numbers[5]; // Not good! This array only has 3 elements.
 
+.. quizdown:: quizzes/arrays_quiz.md
 
 .. note::
 

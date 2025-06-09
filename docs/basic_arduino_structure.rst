@@ -127,3 +127,5 @@ Best Practices for Commenting
 By incorporating thoughtful comments into your code, you'll create
 programs that are not only functional but also accessible and easy to
 manage.
+
+.. quizdown:: quizzes/basic_structure_quiz.md

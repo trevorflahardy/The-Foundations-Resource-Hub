@@ -120,3 +120,6 @@ Here's the updated code:
    Note that the comments from the original code have been removed so you
    can see what was easily updated. You can keep the comments in your code
    to help you understand what each part does, if you wish.
+
+.. quizdown:: quizzes/second_program_quiz.md
+

@@ -437,8 +437,11 @@ you want to control the built-in LED without specifying a pin number.
    interacting with external components in the :ref:`Your First
    Arduino Program <first_arduino_program>` section.
 
-   These variables will be used extensively in your Arduino projects. Don't
-   worry about memorizing them now; you'll become familiar with them over time.
+
+    These variables will be used extensively in your Arduino projects. Don't
+    worry about memorizing them now; you'll become familiar with them over time.
+
+.. quizdown:: quizzes/variables_quiz.md
 
 .. _variable_scope:
 
@@ -577,3 +580,4 @@ By carefully managing variable scope, you can write cleaner, more
 efficient, and less error-prone programs. Aim to use global variables
 sparingly and rely on local variables whenever possible for modular,
 maintainable code.
+
