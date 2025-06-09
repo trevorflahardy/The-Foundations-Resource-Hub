@@ -12,3 +12,16 @@
 1. [x] break
     > `break` exits the loop immediately.
 1. [ ] next
+
+### What numbers does this loop print?
+```cpp
+for (int i = 1; i <= 3; i++) {
+    Serial.println(i);
+}
+```
+> Look at the starting value and end condition.
+1. [x] 1 2 3
+    > The loop begins at 1 and stops after printing 3.
+1. [ ] 0 1 2
+1. [ ] 0 1 2 3
+1. [ ] 2 3 4

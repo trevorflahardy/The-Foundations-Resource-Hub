@@ -10,3 +10,11 @@
     > `return` stops the function and optionally sends data back.
 1. [ ] break
 1. [ ] continue
+
+### Which line correctly defines a function named `blink` that takes no parameters and returns nothing?
+> In Arduino, the return type comes first.
+1. [x] void blink() {}
+    > `void` indicates no return value.
+1. [ ] blink() void {}
+1. [ ] int blink(void);
+1. [ ] void blink;

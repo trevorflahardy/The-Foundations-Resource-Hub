@@ -10,3 +10,10 @@
     > The Library Manager downloads and installs libraries.
 1. [ ] Serial Monitor
 1. [ ] Board Manager
+
+### Which statement adds the `Wire` library to your sketch?
+1. [x] #include <Wire.h>
+    > Angle brackets include standard libraries like Wire.
+1. [ ] import Wire
+1. [ ] include "Wire"
+1. [ ] using Wire;

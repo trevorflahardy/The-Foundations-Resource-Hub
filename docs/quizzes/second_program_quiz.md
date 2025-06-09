@@ -9,3 +9,16 @@
     > `++` increases the value by one.
 1. [ ] +=2
 1. [ ] --
+
+### What value does `x` hold after this code runs?
+```cpp
+int x = 0;
+x++;
+x++;
+Serial.println(x);
+```
+> Each `++` adds one.
+1. [x] 2
+    > `x` is incremented twice before being printed.
+1. [ ] 1
+1. [ ] 0
