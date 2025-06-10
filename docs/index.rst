@@ -33,10 +33,10 @@ Table of Contents
    variables
    arrays
    functions
-   math
-   control_structures
+   math   control_structures
    first_arduino_program
-   second_arduino_program   loops
+   second_arduino_program
+   loops
    libraries
    advanced_topics
    3d_printing/iterating_design

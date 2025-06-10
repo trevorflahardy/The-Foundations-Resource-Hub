@@ -1,9 +1,10 @@
+.. _iterating_design:
+
 Iterating Your Design
 =====================
 
-Lea.. tip::
-   Keep a simple log of each failed print: iteration number, slicer changes, and outcome. Over time you'll build a personal troubleshooting database.ing from Print Failures
-----------------------------
+Common Issues
+-------------
 
 No one gets it on the first try. You should expect to encounter failures, but it's important you learn from them! 
 
@@ -50,8 +51,8 @@ Insufficient support; nozzle temperature too high
  - Check supports, especially overhangs (areas with no material beneath).   
  - Lower nozzle temperature by 5–10 °C.
 
-.. note::  
-   Keep a simple log of each failed print: iteration number, slicer changes, and outcome. Over time you’ll build a personal troubleshooting database.
+.. tip::
+   Keep a simple log of each failed print: iteration number, slicer changes, and outcome. Over time you'll build a personal troubleshooting database.
 
 Design-Test-Repeat Mindset
 ---------------------------

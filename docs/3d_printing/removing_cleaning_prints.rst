@@ -1,8 +1,10 @@
+.. _removing_cleaning_prints:
+
 Removing & Cleaning Your Prints
 ================================
 
 Getting Your Print Off the Bed
-------------------------------
+-------------------------------
 
 Improper removal can easily damage both your print and our 3D printers. Follow these steps to remove your part safely:
 
