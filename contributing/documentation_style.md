@@ -1,9 +1,16 @@
 # Documentation Style
 
-The official guide is written with **reStructuredText** and built using Sphinx. Use the following conventions:
+The official guide is written with **reStructuredText** and built using Sphinx. Use the conventions outlined on the [RST Primer](https://www.sphinx-doc.org/en/master/usage/restructuredtext/basics.html) page, but this is summarized below for convenience.
 
-- Top level headings: `===` underlines
-- Second level headings: `---` underlines
-- Third level headings: `~~~` underlines
+All documentation files should use the `.rst` extension and follow these conventions:
 
-Keep sentences short and prefer lists when introducing multiple steps. To build the documentation locally, see [Building the Documentation](building_docs.md).
+- `\#` with overline, for parts
+- `*` with overline, for chapters. Generally, used at the top of each file for main document header, as each file is commonly a chapter.
+- `=` for sections within a chapter.
+- `-` for subsections.
+- `^` for subsubsections.
+- `"` for paragraphs.
+
+To review writing style, refer to [Writing Guidelines](writing_guidelines.md).
+
+To build the documentation locally, see [Building the Documentation](building_docs.md).
