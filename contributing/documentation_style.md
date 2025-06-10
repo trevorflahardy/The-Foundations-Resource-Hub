@@ -4,7 +4,7 @@ The official guide is written with **reStructuredText** and built using Sphinx. 
 
 All documentation files should use the `.rst` extension and follow these conventions:
 
-- `\#` with overline, for parts
+- `#` with overline, for parts
 - `*` with overline, for chapters. Generally, used at the top of each file for main document header, as each file is commonly a chapter.
 - `=` for sections within a chapter.
 - `-` for subsections.
