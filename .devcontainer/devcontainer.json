@@ -1,14 +1,28 @@
 {
-    "name": "The Arduino Guide",
-    "build": {
-        "dockerfile": "Dockerfile"
-    },
-    "settings": {
-        "python.analysis.typeCheckingMode": "strict"
-    },
-    "extensions": [
+  "name": "The Arduino Guide",
+  "build": {
+    "dockerfile": "Dockerfile",
+    "context": ".."
+  },
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "akamud.vscode-theme-onedark",
+        "aaron-bond.better-comments",
+        "usernamehw.errorlens",
+        "DavidAnson.vscode-markdownlint",
+        "GitHub.vscode-pull-request-github",
+        "ms-python.black-formatter",
+        "ms-python.vscode-pylance",
         "ms-python.python",
-        "ms-python.vscode-pylance"
-    ],
-    "postCreateCommand": "pip install -r requirements.txt && npm install -g pyright"
+        "ms-pyright.pyright",
+        "WakaTime.vscode-wakatime",
+        "ms-python.debugpy",
+        "GitHub.copilot-chat",
+        "GitHub.copilot",
+        "github.vscode-github-actions",
+        "streetsidesoftware.code-spell-checker"
+      ]
+    }
+  }
 }

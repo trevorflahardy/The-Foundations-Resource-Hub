@@ -7,7 +7,9 @@ RUN apt-get update && \
 WORKDIR /workspace
 
 COPY requirements.txt /tmp/
-RUN pip install --no-cache-dir -r /tmp/requirements.txt && \
+
+RUN pip install --upgrade pip && \
+    pip install --no-cache-dir -r /tmp/requirements.txt && \
     pip install --no-cache-dir pyright
 
 CMD ["bash"]
