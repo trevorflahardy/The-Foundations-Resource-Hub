@@ -36,11 +36,10 @@ Table of Contents
    math
    control_structures
    first_arduino_program
-   second_arduino_program
-   loops
+   second_arduino_program   loops
    libraries
    advanced_topics
-   iterating_design
-   removing_cleaning_prints
+   3d_printing/iterating_design
+   3d_printing/removing_cleaning_prints
    additional_program_examples/index
    assignments/index

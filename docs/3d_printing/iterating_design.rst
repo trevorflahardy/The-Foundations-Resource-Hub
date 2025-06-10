@@ -1,25 +1,21 @@
 Iterating Your Design
 =====================
 
-.. contents::
-   :local:
-   :depth: 1
-
-Learning from Print Failures
+Lea.. tip::
+   Keep a simple log of each failed print: iteration number, slicer changes, and outcome. Over time you'll build a personal troubleshooting database.ing from Print Failures
 ----------------------------
 
-No one getson the first try. You should expect to encounter failures, but it's important you learn from them! 
+No one gets it on the first try. You should expect to encounter failures, but it's important you learn from them! 
 
-If something isn't working, don't just try again, but instead take a step back and analyze the problem. Start by checking for these common issues, then adjust your design or slicing settings accordingly.
+If something isn't working, don't just try again; instead, take a step back and analyze the problem. Start by checking for these common issues, then adjust your design or slicing settings accordingly.
 
 Common Print Failures and How to Respond
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Warping
-~~~~~~~
+**Warping**
 
 **Symptom:**  
-Corners lifting off the bed
+Corners lifting off the bed, or sometimes the entire print can lift from the bed completely.
 
 **Possible causes:**  
 Poor first-layer adhesion; bed temperature too low
@@ -30,8 +26,7 @@ Poor first-layer adhesion; bed temperature too low
  - Increase first-layer height or width (e.g., 120 % extrusion width or 0.24 mm layer height). 
  - If you've tried everything else, apply a **thin** layer of glue stick to the build plate to increase adhesion.   
 
-Layer Shifts
-~~~~~~~~~~~~
+**Layer Shifts**
 
 **Symptom:**  
 Layers misaligned horizontally during print
@@ -41,10 +36,9 @@ Print speed or motion settings too aggressive
 
 **What to try:**  
  - Reduce print speed by 10–20 mm/s in your slicer.   
- - Ensure the wheels of the printer rack are locked socan't move during printing.
+ - Ensure the wheels of the printer rack are locked so it can't move during printing.
 
-Stringing
-~~~~~~~~~
+**Stringing**
 
 **Symptom:**  
 Fine threads or hairs between printed features
@@ -62,7 +56,7 @@ Insufficient support; nozzle temperature too high
 Design-Test-Repeat Mindset
 ---------------------------
 
-Iteration is the heart of 3D-printing success. Each cycle refines your part’s fit, finish, or function:
+Iteration is the heart of 3D-printing success. Each cycle refines your part's fit, finish, or function:
 
 #. **Design**  
    Model your part in CAD. Save each file with the version number as `part_v1...`, `part_v2...`, etc., so you can track changes. 
@@ -78,7 +72,7 @@ Next Steps
 
 Once you're comfortable with troubleshooting, explore turning 'working' designs into 'optimized' designs:
 
-- 
+- Identify which aspects of your print could be improved—strength, appearance, fit, or ease of assembly.
 - Analyze and eliminate empty space, weak structural points, and tolerances. 
 - In your CAD software, try adding features like fillets/chamfers, screw-holes for easier assembly, and more.
 

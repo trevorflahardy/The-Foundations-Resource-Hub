@@ -94,3 +94,6 @@ _.py
 
 # Mac OS Image Metadata Files
 .DS_Store
+
+# VSCode history extension files
+.history/
