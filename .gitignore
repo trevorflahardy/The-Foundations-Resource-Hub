@@ -55,6 +55,7 @@ out/
 
 # Sphinx documentation
 docs/_build/
+_build/
 
 # VS Code
 .vscode/
