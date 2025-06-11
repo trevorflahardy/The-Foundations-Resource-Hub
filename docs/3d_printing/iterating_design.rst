@@ -14,12 +14,11 @@ If something isn't working, don't just try again; instead, take a step back and 
 Common Print Failures and How to Respond
 -----------------------------------------
 
-**Warping**
-
-^^^^^^^^^
+Warping
+^^^^^^^
 
 **Symptom:**  
-Corners lifting off the bed,
+Corners lifting off the bed, or sometimes the entire print can lift from the bed completely.
 
 **Possible causes:**  
 Poor first-layer adhesion; bed temperature too low
@@ -30,8 +29,7 @@ Poor first-layer adhesion; bed temperature too low
  - Increase first-layer height or width (e.g., 120 % extrusion width or 0.24 mm layer height). 
  - If you've tried everything else, apply a **thin** layer of glue stick to the build plate to increase adhesion.   
 
-**Layer Shifts**
-
+Layer Shifts
 ^^^^^^^^^^^^
 
 **Symptom:**  
@@ -44,9 +42,8 @@ Print speed or motion settings too aggressive
  - Reduce print speed by 10–20 mm/s in your slicer.   
  - Ensure the wheels of the printer rack are locked so it can't move during printing.
 
-**Stringing**
-
-^^^^^^^^^^
+Stringing
+^^^^^^^^^
 
 **Symptom:**  
 Fine threads or hairs between printed features
