@@ -1,22 +1,25 @@
 .. _iterating_design:
 
+***********************
 Iterating Your Design
-=====================
+***********************
 
 Common Issues
--------------
+=============
 
 No one gets it on the first try. You should expect to encounter failures, but it's important you learn from them! 
 
 If something isn't working, don't just try again; instead, take a step back and analyze the problem. Start by checking for these common issues, then adjust your design or slicing settings accordingly.
 
 Common Print Failures and How to Respond
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+-----------------------------------------
 
 **Warping**
 
+^^^^^^^^^
+
 **Symptom:**  
-Corners lifting off the bed, or sometimes the entire print can lift from the bed completely.
+Corners lifting off the bed,
 
 **Possible causes:**  
 Poor first-layer adhesion; bed temperature too low
@@ -29,6 +32,8 @@ Poor first-layer adhesion; bed temperature too low
 
 **Layer Shifts**
 
+^^^^^^^^^^^^
+
 **Symptom:**  
 Layers misaligned horizontally during print
 
@@ -40,6 +45,8 @@ Print speed or motion settings too aggressive
  - Ensure the wheels of the printer rack are locked so it can't move during printing.
 
 **Stringing**
+
+^^^^^^^^^^
 
 **Symptom:**  
 Fine threads or hairs between printed features
@@ -55,7 +62,7 @@ Insufficient support; nozzle temperature too high
    Keep a simple log of each failed print: iteration number, slicer changes, and outcome. Over time you'll build a personal troubleshooting database.
 
 Design-Test-Repeat Mindset
----------------------------
+==========================
 
 Iteration is the heart of 3D-printing success. Each cycle refines your part's fit, finish, or function:
 
@@ -69,7 +76,7 @@ Iteration is the heart of 3D-printing success. Each cycle refines your part's fi
    Re-slice, re-print, and re-evaluate. Each loop should converge toward a reliable, high-quality part. 
 
 Next Steps
-----------
+==========
 
 Once you're comfortable with troubleshooting, explore turning 'working' designs into 'optimized' designs:
 

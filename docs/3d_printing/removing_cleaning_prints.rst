@@ -1,10 +1,11 @@
 .. _removing_cleaning_prints:
 
+**********************************
 Removing & Cleaning Your Prints
-================================
+**********************************
 
 Getting Your Print Off the Bed
--------------------------------
+===============================
 
 Improper removal can easily damage both your print and our 3D printers. Follow these steps to remove your part safely:
 
@@ -24,7 +25,7 @@ Improper removal can easily damage both your print and our 3D printers. Follow t
    Flexing the build plate to safely remove a finished print. [#geekbuying]_
 
 Removing Supports
------------------
+=================
 
 Supports help complex shapes print cleanly—but they must come off gently:
 
@@ -47,7 +48,7 @@ Supports help complex shapes print cleanly—but they must come off gently:
    Snipping and removing supports from a finished print. [#formlabs]_
 
 Final Cleanup & Lab Courtesy
-----------------------------
+============================
 
 - **Clean up excess PLA.**  
   There's a dedicated PLA disposal bin close to the printers. Any leftover filament from nozzle cleaning, rafts, or supports on the plate should be removed and properly disposed of.
