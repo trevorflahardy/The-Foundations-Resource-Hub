@@ -30,10 +30,10 @@ Table of Contents
    installing_arduino_ide
    code_disclaimer
    basic_arduino_structure
-   variables
-   arrays
+   variables   arrays
    functions
-   math   control_structures
+   math
+   control_structures
    first_arduino_program
    second_arduino_program
    loops
