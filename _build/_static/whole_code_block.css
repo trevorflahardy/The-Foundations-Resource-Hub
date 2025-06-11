@@ -1,0 +1,22 @@
+:root {
+  --color-whole-code-block: rgb(88, 255, 124);
+}
+
+.whole-code-block {
+  border: 1px solid var(--color-whole-code-block);
+  border-radius: 0.25rem;
+  padding: 0.5rem;
+  margin: 1rem 0;
+  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+}
+
+.whole-code-block-warning {
+  color: var(--color-whole-code-block);
+  border-radius: 0.25rem;
+  padding-left: 0.25rem;
+  padding-right: 0.25rem;
+}
+
+.whole-code-block-warning-text {
+  margin: 0.5rem 0 0;
+}
