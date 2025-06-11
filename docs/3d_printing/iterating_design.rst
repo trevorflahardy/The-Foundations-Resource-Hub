@@ -20,32 +20,26 @@ Warping
 **Symptom:**  
 Corners lifting off the bed, or sometimes the entire print can lift from the bed completely.
 
-.. figure:: ../images/3d_printing/warping_problem.jpg
-   :alt: 3D print showing warping with corners lifting off the bed
-   :figwidth: 100%
-
-   Example of warping where corners have lifted from the build plate. [#simplify3d]_
-
 **Possible causes:**  
 Poor first-layer adhesion; bed temperature too low
 
-**What to try:**  
- - Increase bed temperature by 5 °C in your slicer settings.
- - Add a one-layer brim to expand contact area.   
- - Increase first-layer height or width (e.g., 120 % extrusion width or 0.24 mm layer height). 
- - If you've tried everything else, apply a **thin** layer of glue stick to the build plate to increase adhesion.   
+**What to try:** (`in order`)
+  1. Add a one-layer brim in slicer settings to expand contact area.   
+  2. Increase bed temperature by 5 °C in your slicer settings.
+  3. Increase first-layer height or width (e.g., 120 % extrusion width or 0.24 mm layer height). 
+  4. If you've tried everything else, ask a TA or DFX employee to apply 3D printing adhesive to the build plate. **Do not** attempt to do this yourself. 
+
+.. figure:: ../images/3d_printing/warping_problem.jpg
+   :alt: 3D print showing warping with corners lifting off the bed
+   :figwidth: 50%
+
+   Example of warping where corners have lifted from the build plate. [#simplify3d]_
 
 Layer Shifts
 ^^^^^^^^^^^^
 
 **Symptom:**  
 Layers misaligned horizontally during print
-
-.. figure:: ../images/3d_printing/layer_shift_problem.jpg
-   :alt: 3D print showing horizontal layer misalignment
-   :figwidth: 100%
-
-   Example of layer shifts where layers are displaced horizontally during printing. [#bambulab]_
 
 **Possible causes:**  
 Print speed or motion settings too aggressive
@@ -54,17 +48,17 @@ Print speed or motion settings too aggressive
  - Reduce print speed by 10–20 mm/s in your slicer.   
  - Ensure the wheels of the printer rack are locked so it can't move during printing.
 
+.. figure:: ../images/3d_printing/layer_shift_problem.jpg
+   :alt: 3D print showing horizontal layer misalignment
+   :figwidth: 50%
+
+   Example of layer shifts where layers are displaced horizontally during printing. [#bambulab]_
+
 Stringing
 ^^^^^^^^^
 
 **Symptom:**  
 Fine threads or hairs between printed features
-
-.. figure:: ../images/3d_printing/stringing_problem.jpg
-   :alt: 3D print showing stringing between separate features
-   :figwidth: 100%
-
-   Example of stringing with thin plastic threads connecting separate print features. [#3dnextech]_
 
 **Possible causes:**  
 Insufficient support; nozzle temperature too high
@@ -72,6 +66,12 @@ Insufficient support; nozzle temperature too high
 **What to try:**  
  - Check supports, especially overhangs (areas with no material beneath).   
  - Lower nozzle temperature by 5–10 °C.
+
+.. figure:: ../images/3d_printing/stringing_problem.png
+   :alt: 3D print showing stringing between separate features
+   :figwidth: 50%
+
+   Example of stringing with thin plastic threads connecting separate print features. [#3dnextech]_
 
 .. tip::
    Keep a simple log of each failed print: iteration number, slicer changes, and outcome. Over time you'll build a personal troubleshooting database.
