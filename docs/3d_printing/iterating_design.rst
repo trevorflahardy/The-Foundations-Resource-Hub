@@ -20,6 +20,12 @@ Warping
 **Symptom:**  
 Corners lifting off the bed, or sometimes the entire print can lift from the bed completely.
 
+.. figure:: ../images/3d_printing/warping_problem.jpg
+   :alt: 3D print showing warping with corners lifting off the bed
+   :figwidth: 100%
+
+   Example of warping where corners have lifted from the build plate. [#simplify3d]_
+
 **Possible causes:**  
 Poor first-layer adhesion; bed temperature too low
 
@@ -35,6 +41,12 @@ Layer Shifts
 **Symptom:**  
 Layers misaligned horizontally during print
 
+.. figure:: ../images/3d_printing/layer_shift_problem.jpg
+   :alt: 3D print showing horizontal layer misalignment
+   :figwidth: 100%
+
+   Example of layer shifts where layers are displaced horizontally during printing. [#bambulab]_
+
 **Possible causes:**  
 Print speed or motion settings too aggressive
 
@@ -47,6 +59,12 @@ Stringing
 
 **Symptom:**  
 Fine threads or hairs between printed features
+
+.. figure:: ../images/3d_printing/stringing_problem.jpg
+   :alt: 3D print showing stringing between separate features
+   :figwidth: 100%
+
+   Example of stringing with thin plastic threads connecting separate print features. [#3dnextech]_
 
 **Possible causes:**  
 Insufficient support; nozzle temperature too high
@@ -82,3 +100,9 @@ Once you're comfortable with troubleshooting, explore turning 'working' designs 
 - In your CAD software, try adding features like fillets/chamfers, screw-holes for easier assembly, and more.
 
 3D printing makes it extremely easy to iterate your designs. Embracing this process will help you become a highly effective designer and printer.
+
+.. rubric:: References
+
+.. [#simplify3d] Source: Simplify3D - Print Quality Troubleshooting Guide
+.. [#bambulab] Source: Bambu Lab Wiki - Layer Shifts Knowledge Sharing  
+.. [#3dnextech] Source: 3DNexTech - Stringing: What it is and how to get rid of it
