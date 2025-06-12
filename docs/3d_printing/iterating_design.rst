@@ -105,6 +105,6 @@ Once you're comfortable with troubleshooting, explore turning 'working' designs 
 
 .. rubric:: References
 
-.. [#simplify3d] Source: Simplify3D - Print Quality Troubleshooting Guide
-.. [#bambulab] Source: Bambu Lab Wiki - Layer Shifts Knowledge Sharing
-.. [#unionfab] Source: Unionfab - Boost Your 3D Print Quality: Tips and Tricks
+.. [#simplify3d] Source: https://www.simplify3d.com/resources/print-quality-troubleshooting/warping/
+.. [#bambulab] Source: https://wiki.bambulab.com/en/knowledge-sharing/layer-shifts
+.. [#unionfab] Source: https://www.unionfab.com/blog/2024/11/3d-print-quality

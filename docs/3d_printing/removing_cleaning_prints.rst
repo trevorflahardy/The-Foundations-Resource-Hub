@@ -69,7 +69,7 @@ Final Cleanup & Lab Courtesy
 
 .. rubric:: References
 
-.. [#geekbuying] Source: geekbuying.com
-.. [#formlabs] Source: Formlabs Support
+.. [#geekbuying] Source: https://www.geekbuying.com/item/FYSETC-CryoNix-Build-Plate-for-Bambu-Lab-X1-P1-A1-528969.html
+.. [#formlabs] Source: https://support.formlabs.com/s/article/Advanced-Support-Removal-Techniques?language=en_US
 
 
