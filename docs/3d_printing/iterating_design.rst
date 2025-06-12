@@ -7,7 +7,9 @@ Iterating Your Design
 Common Issues
 =============
 
-No one gets it on the first try. You should expect to encounter failures, but it's important you learn from them! 
+As you work on your design, it often takes many iterations to get it right. This is normal and expected in the 3D printing process. Each print is a learning opportunity, and you should not be discouraged by failures. Instead, view them as essential steps toward achieving your final design.
+
+You should expect to encounter failures, but it's important you learn from them!
 
 If something isn't working, don't just try again; instead, take a step back and analyze the problem. Start by checking for these common issues, then adjust your design or slicing settings accordingly.
 
@@ -17,17 +19,17 @@ Common Print Failures and How to Respond
 Warping
 ^^^^^^^
 
-**Symptom:**  
+**Symptom:**
 Corners lifting off the bed, or sometimes the entire print can lift from the bed completely.
 
-**Possible causes:**  
+**Possible causes:**
 Poor first-layer adhesion; bed temperature too low
 
 **What to try:** (`in order`)
-  1. Add a one-layer brim in slicer settings to expand contact area.   
+  1. Add a one-layer brim in slicer settings to expand contact area.
   2. Increase bed temperature by 5 °C in your slicer settings.
-  3. Increase first-layer height or width (e.g., 120 % extrusion width or 0.24 mm layer height). 
-  4. If you've tried everything else, ask a TA or DFX employee to apply 3D printing adhesive to the build plate. **Do not** attempt to do this yourself. 
+  3. Increase first-layer height or width (e.g., 120 % extrusion width or 0.24 mm layer height).
+  4. If you've tried everything else, ask a TA or DFX employee to apply 3D printing adhesive to the build plate. **Do not** attempt to do this yourself.
 
 .. figure:: ../images/3d_printing/warping_problem.jpg
    :alt: 3D print showing warping with corners lifting off the bed
@@ -38,14 +40,14 @@ Poor first-layer adhesion; bed temperature too low
 Layer Shifts
 ^^^^^^^^^^^^
 
-**Symptom:**  
+**Symptom:**
 Layers misaligned horizontally during print
 
-**Possible causes:**  
+**Possible causes:**
 Print speed or motion settings too aggressive
 
-**What to try:**  
- - Reduce print speed by 10–20 mm/s in your slicer.   
+**What to try:**
+ - Reduce print speed by 10–20 mm/s in your slicer.
  - Ensure the wheels of the printer rack are locked so it can't move during printing.
 
 .. figure:: ../images/3d_printing/layer_shift_problem.jpg
@@ -57,14 +59,14 @@ Print speed or motion settings too aggressive
 Stringing
 ^^^^^^^^^
 
-**Symptom:**  
+**Symptom:**
 Fine threads or hairs between printed features
 
-**Possible causes:**  
+**Possible causes:**
 Insufficient support; nozzle temperature too high
 
-**What to try:**  
- - Check supports, especially overhangs (areas with no material beneath).   
+**What to try:**
+ - Check supports, especially overhangs (areas with no material beneath).
  - Lower nozzle temperature by 5–10 °C.
 
 .. figure:: ../images/3d_printing/stringing_problem.png
@@ -81,14 +83,14 @@ Design-Test-Repeat Mindset
 
 Iteration is the heart of 3D-printing success. Each cycle refines your part's fit, finish, or function:
 
-#. **Design**  
-   Model your part in CAD. Save each file with the version number as `part_v1...`, `part_v2...`, etc., so you can track changes. 
-#. **Evaluate**  
-   Measure critical dimensions with calipers from the lab toolbox; inspect surface quality and structural integrity.  
-#. **Adjust**  
-   Slightly tweak your CAD or slicer profile: wall thickness, bridging angles, infill percentage, etc.  
-#. **Repeat**  
-   Re-slice, re-print, and re-evaluate. Each loop should converge toward a reliable, high-quality part. 
+#. **Design**
+   Model your part in CAD. Save each file with the version number as `part_v1...`, `part_v2...`, etc., so you can track changes.
+#. **Evaluate**
+   Measure critical dimensions with calipers from the lab toolbox; inspect surface quality and structural integrity.
+#. **Adjust**
+   Slightly tweak your CAD or slicer profile: wall thickness, bridging angles, infill percentage, etc.
+#. **Repeat**
+   Re-slice, re-print, and re-evaluate. Each loop should converge toward a reliable, high-quality part.
 
 Next Steps
 ==========
@@ -96,7 +98,7 @@ Next Steps
 Once you're comfortable with troubleshooting, explore turning 'working' designs into 'optimized' designs:
 
 - Identify which aspects of your print could be improved—strength, appearance, fit, or ease of assembly.
-- Analyze and eliminate empty space, weak structural points, and tolerances. 
+- Analyze and eliminate empty space, weak structural points, and tolerances.
 - In your CAD software, try adding features like fillets/chamfers, screw-holes for easier assembly, and more.
 
 3D printing makes it extremely easy to iterate your designs. Embracing this process will help you become a highly effective designer and printer.
@@ -104,5 +106,5 @@ Once you're comfortable with troubleshooting, explore turning 'working' designs 
 .. rubric:: References
 
 .. [#simplify3d] Source: Simplify3D - Print Quality Troubleshooting Guide
-.. [#bambulab] Source: Bambu Lab Wiki - Layer Shifts Knowledge Sharing  
+.. [#bambulab] Source: Bambu Lab Wiki - Layer Shifts Knowledge Sharing
 .. [#unionfab] Source: Unionfab - Boost Your 3D Print Quality: Tips and Tricks
