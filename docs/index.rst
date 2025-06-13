@@ -42,5 +42,6 @@ Table of Contents
    advanced_topics
    3d_printing/iterating_design
    3d_printing/removing_cleaning_prints
+   3d_printing/responsible_3d_printing
    additional_program_examples/index
    assignments/index
