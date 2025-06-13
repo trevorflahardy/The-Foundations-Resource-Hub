@@ -18,8 +18,8 @@ examples_path = os.path.abspath("../examples")
 sys.path.append(examples_path)
 
 project = "The Arduino Guide"
-copyright = "2025, Trevor Flahardy"
-author = "Trevor Flahardy"
+copyright = "2025, Trevor Flahardy, Jason Shaw"
+author = "Trevor Flahardy, Jason Shaw"
 release = "1.0.0"
 
 # -- General configuration ---------------------------------------------------
