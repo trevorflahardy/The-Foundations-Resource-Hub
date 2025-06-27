@@ -1,8 +1,8 @@
 .. _removing_cleaning_prints:
 
-**********************************
+================================
 Removing & Cleaning Your Prints
-**********************************
+================================
 
 You've successfully printed your part—now it's time to remove it and clean it up! This guide will help you safely remove your print from the bed, clean up any supports, and ensure everything is left tidy for the next printer.
 
