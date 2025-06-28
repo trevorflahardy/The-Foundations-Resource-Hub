@@ -1,7 +1,7 @@
 The Arduino Guide
 =================
 
-Welcome to The Arduino Guide! This book is designed to introduce you to all the technical aspects of the Egn3000L course. All content is custom tailored to the course and includes helpful information for the programming, circuitry, and 3D printing you'll be doing. We provide a comprehensive foundation for working with Arduino-based projects and how you'll combine them with 3d printing to build exceptional things. Whether you're aiming to complete assignments for this course, build an impressive engineering skill-set, or just troubleshooting problems, this book will equip you with the knowledge and skills needed to succeed.
+Welcome to The Arduino Guide! This book is designed to introduce you to all the technical aspects of the ``EGN 3000L`` course. All content is custom tailored to the course and includes helpful information for the programming, circuitry, and 3D printing you'll be doing. We provide a comprehensive foundation for working with Arduino-based projects and how you'll combine them with 3d printing to build exceptional things. Whether you're aiming to complete assignments for this course, build an impressive engineering skill-set, or just troubleshooting problems, this book will equip you with the knowledge and skills needed to succeed.
 
 Sections will include explanations, examples, and hands-on mini-projects you can do to reinforce your learning. Additionally, there are some "advanced sections" throughout the book. **These advanced sections are marked as optional**, allowing you to focus on the core concepts first and explore more complex topics later, if you choose.
 

@@ -6,7 +6,7 @@ Responsible 3D Printing
 
 Many things go into 3D printing, so proper knowledge of the protocols is pivotal to producing quality prints. Additionally, 3D printers are sophisticated, delicate machines, and as such need to be treated with the utmost care.
 
-This guide details the rules, expectations, and best practices you'll need to follow when 3D printing for Egn3000L. 
+This guide details the rules, expectations, and best practices you'll need to follow when 3D printing for ``EGN 3000L``.
 
 DFX Lab
 =======
@@ -35,7 +35,7 @@ The full list of DFX lab rules should be reviewed prior to entering http://www.e
 - Report any equipment problem, messes left by others, water leaks, missing items, or any unusual events to a TSS staff immediately. Tool or facilities modifications to equipment should not be done unless approved by the Lab Manager.
 - You must be trained and certified to use the tools in this lab. Please see the NREC Office for monthly training sessions offered or card access rights to this lab.
 
-Failing to follow the lab's rules may result in consequences from both the lab and from us. These can include permanent banishment from the lab, fees, and/or a failing grade in the course. 
+Failing to follow the lab's rules may result in consequences from both the lab and from us. These can include permanent banishment from the lab, fees, and/or a failing grade in the course.
 
 .. _printing_workflow_at_usf:
 
@@ -247,4 +247,4 @@ We will not hesitate to enforce the rules, regardless of if you're ignorant or s
 
 ----
 
-3D printing in Egn3000L is an incredible opportunity to manufacture parts like professional engineers. Success requires preparation, attention, and following the rules.
+3D printing in ``EGN 3000L`` is an incredible opportunity to manufacture parts like professional engineers. Success requires preparation, attention, and following the rules.
