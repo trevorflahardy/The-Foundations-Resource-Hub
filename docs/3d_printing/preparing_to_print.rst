@@ -171,19 +171,19 @@ Installing Orca Flashforge
 
 Head to the `Flashforge Downloads Page <https://www.flashforge.com/blogs/download-document/adventurer-5m-pro#>`_ and grab the latest installer for your operating system (Windows 10+ or macOS 10.15+).
 
-.. ! NOTE: image needed
+.. ! TODO: image needed
 
 2. **Run the Installer**
 
 Follow the on-screen prompts. The setup is simple and shouldn't take more than a minute or two.
 
-.. ! NOTE: image needed
+.. ! TODO: image needed
 
 3. **Launch the App**
 
 Open Orca Flashforge, and the setup wizard will guide you through initial configuration.
 
-.. ! NOTE: image needed
+.. ! TODO: image needed
 
 Setup Wizard Walkthrough
 -------------------------
@@ -195,7 +195,7 @@ The first time you launch Orca Flashforge, you'll see a few friendly setup promp
 - **Select Nozzle Size** - Pick the nozzle size available in the lab: ``0.4mm``.
 - **Select Filaments** - Choose the filaments you'll be printing with: ``PLA``.
 
-.. ! NOTE: images needed
+.. ! TODO: images needed
 
 That's it! You're now ready to load models and start slicing.
 
