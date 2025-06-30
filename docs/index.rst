@@ -44,3 +44,4 @@ Table of Contents
    3d_printing/index
    additional_program_examples/index
    assignments/index
+   3d_printing/index

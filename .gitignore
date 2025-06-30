@@ -60,7 +60,8 @@ _build/
 # VS Code
 .vscode/
 dependabot.yml
-.devcontainer/
+# Dev container can be committed
+# .devcontainer/
 .coverage
 
 # mpeltonen/sbt-idea plugin
