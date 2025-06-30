@@ -13,27 +13,27 @@ DFX Lab
 
 .. important::
 
-   You **must** complete the DFX lab safety training before using any equipment in the lab, including our 3D printers. Find a time and sign up for the training here: http://www.eng.usf.edu/dfx/labtrainings.html
+   You **must** complete the DFX lab safety training before using any equipment in the lab, including our 3D printers. Find a time and sign up for the training here: `see the training page <http://www.eng.usf.edu/dfx/labtrainings.html>`_.
 
-We are not employees or representatives of the DFX lab, but our 3D printers are located there, so in addition to our own rules you'll follow the DFX lab's rules and expectations too. These are non-negotiable and must be followed whenever you're in the lab, and regardless of what you're doing.
+The Foundations of Engineering Lab administration are not employees or representatives of the DFX lab, but, the courses' 3D printers are located there. So, in addition to the rules outlined in this guide, you **must** follow the DFX lab's rules and expectations as well. These are **non-negotiable** in the lab for your safety.
 
 .. note::
 
-   **Our Course Printers vs. DFX Lab Printers**
+   **Engineering Lab Course Printers vs. DFX Lab Printers**
 
-   We operate our own dedicated 3D printers within the DFX lab space. These course printers are **only for students enrolled in our foundations course** and cannot be used by other students or DFX lab users.
+   Foundations operates its own 3D printers within the DFX lab space. These course printers are **only for students enrolled in the Foundations course** and cannot be used by other students not enrolled in the course, including all DFX lab users.
 
-   If you want to use the DFX lab's own 3D printers (separate from ours), you'll need to complete their specific 3D printer training. If you're interested in using the DFX lab's printers, sign up for their training at the same website as above.
+   If you want to use the DFX lab's own 3D printers, you'll need to complete DFX's dedicated 3D printer training, and can sign up using the `DFX lab's training page <http://www.eng.usf.edu/dfx/labtrainings.html>`_.
 
-The full list of DFX lab rules should be reviewed prior to entering http://www.eng.usf.edu/dfx/labrules.html, but these are some of the most important ones to keep in mind:
+The full list of DFX lab rules should be reviewed `here <http://www.eng.usf.edu/dfx/labrules.html>`_, but these are some of the most important ones to keep in mind:
 
-- General operating hours are Monday through Friday 8am to 5pm when the University is normally open unless you have afterhours access.
-- No food or drink is allowed in this lab except for the designated storage areas.
-- All tools, support supplies and accessory equipment housed in this lab are for consumption and use in this lab and should not be removed or borrowed unless approved by the laboratory manager.
-- All supplies or projects brought to the lab should NOT be stored in the lab unless a storage area has been reserved by a lab staff member.
-- Cleaning your work area is essential. For the rapid prototyping tools you will be shown how to leave the tool when you are finished. Do not leave personal items in this lab.
+- General operating hours are **Monday through Friday 8am to 5pm** when the University is normally open.
+- **No food or drink** is allowed in this lab except for the designated storage areas.
+- All tools, support supplies and accessory equipment housed in this lab are for consumption and use in this lab and **should not be removed** or borrowed unless approved by the laboratory manager.
+- All **supplies or projects brought to the lab should NOT be stored in the lab** unless a storage area has been reserved by a lab staff member.
+- Cleaning your work area is essential. For the rapid prototyping tools you will be shown how to leave the tool when you are finished. **Do not leave personal items in this lab**.
 - Report any equipment problem, messes left by others, water leaks, missing items, or any unusual events to a TSS staff immediately. Tool or facilities modifications to equipment should not be done unless approved by the Lab Manager.
-- You must be trained and certified to use the tools in this lab. Please see the NREC Office for monthly training sessions offered or card access rights to this lab.
+- You **must be trained and certified to use the tools in this lab**. Please see the NREC Office for monthly training sessions offered or card access rights to this lab.
 
 Failing to follow the lab's rules may result in consequences from both the lab and from us. These can include permanent banishment from the lab, fees, and/or a failing grade in the course.
 
