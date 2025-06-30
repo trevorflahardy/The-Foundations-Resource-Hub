@@ -11,9 +11,9 @@ This guide details the rules, expectations, and best practices you'll need to fo
 DFX Lab
 =======
 
-.. warning::
+.. important::
 
-   You must complete the DFX lab safety training before using any equipment in the lab, including our 3D printers. Find a time and sign up for the training here: http://www.eng.usf.edu/dfx/labtrainings.html
+   You **must** complete the DFX lab safety training before using any equipment in the lab, including our 3D printers. Find a time and sign up for the training here: http://www.eng.usf.edu/dfx/labtrainings.html
 
 We are not employees or representatives of the DFX lab, but our 3D printers are located there, so in addition to our own rules you'll follow the DFX lab's rules and expectations too. These are non-negotiable and must be followed whenever you're in the lab, and regardless of what you're doing.
 
