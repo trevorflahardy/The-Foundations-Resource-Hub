@@ -78,3 +78,18 @@ Glossary of 3D Printing Terms
 
   Tinkercad
     An online, beginner-friendly CAD tool for creating 3D models.
+
+  Infill
+    The internal structure of a 3D print, which can be solid or patterned to provide strength while minimizing material use.
+
+  Tree Supports
+    A type of support structure that branches out like a tree, providing support for complex overhangs while minimizing material use.
+
+  Normal Supports
+    Traditional support structures that are printed directly under overhangs, often leaving marks on the model.
+
+  Brim
+    A thin ring of material printed around the base of a model to improve bed adhesion.
+
+  Raft
+    A thicker base layer printed beneath a model to enhance adhesion and stability during printing.
