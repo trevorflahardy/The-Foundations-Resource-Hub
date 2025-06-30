@@ -115,6 +115,10 @@ After Your Print
 Starting Your First Print
 =========================
 
+.. TODO:
+   Add images for the printers, spools, etc so students can have a visual walk-through and reference as well. This
+   is vital.
+
 Your first print is exciting, and following these steps will set you up for success:
 
 Pre-Flight Checklist
