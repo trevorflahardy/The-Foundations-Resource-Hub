@@ -4,6 +4,8 @@
 Project Examples and Challenges
 ********************************
 
+.. Walks through common challenges or examples with explanations of how engineers might approach them. 
+
 ..
   - **team-project-challenges**
     - Sample 3D printing tasks for your team
