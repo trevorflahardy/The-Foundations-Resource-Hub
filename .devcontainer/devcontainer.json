@@ -1,0 +1,29 @@
+{
+  "name": "The Arduino Guide",
+  "build": {
+    "dockerfile": "Dockerfile",
+    "context": ".."
+  },
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "akamud.vscode-theme-onedark",
+        "aaron-bond.better-comments",
+        "usernamehw.errorlens",
+        "DavidAnson.vscode-markdownlint",
+        "GitHub.vscode-pull-request-github",
+        "ms-python.black-formatter",
+        "ms-python.vscode-pylance",
+        "ms-python.python",
+        "ms-pyright.pyright",
+        "WakaTime.vscode-wakatime",
+        "ms-python.debugpy",
+        "GitHub.copilot-chat",
+        "GitHub.copilot",
+        "github.vscode-github-actions",
+        "streetsidesoftware.code-spell-checker",
+        "ritwickdey.LiveServer"
+      ]
+    }
+  }
+}
