@@ -3,7 +3,22 @@
 Using a Photocell Example
 =========================
 
-This example details how to use a photocell with an Arduino board. Photocells are light-sensitive resistors that change resistance based on the amount of light they are exposed to. In this example, we will learn how to use a photocell with an Arduino board by turning on an LED when  the light level is below a certain threshold.
+This example shows how to use a photocell (light sensor) with an Arduino. Photocells change their resistance based on the amount of light, which we can read as changing voltage values.
+
+**How Photocells Work:**
+
+- **Bright light** = Low resistance = Lower voltage reading
+- **Dark** = High resistance = Higher voltage reading
+- Use with a **10kΩ resistor** to create a voltage divider circuit
+
+**Basic Troubleshooting:**
+
+- **Same reading always**: Check wiring connections
+- **Erratic readings**: Make sure connections are secure in breadboard
+- **Not sensitive enough**: Try covering/uncovering sensor to test range
+
+.. tip::
+    Use `Serial.println(analogRead(A0));` to see the actual sensor values and adjust your code thresholds accordingly.
 
 --------------
 

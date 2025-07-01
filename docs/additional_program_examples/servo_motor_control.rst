@@ -3,13 +3,21 @@
 Servo Motor Control Example
 ===========================
 
-This example walks through how to control a Servo motor using an Arduino
-board. Your project kit has a Servo. Servo motors are small devices that
-have a shaft that can be positioned to specific angular positions.
-Servos are used in many applications, including robotics,
-remote control cars, and airplanes. In this example, we will learn how to
-control a Servo using an Arduino board.
+This example shows how to control a servo motor using Arduino. Servo motors can move to specific angles (0-180 degrees) using PWM signals.
 
+**Servo vs DC Motor:**
+
+- **DC Motor**: Spins continuously, hard to control exact position
+- **Servo Motor**: Moves to specific angles, holds position automatically
+
+**Basic Connections:**
+- **Red wire**: Power (5V)
+- **Brown/Black wire**: Ground  
+- **Orange/Yellow wire**: Control signal (connect to Arduino pin 9)
+
+**Simple Troubleshooting:**
+- **Servo jitters**: Check power connections, may need external power supply
+- **Doesn't move**: Verify control wire is connected to correct pin
 .. seealso::
 
     For more information on the Servo motor, see the YouTube tutorial on

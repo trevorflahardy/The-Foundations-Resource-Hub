@@ -41,6 +41,7 @@ Table of Contents
    loops
    libraries
    advanced_topics
+   electrical_fundamentals
    3d_printing/index
    additional_program_examples/index
    assignments/index
