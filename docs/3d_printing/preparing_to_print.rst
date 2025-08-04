@@ -318,33 +318,35 @@ That's it! You're now ready to load models and start slicing.
 Slicing and Exporting with Orca Flashforge
 ==========================================
 
+Now that you have Orca Flashforge set up, let's walk through the complete workflow from loading your first model to getting G-code ready for the printer.
+
 Loading Models
-^^^^^^^^^^^^^^^
+---------------
 
-Slicing Settings
-^^^^^^^^^^^^^^^^
+The first step in any print job is getting your 3D model into the slicer. Orca Flashforge makes this process straightforward.
 
-Exporting G-Code to USB
-^^^^^^^^^^^^^^^^^^^^^^^^
+**Importing Your Model**
 
+To load a model, you can:
 
-- Loading models (orientation, plate management)
-- Slicing settings (layer height, infill, supports)
-- Exporting G-code to USB
+- **Drag and drop** your STL, OBJ, or 3MF file directly into the workspace
+- Click the **Add** button in the toolbar and browse for your file
+- Use **Ctrl+I** (or **Cmd+I** on Mac) to open the import dialog
+
+.. image:: /images/3d_printing/loading/import_model.png
+  :align: center
+  :alt: Importing a model into Orca Flashforge.
+
+Once imported, your model will appear on the virtual build plate, ready for positioning and orientation.
 
 Orientation
 ^^^^^^^^^^^^^
+
 How your part is positioned on the print bed is called its :term:`orientation`. A thoughtful orientation can save you time and plastic, while also giving the part extra strength.
 
-- **Start stable** - Try to place the largest, flattest face on the plate. This gives the model a solid foundation and often reduces the number of supports you'll need.
-- **Mind the layers** - Prints are weakest between layers. If a thin feature will be under stress, rotate the model so the layers run along its length rather than across it.
-- **Preview supports** - Rotate the model in Orca Flashforge and check the preview. A small adjustment can keep supports off visible surfaces and cut down on cleanup later.
-- **Try auto orient** - Orca Flashforge includes an auto orient feature similar to PrusaSlicer. It can quickly rotate parts to minimize supports and maximize bed contact.
-
-Experiment with orientations as you get comfortable. A few extra seconds in the slicer can make a big difference once the printer starts moving.
-
 Auto Orient and Arrange
-"""""""""""""""""""""""""
+""""""""""""""""""""""""""
+
 Modern 3D printing slicers are fantastic at automatically orienting parts for optimal printing. To let Orca Flashforge orient and arrange your parts for you:
 
 **First**, click the **Auto Orient** button in the toolbar. This will analyze each part and find the best orientation for printing.
@@ -377,8 +379,8 @@ And voilà! Your parts are now optimally oriented and arranged for printing. You
 
   Most commonly, you will not need to manually adjust the orientation of your parts, as Orca Flashforge does a great job of finding the best orientation for you.
 
-Plate
-^^^^^^
+Plate Management
+^^^^^^^^^^^^^^^^
 In Orca Flashforge, the **plate** represents the printer's build area. You can set up several plates inside a single project, and each one acts like its own print job.
 
 Use additional plates when:
@@ -388,12 +390,142 @@ Use additional plates when:
 - Planning a larger project so it's ready to print plate by plate.
 
 .. image:: /images/3d_printing/plate_1.png
-   :align: center
-   :alt: Multiple plates shown as tabs in Orca Flashforge.
+  :align: center
+  :alt: Multiple plates shown as tabs in Orca Flashforge.
 
 To add another plate, click the ``+`` icon on the top left of the workspace. This opens a new plate with the same settings as your current one, ready for you to load more models.
 
 When auto orienting and arranging models, the slicer will sometimes create **multiple plates automatically**. This happens when your models cannot fit on a single plate due to size or orientation constraints.
+
+Slicing Settings
+----------------
+
+With your model loaded and positioned, it's time to configure the slicing settings. Orca Flashforge provides intelligent defaults, but understanding the key parameters helps you optimize for your specific needs.
+
+Accessing Slicing Settings
+^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+The main slicing parameters are located in the left panel of the interface:
+
+- **Printer Settings** - Machine-specific parameters (already set for Adventurer 5M)
+- **Filament Settings** - Temperature and material properties.
+- **Print Settings** - Controls layer height, infill, and supports. This is where you'll spend most of your time.
+
+.. image:: /images/3d_printing/slicing/settings_panel.png
+   :align: center
+   :scale: 50%
+   :alt: Slicing settings panel in Orca Flashforge.
+
+Key Settings to Review
+^^^^^^^^^^^^^^^^^^^^^^
+
+For most prints at USF, you'll want to check these essential settings:
+
+.. list-table::
+  :header-rows: 1
+
+  * - Setting
+    - Which Tab to Find It On
+    - What it Does
+    - Recommended value
+  * - Layer Height
+    - Dropdown bar
+    - Controls the thickness of each layer.
+    - ``0.20mm Standard`` for most prints, ``0.12mm Fine`` for detailed models, ``0.28mm Draft`` for faster prints
+  * - Wall loops
+    - Strength tab
+    - Controls the number of loops for the outer wall.
+    - ``2`` loops for most prints, ``4`` for high-strength parts only.
+  * - Infill
+    - Strength tab
+    - Controls the internal pattern and density.
+    - ``15%`` for most functional parts.
+  * - Infill Pattern
+    - Strength tab
+    - Controls the internal pattern used for infill.
+    - ``Grid`` for most prints, ``Gyroid`` for complex shapes, ``Adaptive Cubic`` for large models.
+  * - Enable supports
+    - Supports tab
+    - Controls whether supports are generated
+    - Toggle "Enable Support"
+  * - Support Type
+    - Supports tab
+    - Controls the type of supports used.
+    - ``Tree (auto)`` for complex models, ``Normal (auto)`` for large flat overhangs.
+  * - Brim Type
+    - Others tab
+    - Controls the type of brim used for bed adhesion.
+    - ``Auto`` for most prints, ``None`` for models with good bed adhesion (large flat bases).
+
+**Reorient and Re-Arrange your build plates after changing settings.**
+
+Preview Before Slicing
+^^^^^^^^^^^^^^^^^^^^^^
+
+Before generating G-code, use the **Preview** feature to check your settings:
+
+#. Click the **Slice Plate** button to generate a preview
+#. Use the layer slider to inspect different heights of your print
+#. Look for potential issues like insufficient supports or poor surface contact
+
+.. image:: /images/3d_printing/slicing/preview_mode.png
+  :align: center
+  :alt: Preview mode showing layer-by-layer breakdown.
+
+.. image:: /images/3d_printing/slicing/preview_layer.png
+  :align: center
+  :alt: Layer-by-layer preview in Orca Flashforge.
+
+The preview shows you exactly how the printer will build your model, layer by layer.
+
+Exporting G-Code to USB
+^^^^^^^^^^^^^^^^^^^^^^^
+Once you're satisfied with your slicing settings and preview, it's time to export the G-code file that the printer will use.
+
+**Generating G-Code**
+
+1. **Final Slice**: Click the **Slice Plate** button if you haven't already. This processes your model with all current settings.
+
+2. **Review Print Time**: Orca Flashforge will display estimated print time and material usage. This helps you plan your lab time.
+
+.. image:: /images/3d_printing/slicing/slice_complete.png
+  :align: center
+  :alt: Completed slice showing print time and material estimates.
+  :scale: 50%
+
+3. **Export to File**: Select the dropdown next to the **Print plate** button (in the top right corner) and choose **Export G-code file**.
+
+.. image:: /images/3d_printing/slicing/export_gcode_file.png
+  :align: center
+  :alt: Export G-code dialog in Orca Flashforge.
+
+4. **Choose Location**: Save the .gcode file to your USB drive. The file name should follow the following format:
+
+    - **LastName_FirstInitial_Professor_Section_ModelName.gcode**
+
+    This helps keep your files organized and easily identifiable, and allows the TAs to quickly find your print job. If you do not follow this format, your print job will be cancelled by staff.
+
+.. image:: /images/3d_printing/slicing/save_gcode.png
+  :align: center
+  :alt: Save dialog for exporting G-code to USB.
+
+.. note::
+
+  Note this export is only for **one plate at a time**. If you have multiple plates, you'll need to export each one separately.
+
+At the Printer
+^^^^^^^^^^^^^^
+
+With your G-code file ready on the USB drive:
+
+#. Insert the USB drive into the printer's USB port
+#. Navigate to the file using the printer's touchscreen
+#. Select your file and start the print
+#. The printer will heat up and begin following your G-code instructions
+
+.. tip::
+
+  Keep your USB drive with you during the print. If something goes wrong, you might need to restart or adjust settings without re-slicing.
 
 -----
 
