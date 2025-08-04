@@ -1,10 +1,12 @@
-.. _what_is_slicing:
+.. _preparing_to_print:
 
 ******************
 Preparing to Print
 ******************
 
 You now have a model, but now what? Before you can print, you need to prepare it using slicing software. This is where we turn your 3D model into instructions that the printer can understand.
+
+.. _what_is_slicing:
 
 What is Slicing?
 ================
@@ -16,14 +18,14 @@ Think of it like converting a sculpture into instructions for a robot to carve i
 Understanding Key Slicing Concepts
 ----------------------------------
 
-Before we dive into using the software, let's cover some basic slicing terms. Don't worry—you'll get the hang of them fast!
+Before we dive into using the software, let's cover some basic slicing terms. Don't worry if you don't get all the terms right away; you'll become familiar with them as you slice models and continue through this guide.
 
 Infill
 ^^^^^^^
 
-:term:`Infill` is the internal pattern that fills the inside of your model. Our model's cannot be hollow, can they? Infill gives our object strength and stability. You usually won't see it, but it's crucial for making sure your print doesn't fall apart.
+:term:`Infill` is the internal pattern that fills the inside of your model. Our model's cannot be hollow, can they? Of course, not, so infill gives our object **strength and stability**. You won't see it the inside of your model once it is done printing, but infill is crucial for making sure your print doesn't fall apart.
 
-There are several types of infill patterns you can use, each with their own strengths and weaknesses. Common patterns include:
+There are several types of infill patterns you can use, each with their own strengths and weaknesses. Let's walk through the most common ones you'll encounter.
 
 Rectilinear Infill Pattern [#f1]_
 """"""""""""""""""""""""""""""""""
@@ -67,7 +69,9 @@ However, due to the more complex printing path, slicing time will be longer, res
 
 ----
 
-At USF, you will mainly be using the **Grid** infill pattern, as it provides a good balance of strength and print speed. However, you can experiment with others as you become more comfortable with slicing
+At USF, you will mainly be using the **Grid** infill pattern, as it provides a good balance of strength and print speed. However, you can experiment with others as you become more comfortable with slicing.
+
+But what about when your model has **overhangs** or **bridges**? These are parts of the model that extend out without support underneath, and they can be tricky to print. That's where :term:`supports` come in.
 
 Supports
 ^^^^^^^^
@@ -79,13 +83,15 @@ Supports come in many types, but the only you will be using at the USF print lab
 Tree Supports
 """""""""""""
 
-:term:`Tree supports <tree supports>` samples the overhangs to get the so-called nodes, each node is represented as a circle. And then the nodes are propagated down to the heat bed. During propagation, the circles may be enlarged to get better strength and may be moved away from the object so the supports are less likely to collide with the object [#f2]_.
+:term:`Tree supports <tree supports>` samples the overhangs to get something called "nodes". Each node is represented as a circle, the nodes are propagated (joined) down to the heat bed. During propagation, the circles may be enlarged to get better strength and may be moved away from the object so the supports are less likely to collide with the object [#f2]_.
 
 But when do I use tree supports over normal supports? For objects with **complex structures** and most of the :term:`overhangs <Overhang>` are small, non-planar surfaces, tree supports give stronger support structure, less material, and less time cost, while keeping similar surface quality [#f2]_.
 
 .. image:: /images/3d_printing/supports/when_tree.png
   :align: center
   :alt: When to use Tree Supports
+
+How about non-complex structures? Tree supports are still useful for large overhangs, as they provide a strong support structure with less material used compared to normal supports. They also make it easier to remove the supports after printing.
 
 Normal Supports
 """"""""""""""""
@@ -105,23 +111,31 @@ But when do I use normal supports over tree supports? For **large planar overhan
 
 Key Differences
 """""""""""""""
-To recap, here are the key differences:
+So we have covered both types of supports, normal and tree, but which one should you use? It really depends on your model's geometry and the specific overhangs you need to support.
 
 - **Tree Supports**:
   - Best for complex structures with small, non-planar overhangs.
+
   - Stronger support with less material.
+
   - Less time cost.
+
   - Easier to remove.
 - **Normal Supports**:
   - Best for large planar overhangs.
+
   - Better surface quality.
+
   - May leave marks on the model.
+
   - More material used.
 
-Which to use depends on your model's geometry and the specific overhangs you need to support. As you gain experience, you'll develop a feel for which type works best in different situations. Always feel free to reach out to the lab staff if you're unsure!
+Which to use depends on your model's geometry and the specific overhangs you need to support. As you gain experience, you'll develop a feel for which type works best in different situations. Always feel free to reach out for help if you are unsure!
 
 .. ! NOTE: Keep walking through the following list items and making them their own section, using the Bambu Labs wiki as reference
 .. ! for images, content, and flow of document.
+
+[TODO]: Walk through bambu labs and make these their own section:
 
 - **Layer Height**
   The thickness of each printed layer. Smaller layer heights = smoother details but longer print times.
@@ -157,19 +171,19 @@ Installing Orca Flashforge
 
 Head to the `Flashforge Downloads Page <https://www.flashforge.com/blogs/download-document/adventurer-5m-pro#>`_ and grab the latest installer for your operating system (Windows 10+ or macOS 10.15+).
 
-.. ! NOTE: image needed
+.. ! TODO: image needed
 
 2. **Run the Installer**
 
 Follow the on-screen prompts. The setup is simple and shouldn't take more than a minute or two.
 
-.. ! NOTE: image needed
+.. ! TODO: image needed
 
 3. **Launch the App**
 
 Open Orca Flashforge, and the setup wizard will guide you through initial configuration.
 
-.. ! NOTE: image needed
+.. ! TODO: image needed
 
 Setup Wizard Walkthrough
 -------------------------
@@ -181,7 +195,7 @@ The first time you launch Orca Flashforge, you'll see a few friendly setup promp
 - **Select Nozzle Size** - Pick the nozzle size available in the lab: ``0.4mm``.
 - **Select Filaments** - Choose the filaments you'll be printing with: ``PLA``.
 
-.. ! NOTE: images needed
+.. ! TODO: images needed
 
 That's it! You're now ready to load models and start slicing.
 
