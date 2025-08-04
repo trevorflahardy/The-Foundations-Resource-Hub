@@ -235,7 +235,7 @@ When the model height is 0.51mm, the center Z height of the third layer is ``0.5
   :align: center
   :alt: Z-Accuracy Example
 
-This is called **Z-accuracy**, and can be an annoying issue in 3D printing, and can affect the fitment of your mosdel. If your model is not the correct height, and other parts depend on its accuracy, your assembly may not fit together or work as intended.
+This is called **Z-accuracy**, and can be an annoying issue in 3D printing, and can affect the fitment of your model. If your model is not the correct height, and other parts depend on its accuracy, your assembly may not fit together or work as intended.
 
 When designing your models, you may need to keep in mind its **Z-height**. The Z-height is the height of your model in the Z-axis, or the vertical axis. So, what do I do about this? We're talking about the difference of ``0.1mm`` here, should I even care? Well, yes... and no.
 
