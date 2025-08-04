@@ -16,6 +16,8 @@ Resources
     - Prusa tutorials, CAD training, etc.
     - Links to popular youtubers and videos they help dramatically!
 
+Use this glossary while reading :ref:`introduction_to_3d_printing`, :ref:`3d_design_for_printing`, and :ref:`preparing_to_print` to clarify terminology.
+
 
 Glossary of 3D Printing Terms
 =============================

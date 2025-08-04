@@ -44,25 +44,125 @@ Printing Workflow Overview
 
 It's helpful to understand the process of 3D printing at USF. An overview of the workflow is as follows, but further sections will go into further detail:
 
-1. **Prepare Your Design**
-   Ensure your CAD model is ready and export it as an STL file. Double-check dimensions and make sure your design is optimized for 3D-printing.
+#. **Prepare Your Design**
+   Ensure your CAD model is ready and export it as an STL file. Double-check dimensions and make sure your design is optimized for 3D printing. See :ref:`3d_design_for_printing`.
 
-2. **Slice Your Model**
-   Use the DFX Lab desktop stations, or your own personal computer, to slice your STL file into G-code. See :ref:`what_is_slicing` for more details on slicing.
+#. **Slice Your Model**
+   Use the DFX Lab desktop stations, or your own personal computer, to slice your STL file into G-code. See :ref:`preparing_to_print` for details on slicing.
 
-3. **Request Print Permission**
+#. **Request Print Permission**
    The Foundations print lab staff must approve your G-code file before printing. Submit your G-code file, with other required materials, to the designated location and wait for confirmation.
 
-   .. ! TODO: Location needed
+   .. todo:: Location needed.
 
-4. **Start Your Print**
+#. **Start Your Print**
    Check everything (filament, bed, file) and begin your print, ensuring you stay nearby for the first few layers.
 
-5. **Monitor Progress**
+#. **Monitor Progress**
    Check on your print periodically. Long prints don't need constant supervision, but regular check-ins are important.
 
-6. **Remove and Clean Up**
-   Once finished and cooled, carefully remove your print and clean up any support material or debris.
+#. **Remove and Clean Up**
+   Once finished and cooled, carefully remove your print and clean up any support material or debris. See :ref:`removing_cleaning_prints`.
+
+.. _preparing_to_print:
+
+Preparing to Print
+==================
+
+You now have a model, but before you can print, you need to prepare it using slicing software. This process turns your 3D model into instructions the printer can understand.
+
+.. _what_is_slicing:
+
+What is Slicing?
+----------------
+
+:Slicing: is the process of turning your digital 3D model into printable instructions—layer by layer. These instructions are saved as :term:`G-code`, which your printer follows line by line.
+
+Understanding Key Slicing Concepts
+----------------------------------
+
+Infill
+^^^^^^
+
+:term:`Infill` is the internal pattern that fills the inside of your model and gives it strength and stability. At USF, you will mainly be using the **Grid** infill pattern.
+
+Supports
+^^^^^^^^
+
+When printing models with overhangs, you may need to add :term:`supports`. The lab uses :term:`tree supports` for complex structures and :term:`normal supports` for large flat overhangs.
+
+Key Settings to Review
+----------------------
+
+.. list-table::
+  :header-rows: 1
+
+  * - Setting
+    - Which Tab to Find It On
+    - What it Does
+    - Recommended value
+  * - Layer Height
+    - Dropdown bar
+    - Controls the thickness of each layer.
+    - ``0.20mm Standard`` for most prints, ``0.12mm Fine`` for detailed models, ``0.28mm Draft`` for faster prints
+  * - Wall loops
+    - Strength tab
+    - Controls the number of loops for the outer wall.
+    - ``2`` loops for most prints, ``4`` for high-strength parts only.
+  * - Infill
+    - Strength tab
+    - Controls the internal pattern and density.
+    - ``15%`` for most functional parts.
+  * - Infill Pattern
+    - Strength tab
+    - Controls the internal pattern used for infill.
+    - ``Grid`` for most prints, ``Gyroid`` for complex shapes, ``Adaptive Cubic`` for large models.
+  * - Enable supports
+    - Supports tab
+    - Controls whether supports are generated
+    - Toggle "Enable Support"
+  * - Support Type
+    - Supports tab
+    - Controls the type of supports used.
+    - ``Tree (auto)`` for complex models, ``Normal (auto)`` for large flat overhangs.
+  * - Brim Type
+    - Others tab
+    - Controls the type of brim used for bed adhesion.
+    - ``Auto`` for most prints, ``None`` for models with good bed adhesion (large flat bases).
+
+Preview Before Slicing
+----------------------
+
+Before generating G-code, use the **Preview** feature to check your settings:
+
+#. Click the **Slice Plate** button to generate a preview.
+#. Use the layer slider to inspect different heights of your print.
+#. Look for potential issues like insufficient supports or poor surface contact.
+
+Exporting G-Code to USB
+-----------------------
+Once you're satisfied:
+
+#. **Final Slice**: Click the **Slice Plate** button if you haven't already. This processes your model with all current settings.
+#. **Review Print Time**: Orca Flashforge will display estimated print time and material usage.
+#. **Export to File**: Select the dropdown next to the **Print plate** button and choose **Export G-code file**.
+#. **Choose Location**: Save the ``.gcode`` file to your USB drive using the format ``LastName_FirstInitial_Professor_Section_ModelName.gcode``.
+
+At the Printer
+--------------
+
+With your G-code file ready on the USB drive:
+
+#. Insert the USB drive into the printer's USB port.
+#. Navigate to the file using the printer's touchscreen.
+#. Select your file and start the print.
+#. The printer will heat up and begin following your G-code instructions.
+
+.. tip::
+
+   Keep your USB drive with you during the print. If something goes wrong, you might need to restart or adjust settings without re-slicing.
+
+For guidance on removing the print after completion, see :ref:`removing_cleaning_prints`.
 
 .. _rules_etiquette_lab:
 
@@ -131,17 +231,17 @@ Pre-Flight Checklist
 
 Before starting any print, run through this quick checklist:
 
-1. **Filament Check**: Ensure there's enough filament for your entire print, plus some extra.
-2. **Bed Preparation**: Ensure the build plate is free of debris and leftover filament.
-3. **File Verification**: Double-check your G-code file is correctly named so staff doesn't cancel it.
+#. **Filament Check**: Ensure there's enough filament for your entire print, plus some extra.
+#. **Bed Preparation**: Ensure the build plate is free of debris and leftover filament.
+#. **File Verification**: Double-check your G-code file is correctly named so staff doesn't cancel it.
 
 Starting the Print
 ------------------
 
-1. **Load Your File**
+#. **Load Your File**
    Transfer your G-code file to the printer via USB-drive.
 
-2. **Start and Stay Close**
+#. **Start and Stay Close**
    Begin the print and **stay nearby for at least the first 10 minutes**. This is when most issues occur:
 
    - Watch the first layer go down - it should stick well to the bed.
@@ -210,13 +310,13 @@ If Something Goes Wrong
 
 In case of critical issues follow these steps in order:
 
-1. **Stop the Print**: Attempt to stop the print using the screen. The job should stop immediately, and the extruder will return to the home position.
+#. **Stop the Print**: Attempt to stop the print using the screen. The job should stop immediately, and the extruder will return to the home position.
 
-2. **Power Off**: If the screen on the printer is unresponsive, use the printer power switch, located on the back of the printer near its power cable.
+#. **Power Off**: If the screen on the printer is unresponsive, use the printer power switch, located on the back of the printer near its power cable.
 
-3. **Get Help Immediately**: Contact a TA or DFX staff member right away. Don't try to fix electrical or mechanical issues yourself.
+#. **Get Help Immediately**: Contact a TA or DFX staff member right away. Don't try to fix electrical or mechanical issues yourself.
 
-4. **Document the Issue**: Take photos if safe to do so - this helps staff diagnose problems and understand what went wrong.
+#. **Document the Issue**: Take photos if safe to do so - this helps staff diagnose problems and understand what went wrong.
 
 Emergency Contacts
 ------------------

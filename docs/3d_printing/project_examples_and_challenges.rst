@@ -4,12 +4,6 @@
 Project Examples and Challenges
 ********************************
 
-.. Walks through common challenges or examples with explanations of how engineers might approach them. 
+This section outlines sample challenges and project ideas. Use these examples to apply the concepts from :ref:`3d_design_for_printing` and :ref:`iterating_design`.
 
-..
-  - **team-project-challenges**
-    - Sample 3D printing tasks for your team
-    - Ideas: Custom Arduino enclosures, tool holders, cable management
-  - **gallery-of-student-prints**
-    - Showcase successful models
-    - Encourage remixing & creative improvements
+.. todo:: Add specific challenges and gallery examples.

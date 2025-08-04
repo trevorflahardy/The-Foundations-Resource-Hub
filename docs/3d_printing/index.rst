@@ -22,7 +22,6 @@ Table of Contents
 
    introduction_to_3d_printing
    3d_design_for_printing
-   preparing_to_print
    responsible_3d_printing
    removing_cleaning_prints
    iterating_design
