@@ -69,7 +69,7 @@ It's helpful to understand the process of 3D printing at USF. An overview of the
 Rules & Etiquette around the Printers
 =====================================
 
-Beyond the official DFX lab rules, here are some key dos and don'ts to keep in mind when printing:
+Beyond the official DFX lab rules, here are some key do's and don'ts to keep in mind when printing:
 
 Before You Start
 -----------------
@@ -203,7 +203,7 @@ Mechanical Cautions
 - Never try to "help" the printer by pushing or pulling parts during operation.
 - Keep fingers, hair, and loose clothing away from moving components.
 - Don't attempt to clear jams or clogs, just stop the print and ask for help.
-- The filament spool should not be touched or removed. If you need to change filament, stop the print **before it reaches the end** and ask for assistance.
+- The filament spool should not be touched or removed. All printers have a filament sensor that will stop the print if the filament runs out or is removed. If this happens, let a TA or staff member know to refill the spool and continue your print. Do not try and refill the spool yourself.
 
 If Something Goes Wrong
 -----------------------
@@ -232,6 +232,10 @@ Emergency Contacts
 Personal Safety Gear
 ---------------------
 Close-toed shoes are the only requirement for 3D printing, however if you're using other tools in the DFX lab you may need specialized safety gear. Always reference the DFX lab's safety guidelines for the specific tools you're using.
+
+.. tip::
+
+   If you have long hair, tie it back to prevent it from getting caught in moving parts. Loose clothing should also be avoided.
 
 .. _consequences_violations:
 
