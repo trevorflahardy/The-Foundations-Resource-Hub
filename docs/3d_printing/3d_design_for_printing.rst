@@ -112,6 +112,8 @@ Choose the Bottom of Your Model Right Away
 
 When starting to design a model, choose the face of the model that will be attached to the print bed. Knowing the orientation of your print from the start can help you more easily identify where you have 'bad' overhangs. This is helpful because it's easier to catch and fix 'bad' overhangs right away instead of when your model is nearing completion.
 
+.. _bed_adhesion:
+
 Bed Adhesion
 ------------
 

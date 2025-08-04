@@ -135,20 +135,79 @@ Which to use depends on your model's geometry and the specific overhangs you nee
 .. ! NOTE: Keep walking through the following list items and making them their own section, using the Bambu Labs wiki as reference
 .. ! for images, content, and flow of document.
 
-[TODO]: Walk through bambu labs and make these their own section:
+..
+  [TODO]: Walk through bambu labs and make these their own section:
 
-- **Layer Height**
-  The thickness of each printed layer. Smaller layer heights = smoother details but longer print times.
+Layer Height
+^^^^^^^^^^^^^
 
-- **Brim/Raft**
-  Helpers that stick to the print bed and improve adhesion:
-  - A :term:`brim` is a thin ring around your model.
-  - A :term:`raft` is a thicker base printed underneath.
+Layer height refers to the vertical thickness of each deposited layer of molten material (measured in millimeters), and it is one of the most critical parameters influencing both print quality and print speed.
 
-- **Orientation**
+.. image:: /images/3d_printing/layer_height_1.png
+  :align: center
+  :alt: An image showing what layer height is.
+
+For example, with a 0.4 mm nozzle:
+
+- A **smaller layer height** (e.g., **0.12 mm**) results in finer layering, producing smoother surfaces and better detail, but **significantly increases** print time.
+- A **larger layer height** (e.g., **0.28 mm**) allows for **faster print speeds**, but may lead to **visible layer lines** and loss of detail.
+
+.. image:: /images/3d_printing/layer_height_2.png
+  :align: center
+  :alt: An image showing the difference in layer height.
+
+**Recommended settings** for layer height:
+
+- **Standard Quality**: 0.2 mm
+- **High Quality**: 0.12 mm
+- **Draft Quality**: 0.28 mm
+
+Wall Count
+^^^^^^^^^^^^^
+This parameter defines the number of outer shell layers, which directly affects both the strength and surface quality of the printed model. It is generally recommended to set it between 2 and 4 layers, depending on your specific needs.
+
+As shown in the image below, the wall structure typically includes:
+
+- **Orange**: Outer walls
+- **Yellow**: Inner walls
+
+.. image:: /images/3d_printing/wall_count_1.png
+  :align: center
+  :alt: An image showing the wall count.
+
+**Recommended Settings:**
+
+- **Functional parts**: Set to 3-4 walls to enhance structural strength and durability.
+- **Decorative models**: 2 walls are sufficient to save material and improve print efficiency.
+
+Brim/Raft
+^^^^^^^^^^^^^
+A :term:`brim` is a single-layer flat area around the base of your model. Its purpose is to keep the edges of your print down and make the contact area between your print and the build plate bigger.
+
+- The bigger surface area allows your print to stick better on the build plate. This is pretty useful for tall and thin objects.
+- Brim can also help improve the bonding of the edges on the bottom of the model. Having a brim of sufficient width will keep the model edges in place, preventing this warping.
+
+.. image:: /images/3d_printing/brim_1.png
+  :align: center
+  :alt: An image showing the brim.
+
+As discussed in :ref:`bed_adhesion`, a brim is a great way to improve bed adhesion, especially for models with small contact areas. In Orca Flashforge, you can enable a brim in the slicing settings.
+
+It is **recommended** to set the brim to **auto** for most prints, as it will automatically adjust the brim width based on the model's size and shape.
+
+.. image:: /images/3d_printing/brim_2.png
+  :align: center
+  :alt: An image showing the brim settings in Orca Flashforge.
+
+..
+  Skipped brim-object gap and manual brim information. Maybe add in the future, but it felt excessive for now.
+
+Orientation
+^^^^^^^^^^^^^
   How your part is positioned on the print bed. This affects print time, strength, and support needs.
 
-- **Plate**
+Plate
+^^^^^^
   A virtual “build plate” in Orca Flashforge. You can organize prints across multiple plates if needed.
 
 .. tip::
