@@ -204,39 +204,48 @@ It is **recommended** to set the brim to **auto** for most prints, as it will au
 
 Orientation
 ^^^^^^^^^^^^^
-How your part is positioned on the print bed is called its *orientation*. A thoughtful orientation can save you time and plastic, while also giving the part extra strength.
+How your part is positioned on the print bed is called its :term:`orientation`. A thoughtful orientation can save you time and plastic, while also giving the part extra strength.
 
-- **Start stable** – Try to place the largest, flattest face on the plate. This gives the model a solid foundation and often reduces the number of supports you'll need.
-- **Mind the layers** – Prints are weakest between layers. If a thin feature will be under stress, rotate the model so the layers run along its length rather than across it.
-- **Preview supports** – Rotate the model in Orca Flashforge and check the preview. A small adjustment can keep supports off visible surfaces and cut down on cleanup later.
-- **Try auto orient** – Orca Flashforge includes an auto orient feature similar to PrusaSlicer. It can quickly rotate parts to minimize supports and maximize bed contact.
+- **Start stable** - Try to place the largest, flattest face on the plate. This gives the model a solid foundation and often reduces the number of supports you'll need.
+- **Mind the layers** - Prints are weakest between layers. If a thin feature will be under stress, rotate the model so the layers run along its length rather than across it.
+- **Preview supports** - Rotate the model in Orca Flashforge and check the preview. A small adjustment can keep supports off visible surfaces and cut down on cleanup later.
+- **Try auto orient** - Orca Flashforge includes an auto orient feature similar to PrusaSlicer. It can quickly rotate parts to minimize supports and maximize bed contact.
 
 Experiment with orientations as you get comfortable. A few extra seconds in the slicer can make a big difference once the printer starts moving.
 
-Auto Orient and Rotate
+Auto Orient and Arrange
 """""""""""""""""""""""""
-Sometimes the computer can do the heavy lifting. To let Orca Flashforge orient your parts for you:
+Modern 3D printing slicers are fantastic at automatically orienting parts for optimal printing. To let Orca Flashforge orient and arrange your parts for you:
 
-1. Select the models you want to arrange.
-2. Click **Arrange All Objects** (or press **A**).
-3. Check **Auto Rotate for Best Orientation**.
-4. Press **Arrange** and let the slicer rotate and lay out your parts.
+**First**, click the **Auto Orient** button in the toolbar. This will analyze each part and find the best orientation for printing.
 
-Auto orientation handles most models well, but if it looks off, feel free to ask a TA or staff member for advice.
-
-.. image:: /images/3d_printing/orientation/auto_arrange.png
+.. image:: /images/3d_printing/orientation/auto_place_1.png
    :align: center
-   :alt: Auto-orienting parts with Arrange All Objects.
+   :alt: Unarranged parts in Orca Flashforge.
 
-If the automatic result doesn't fit your needs, rotate the models yourself:
+The result of this is that each part is rotated to its optimal orientation, which can save you time and material.
 
-- Drag the colored rings around the model or enter exact angles in the rotation panel.
-- Use the 45° buttons for quick, even turns.
-- Not sure what's best? Ask a TA or staff member for a second opinion.
+.. image:: /images/3d_printing/orientation/auto_place_2.png
+  :align: center
+  :alt: Auto oriented parts in Orca Flashforge.
 
-.. image:: /images/3d_printing/orientation/manual_rotate.png
+**Next**, click the **Arrange All Objects** button (or press **A**). This will automatically position all parts on the plate, ensuring they fit within the build area and are spaced appropriately.
+
+.. image:: /images/3d_printing/orientation/auto_place_3.png
+  :align: center
+  :alt: Process of auto arranging parts in Orca Flashforge.
+
+And voilà! Your parts are now optimally oriented and arranged for printing. You can still manually adjust their positions if needed, but this feature saves a lot of time and effort.
+
+.. image:: /images/3d_printing/orientation/auto_place_4.png
    :align: center
-   :alt: Manually rotating a part in Orca Flashforge.
+   :alt: Result of auto-orienting and arranging parts in Orca Flashforge.
+
+.. tip::
+
+  It is recommended to use the auto orient and arrange features whenever possible, as they can significantly improve print quality and reduce the need for supports with minimal effort.
+
+  Most commonly, you will not need to manually adjust the orientation of your parts, as Orca Flashforge does a great job of finding the best orientation for you.
 
 Plate
 ^^^^^^
@@ -248,21 +257,13 @@ Use additional plates when:
 - Sorting versions of a model that require different settings or filament colors.
 - Planning a larger project so it's ready to print plate by plate.
 
-.. image:: /images/3d_printing/plates/plate_tabs.png
+.. image:: /images/3d_printing/plate_1.png
    :align: center
    :alt: Multiple plates shown as tabs in Orca Flashforge.
 
-To add another plate, click the ``+`` icon next to the plate tabs or right-click the workspace and choose **Add Plate**.
+To add another plate, click the ``+`` icon on the top left of the workspace. This opens a new plate with the same settings as your current one, ready for you to load more models.
 
-.. image:: /images/3d_printing/plates/add_plate.png
-   :align: center
-   :alt: Adding a new plate in Orca Flashforge.
-
-Switch between plates using the tabs along the top of the workspace. When you're ready, slice and export each plate separately. At the USF lab we usually print one plate at a time, but organizing a whole project up front makes the process much smoother.
-
-.. tip::
-
-   You don't need to change all these settings manually—our printer profiles will handle most of it. But knowing what these mean will help you troubleshoot and customize when you're ready!
+When auto orienting and arranging models, the slicer will sometimes create **multiple plates automatically**. This happens when your models cannot fit on a single plate due to size or orientation constraints.
 
 ---
 
@@ -312,7 +313,87 @@ That's it! You're now ready to load models and start slicing.
 
   Although Orca Flashforge can wirelessly connect to 3D printers, at USF, you'll export G-code to a USB drive and physically plug it into the printer. Easy and reliable!
 
-We'll cover how to export your sliced models below.
+.. _slicing_and_exporting_with_orca_flashforge:
+
+Slicing and Exporting with Orca Flashforge
+==========================================
+
+Loading Models
+^^^^^^^^^^^^^^^
+
+Slicing Settings
+^^^^^^^^^^^^^^^^
+
+Exporting G-Code to USB
+^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+- Loading models (orientation, plate management)
+- Slicing settings (layer height, infill, supports)
+- Exporting G-code to USB
+
+Orientation
+^^^^^^^^^^^^^
+How your part is positioned on the print bed is called its :term:`orientation`. A thoughtful orientation can save you time and plastic, while also giving the part extra strength.
+
+- **Start stable** - Try to place the largest, flattest face on the plate. This gives the model a solid foundation and often reduces the number of supports you'll need.
+- **Mind the layers** - Prints are weakest between layers. If a thin feature will be under stress, rotate the model so the layers run along its length rather than across it.
+- **Preview supports** - Rotate the model in Orca Flashforge and check the preview. A small adjustment can keep supports off visible surfaces and cut down on cleanup later.
+- **Try auto orient** - Orca Flashforge includes an auto orient feature similar to PrusaSlicer. It can quickly rotate parts to minimize supports and maximize bed contact.
+
+Experiment with orientations as you get comfortable. A few extra seconds in the slicer can make a big difference once the printer starts moving.
+
+Auto Orient and Arrange
+"""""""""""""""""""""""""
+Modern 3D printing slicers are fantastic at automatically orienting parts for optimal printing. To let Orca Flashforge orient and arrange your parts for you:
+
+**First**, click the **Auto Orient** button in the toolbar. This will analyze each part and find the best orientation for printing.
+
+.. image:: /images/3d_printing/orientation/auto_place_1.png
+   :align: center
+   :alt: Unarranged parts in Orca Flashforge.
+
+The result of this is that each part is rotated to its optimal orientation, which can save you time and material.
+
+.. image:: /images/3d_printing/orientation/auto_place_2.png
+  :align: center
+  :alt: Auto oriented parts in Orca Flashforge.
+
+**Next**, click the **Arrange All Objects** button (or press **A**). This will automatically position all parts on the plate, ensuring they fit within the build area and are spaced appropriately.
+
+.. image:: /images/3d_printing/orientation/auto_place_3.png
+  :align: center
+  :alt: Process of auto arranging parts in Orca Flashforge.
+
+And voilà! Your parts are now optimally oriented and arranged for printing. You can still manually adjust their positions if needed, but this feature saves a lot of time and effort.
+
+.. image:: /images/3d_printing/orientation/auto_place_4.png
+   :align: center
+   :alt: Result of auto-orienting and arranging parts in Orca Flashforge.
+
+.. tip::
+
+  It is recommended to use the auto orient and arrange features whenever possible, as they can significantly improve print quality and reduce the need for supports with minimal effort.
+
+  Most commonly, you will not need to manually adjust the orientation of your parts, as Orca Flashforge does a great job of finding the best orientation for you.
+
+Plate
+^^^^^^
+In Orca Flashforge, the **plate** represents the printer's build area. You can set up several plates inside a single project, and each one acts like its own print job.
+
+Use additional plates when:
+
+- Preparing multiple parts that won't fit on the bed all at once.
+- Sorting versions of a model that require different settings or filament colors.
+- Planning a larger project so it's ready to print plate by plate.
+
+.. image:: /images/3d_printing/plate_1.png
+   :align: center
+   :alt: Multiple plates shown as tabs in Orca Flashforge.
+
+To add another plate, click the ``+`` icon on the top left of the workspace. This opens a new plate with the same settings as your current one, ready for you to load more models.
+
+When auto orienting and arranging models, the slicer will sometimes create **multiple plates automatically**. This happens when your models cannot fit on a single plate due to size or orientation constraints.
 
 -----
 
