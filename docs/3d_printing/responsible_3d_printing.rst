@@ -44,25 +44,41 @@ Printing Workflow Overview
 
 It's helpful to understand the process of 3D printing at USF. An overview of the workflow is as follows, but further sections will go into further detail:
 
-1. **Prepare Your Design**
-   Ensure your CAD model is ready and export it as an STL file. Double-check dimensions and make sure your design is optimized for 3D-printing.
+#. **Prepare Your Design**
+   Ensure your CAD model is ready and export it as an STL file. Double-check dimensions and make sure your design is optimized for 3D printing. See :ref:`3d_design_for_printing`.
 
-2. **Slice Your Model**
-   Use the DFX Lab desktop stations, or your own personal computer, to slice your STL file into G-code. See :ref:`what_is_slicing` for more details on slicing.
+#. **Slice Your Model**
+   Use the DFX Lab desktop stations, or your own personal computer, to slice your STL file into G-code. See :ref:`preparing_to_print` for details on slicing.
 
-3. **Request Print Permission**
+#. **Request Print Permission**
    The Foundations print lab staff must approve your G-code file before printing. Submit your G-code file, with other required materials, to the designated location and wait for confirmation.
 
-   .. ! TODO: Location needed
+   .. todo:: Location needed.
 
-4. **Start Your Print**
+#. **Start Your Print**
    Check everything (filament, bed, file) and begin your print, ensuring you stay nearby for the first few layers.
 
-5. **Monitor Progress**
+#. **Monitor Progress**
    Check on your print periodically. Long prints don't need constant supervision, but regular check-ins are important.
 
-6. **Remove and Clean Up**
-   Once finished and cooled, carefully remove your print and clean up any support material or debris.
+#. **Remove and Clean Up**
+   Once finished and cooled, carefully remove your print and clean up any support material or debris. See :ref:`removing_cleaning_prints`.
+
+At the Printer
+==============
+
+With your G-code file ready on the USB drive:
+
+#. Insert the USB drive into the printer's USB port.
+#. Navigate to the file using the printer's touchscreen.
+#. Select your file and start the print.
+#. The printer will heat up and begin following your G-code instructions.
+
+.. tip::
+
+   Keep your USB drive with you during the print. If something goes wrong, you might need to restart or adjust settings without re-slicing.
+
+For guidance on removing the print after completion, see :ref:`removing_cleaning_prints`.
 
 .. _rules_etiquette_lab:
 
@@ -120,9 +136,6 @@ After Your Print
 Starting Your First Print
 =========================
 
-.. TODO:
-   Add images for the printers, spools, etc so students can have a visual walk-through and reference as well. This
-   is vital.
 
 Your first print is exciting, and following these steps will set you up for success:
 
@@ -131,17 +144,17 @@ Pre-Flight Checklist
 
 Before starting any print, run through this quick checklist:
 
-1. **Filament Check**: Ensure there's enough filament for your entire print, plus some extra.
-2. **Bed Preparation**: Ensure the build plate is free of debris and leftover filament.
-3. **File Verification**: Double-check your G-code file is correctly named so staff doesn't cancel it.
+#. **Filament Check**: Ensure there's enough filament for your entire print, plus some extra.
+#. **Bed Preparation**: Ensure the build plate is free of debris and leftover filament.
+#. **File Verification**: Double-check your G-code file is correctly named so staff doesn't cancel it.
 
 Starting the Print
 ------------------
 
-1. **Load Your File**
+#. **Load Your File**
    Transfer your G-code file to the printer via USB-drive.
 
-2. **Start and Stay Close**
+#. **Start and Stay Close**
    Begin the print and **stay nearby for at least the first 10 minutes**. This is when most issues occur:
 
    - Watch the first layer go down - it should stick well to the bed.
@@ -210,13 +223,13 @@ If Something Goes Wrong
 
 In case of critical issues follow these steps in order:
 
-1. **Stop the Print**: Attempt to stop the print using the screen. The job should stop immediately, and the extruder will return to the home position.
+#. **Stop the Print**: Attempt to stop the print using the screen. The job should stop immediately, and the extruder will return to the home position.
 
-2. **Power Off**: If the screen on the printer is unresponsive, use the printer power switch, located on the back of the printer near its power cable.
+#. **Power Off**: If the screen on the printer is unresponsive, use the printer power switch, located on the back of the printer near its power cable.
 
-3. **Get Help Immediately**: Contact a TA or DFX staff member right away. Don't try to fix electrical or mechanical issues yourself.
+#. **Get Help Immediately**: Contact a TA or DFX staff member right away. Don't try to fix electrical or mechanical issues yourself.
 
-4. **Document the Issue**: Take photos if safe to do so - this helps staff diagnose problems and understand what went wrong.
+#. **Document the Issue**: Take photos if safe to do so - this helps staff diagnose problems and understand what went wrong.
 
 Emergency Contacts
 ------------------

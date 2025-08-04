@@ -4,7 +4,7 @@
 3D Design for Printing
 ***********************
 
-Next, we'll explore how to create effective 3D models for printing, understand key file formats, and utilize tools like Tinkercad to bring your designs to life.
+This section builds on :ref:`introduction_to_3d_printing` and explores how to create effective models, understand key file formats, and utilize tools like Tinkercad to bring your designs to life.
 
 Introduction to 3D Modeling
 ===========================
@@ -24,7 +24,6 @@ Understanding different file formats is crucial for 3D printing:
 - :term:`STEP (Standard for the Exchange of Product Model Data)`: Used for sharing models between different CAD programs, preserving complex geometry and assembly information.
 - :term:`3MF (3D Manufacturing Format)`: A modern format that includes color, material, and other metadata, aiming to be a comprehensive solution for 3D printing needs.
 
-.. ! NOTE: Add detail here about which file format students will be using.
 
 Design Thinking for Printing
 ============================
@@ -259,16 +258,14 @@ Tinkercad
 Exporting for Printing
 ^^^^^^^^^^^^^^^^^^^^^^^
 
-.. ! NOTE: Need images here and better explanation.
 
 Once your design is complete in Tinkercad:
 
-1. **Click on "Export"**: Located in the upper-right corner of the Tinkercad interface.
-2. **Choose the File Format**: Select .STL for 3D printing.
-3. **Download the File**: The file will be saved to your computer, ready to be imported into slicing software like OrcaSlicer.
+#. **Click on "Export"**: Located in the upper-right corner of the Tinkercad interface.
+#. **Choose the File Format**: Select .STL for 3D printing.
+#. **Download the File**: The file will be saved to your computer, ready to be imported into slicing software like OrcaSlicer.
 
-.. ! NOTE: Potentially touch on other CAD softwares, but this is not a requirement of the course and may become confusing.
 
 -----
 
-By understanding 3D modeling principles, file formats, and using tools like Tinkercad, you're well-equipped to create designs ready for 3D printing. Remember to consider the printing process during design to ensure successful prints.
+By understanding 3D modeling principles, file formats, and using tools like Tinkercad, you're well-equipped to create designs ready for 3D printing. Remember to consider the printing process during design to ensure successful prints, then continue to :ref:`preparing_to_print` to slice and print your model, and consult :ref:`iterating_design` to refine your part after testing.

@@ -199,7 +199,7 @@ It is **recommended** to set the brim to **auto** for most prints, as it will au
 
 Orientation
 ^^^^^^^^^^^^^
-How your part is positioned on the print bed is called its :term:`orientation`. A thoughtful orientation can save you time and plastic, while also giving the part extra strength.
+How your part is positioned on the print bed is called its orientation. A thoughtful orientation can save you time and plastic, while also giving the part extra strength.
 
 - **Start stable** - Try to place the largest, flattest face on the plate. This gives the model a solid foundation and often reduces the number of supports you'll need.
 - **Mind the layers** - Prints are weakest between layers. If a thin feature will be under stress, rotate the model so the layers run along its length rather than across it.
@@ -272,23 +272,17 @@ So we know *about* slicing now, but we need to get your slicing software ready t
 Installing Orca Flashforge
 --------------------------
 
-1. **Download Orca Flashforge**
+#. **Download Orca Flashforge**
 
-Head to the `Flashforge Downloads Page <https://www.flashforge.com/blogs/download-document/adventurer-5m-pro#>`_ and grab the latest installer for your operating system (Windows 10+ or macOS 10.15+).
+   Head to the `Flashforge Downloads Page <https://www.flashforge.com/blogs/download-document/adventurer-5m-pro#>`_ and grab the latest installer for your operating system (Windows 10+ or macOS 10.15+).
 
-.. ! TODO: image needed
+#. **Run the Installer**
 
-2. **Run the Installer**
+   Follow the on-screen prompts. The setup is simple and shouldn't take more than a minute or two.
 
-Follow the on-screen prompts. The setup is simple and shouldn't take more than a minute or two.
+#. **Launch the App**
 
-.. ! TODO: image needed
-
-3. **Launch the App**
-
-Open Orca Flashforge, and the setup wizard will guide you through initial configuration.
-
-.. ! TODO: image needed
+   Open Orca Flashforge, and the setup wizard will guide you through initial configuration.
 
 Setup Wizard Walkthrough
 -------------------------
@@ -299,8 +293,6 @@ The first time you launch Orca Flashforge, you'll see a few friendly setup promp
 - **Select Printer** - Choose the printer model you'll be using: ``Adventurer 5M``.
 - **Select Nozzle Size** - Pick the nozzle size available in the lab: ``0.4mm``.
 - **Select Filaments** - Choose the filaments you'll be printing with: ``PLA``.
-
-.. ! TODO: images needed
 
 That's it! You're now ready to load models and start slicing.
 
@@ -337,7 +329,7 @@ Once imported, your model will appear on the virtual build plate, ready for posi
 Orientation
 ^^^^^^^^^^^^^
 
-How your part is positioned on the print bed is called its :term:`orientation`. A thoughtful orientation can save you time and plastic, while also giving the part extra strength.
+How your part is positioned on the print bed is called its orientation. A thoughtful orientation can save you time and plastic, while also giving the part extra strength.
 
 Auto Orient and Arrange
 """"""""""""""""""""""""""
@@ -479,22 +471,22 @@ Once you're satisfied with your slicing settings and preview, it's time to expor
 
 **Generating G-Code**
 
-1. **Final Slice**: Click the **Slice Plate** button if you haven't already. This processes your model with all current settings.
+#. **Final Slice**: Click the **Slice Plate** button if you haven't already. This processes your model with all current settings.
 
-2. **Review Print Time**: Orca Flashforge will display estimated print time and material usage. This helps you plan your lab time.
+#. **Review Print Time**: Orca Flashforge will display estimated print time and material usage. This helps you plan your lab time.
 
 .. image:: /images/3d_printing/slicing/slice_complete.png
   :align: center
   :alt: Completed slice showing print time and material estimates.
   :scale: 50%
 
-3. **Export to File**: Select the dropdown next to the **Print plate** button (in the top right corner) and choose **Export G-code file**.
+#. **Export to File**: Select the dropdown next to the **Print plate** button (in the top right corner) and choose **Export G-code file**.
 
 .. image:: /images/3d_printing/slicing/export_gcode_file.png
   :align: center
   :alt: Export G-code dialog in Orca Flashforge.
 
-4. **Choose Location**: Save the .gcode file to your USB drive. The file name should follow the following format:
+#. **Choose Location**: Save the .gcode file to your USB drive. The file name should follow the following format:
 
     - **LastName_FirstInitial_Professor_Section_ModelName.gcode**
 
@@ -508,19 +500,7 @@ Once you're satisfied with your slicing settings and preview, it's time to expor
 
   Note this export is only for **one plate at a time**. If you have multiple plates, you'll need to export each one separately.
 
-At the Printer
-^^^^^^^^^^^^^^
-
-With your G-code file ready on the USB drive:
-
-#. Insert the USB drive into the printer's USB port
-#. Navigate to the file using the printer's touchscreen
-#. Select your file and start the print
-#. The printer will heat up and begin following your G-code instructions
-
-.. tip::
-
-  Keep your USB drive with you during the print. If something goes wrong, you might need to restart or adjust settings without re-slicing.
+Once your file is exported, you're ready to move to the printer. See :ref:`responsible_3d_printing` for on-printer steps and lab etiquette.
 
 -----
 

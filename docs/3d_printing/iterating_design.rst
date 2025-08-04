@@ -7,7 +7,7 @@ Iterating Your Design
 Common Issues
 =============
 
-No one gets it on the first try. You should expect to encounter failures, but it's important you learn from them! 
+No one gets it on the first try. You should expect to encounter failures, but it's important you learn from them. This section assumes you've already prepared your model as described in :ref:`preparing_to_print`.
 
 If something isn't working, don't just try again; instead, take a step back and analyze the problem. Start by checking for these common issues, then adjust your design or slicing settings accordingly.
 
@@ -23,11 +23,11 @@ Corners lifting off the bed, or sometimes the entire print can lift from the bed
 **Possible causes:**  
 Poor first-layer adhesion; bed temperature too low
 
-**What to try:** (`in order`)
-  1. Add a one-layer brim in slicer settings to expand contact area.   
-  2. Increase bed temperature by 5 °C in your slicer settings.
-  3. Increase first-layer height or width (e.g., 120 % extrusion width or 0.24 mm layer height). 
-  4. If you've tried everything else, ask a TA or DFX employee to apply 3D printing adhesive to the build plate. **Do not** attempt to do this yourself. 
+**What to try:** (in order)
+  #. Add a one-layer brim in slicer settings to expand contact area.
+  #. Increase bed temperature by 5 °C in your slicer settings.
+  #. Increase first-layer height or width (e.g., 120 % extrusion width or 0.24 mm layer height).
+  #. If you've tried everything else, ask a TA or DFX employee to apply 3D printing adhesive to the build plate. **Do not** attempt to do this yourself.
 
 .. figure:: ../images/3d_printing/warping_problem.jpg
    :alt: 3D print showing warping with corners lifting off the bed
@@ -99,7 +99,7 @@ Once you're comfortable with troubleshooting, explore turning 'working' designs 
 - Analyze and eliminate empty space, weak structural points, and tolerances. 
 - In your CAD software, try adding features like fillets/chamfers, screw-holes for easier assembly, and more.
 
-3D printing makes it extremely easy to iterate your designs. Embracing this process will help you become a highly effective designer and printer.
+3D printing makes it extremely easy to iterate your designs. Embracing this process will help you become a highly effective designer and printer. For examples to test your skills, see :ref:`project_examples_and_challenges`.
 
 .. rubric:: References
 

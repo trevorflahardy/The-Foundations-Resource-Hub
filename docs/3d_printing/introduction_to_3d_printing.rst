@@ -17,7 +17,7 @@ Introduction to 3D Printing
     - Extruder, hotend, heated bed, stepper motors, etc.
     - Basic operation cycle
 
-Welcome to the world of 3D printing! In this section, we'll explore the fundamentals of 3D printing, its various types, and the anatomy of a typical 3D printer. This knowledge will serve as a foundation for your hands-on experiences in the lab.
+Welcome to the world of 3D printing! In this section, you'll explore the fundamentals of the technology, its various types, and the anatomy of a typical 3D printer. This knowledge serves as a foundation for your hands-on experiences in the lab.
 
 What is 3D Printing?
 ====================
@@ -95,11 +95,11 @@ Key Components
 Basic Operation Cycle
 ---------------------
 
-1. **Design**: Create a 3D model using computer-aided design (CAD) software.
-2. **Slicing**: Convert the 3D model into layers and generate G-code using slicing software.
-3. **Printing**: The printer reads the :term:`G-code` and deposits material layer by layer to build the object.
-4. **Post-Processing**: After printing, the object may require cleaning, support removal, or other finishing processes.
+#. **Design**: Create a 3D model using computer-aided design (CAD) software. See :ref:`3d_design_for_printing`.
+#. **Slicing**: Convert the 3D model into layers and generate G-code using slicing software. See :ref:`preparing_to_print`.
+#. **Printing**: The printer reads the :term:`G-code` and deposits material layer by layer to build the object.
+#. **Post-Processing**: After printing, the object may require cleaning, support removal, or other finishing processes. See :ref:`removing_cleaning_prints`.
 
 -----
 
-By understanding these basics, you're well on your way to becoming proficient in 3D printing. In the next sections, we'll delve deeper into 3D modeling, preparing files for printing, and hands-on printing techniques.
+By understanding these basics, you're well on your way to becoming proficient in 3D printing. Next, explore :ref:`3d_design_for_printing` to begin modeling, followed by :ref:`preparing_to_print` and :ref:`removing_cleaning_prints` for printing and cleanup techniques.
