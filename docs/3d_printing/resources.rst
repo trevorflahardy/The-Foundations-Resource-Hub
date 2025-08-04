@@ -88,6 +88,9 @@ Glossary of 3D Printing Terms
   Normal Supports
     Traditional support structures that are printed directly under overhangs, often leaving marks on the model.
 
+  Orientation
+    The positioning and rotation of a 3D model on the build platform, which affects print quality and support requirements.
+
   Brim
     A thin ring of material printed around the base of a model to improve bed adhesion.
 
