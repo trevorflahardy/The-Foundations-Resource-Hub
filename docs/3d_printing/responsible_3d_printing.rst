@@ -42,21 +42,26 @@ Failing to follow the lab's rules may result in consequences from both the lab a
 Printing Workflow Overview
 ==========================
 
-It's helpful to understand the overall workflow. This guide will go deeper into detail, but here's a quick overview of the process:
+It's helpful to understand the process of 3D printing at USF. An overview of the workflow is as follows, but further sections will go into further detail:
 
 1. **Prepare Your Design**
-   Ensure your CAD model is ready and export it as an STL file. Double-check dimensions and make sure your design is printable.
+   Ensure your CAD model is ready and export it as an STL file. Double-check dimensions and make sure your design is optimized for 3D-printing.
 
 2. **Slice Your Model**
-   Use the lab computers or bring your own laptop with slicing software to prepare your print file (G-code).
+   Use the DFX Lab desktop stations, or your own personal computer, to slice your STL file into G-code. See :ref:`what_is_slicing` for more details on slicing.
 
-3. **Start Your Print**
+3. **Request Print Permission**
+   The Foundations print lab staff must approve your G-code file before printing. Submit your G-code file, with other required materials, to the designated location and wait for confirmation.
+
+   .. ! TODO: Location needed
+
+4. **Start Your Print**
    Check everything (filament, bed, file) and begin your print, ensuring you stay nearby for the first few layers.
 
-4. **Monitor Progress**
+5. **Monitor Progress**
    Check on your print periodically. Long prints don't need constant supervision, but regular check-ins are important.
 
-5. **Remove and Clean Up**
+6. **Remove and Clean Up**
    Once finished and cooled, carefully remove your print and clean up any support material or debris.
 
 .. _rules_etiquette_lab:
