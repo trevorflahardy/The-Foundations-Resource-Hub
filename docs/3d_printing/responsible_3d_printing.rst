@@ -64,92 +64,8 @@ It's helpful to understand the process of 3D printing at USF. An overview of the
 #. **Remove and Clean Up**
    Once finished and cooled, carefully remove your print and clean up any support material or debris. See :ref:`removing_cleaning_prints`.
 
-.. _preparing_to_print:
-
-Preparing to Print
-==================
-
-You now have a model, but before you can print, you need to prepare it using slicing software. This process turns your 3D model into instructions the printer can understand.
-
-.. _what_is_slicing:
-
-What is Slicing?
-----------------
-
-:Slicing: is the process of turning your digital 3D model into printable instructions—layer by layer. These instructions are saved as :term:`G-code`, which your printer follows line by line.
-
-Understanding Key Slicing Concepts
-----------------------------------
-
-Infill
-^^^^^^
-
-:term:`Infill` is the internal pattern that fills the inside of your model and gives it strength and stability. At USF, you will mainly be using the **Grid** infill pattern.
-
-Supports
-^^^^^^^^
-
-When printing models with overhangs, you may need to add :term:`supports`. The lab uses :term:`tree supports` for complex structures and :term:`normal supports` for large flat overhangs.
-
-Key Settings to Review
-----------------------
-
-.. list-table::
-  :header-rows: 1
-
-  * - Setting
-    - Which Tab to Find It On
-    - What it Does
-    - Recommended value
-  * - Layer Height
-    - Dropdown bar
-    - Controls the thickness of each layer.
-    - ``0.20mm Standard`` for most prints, ``0.12mm Fine`` for detailed models, ``0.28mm Draft`` for faster prints
-  * - Wall loops
-    - Strength tab
-    - Controls the number of loops for the outer wall.
-    - ``2`` loops for most prints, ``4`` for high-strength parts only.
-  * - Infill
-    - Strength tab
-    - Controls the internal pattern and density.
-    - ``15%`` for most functional parts.
-  * - Infill Pattern
-    - Strength tab
-    - Controls the internal pattern used for infill.
-    - ``Grid`` for most prints, ``Gyroid`` for complex shapes, ``Adaptive Cubic`` for large models.
-  * - Enable supports
-    - Supports tab
-    - Controls whether supports are generated
-    - Toggle "Enable Support"
-  * - Support Type
-    - Supports tab
-    - Controls the type of supports used.
-    - ``Tree (auto)`` for complex models, ``Normal (auto)`` for large flat overhangs.
-  * - Brim Type
-    - Others tab
-    - Controls the type of brim used for bed adhesion.
-    - ``Auto`` for most prints, ``None`` for models with good bed adhesion (large flat bases).
-
-Preview Before Slicing
-----------------------
-
-Before generating G-code, use the **Preview** feature to check your settings:
-
-#. Click the **Slice Plate** button to generate a preview.
-#. Use the layer slider to inspect different heights of your print.
-#. Look for potential issues like insufficient supports or poor surface contact.
-
-Exporting G-Code to USB
------------------------
-Once you're satisfied:
-
-#. **Final Slice**: Click the **Slice Plate** button if you haven't already. This processes your model with all current settings.
-#. **Review Print Time**: Orca Flashforge will display estimated print time and material usage.
-#. **Export to File**: Select the dropdown next to the **Print plate** button and choose **Export G-code file**.
-#. **Choose Location**: Save the ``.gcode`` file to your USB drive using the format ``LastName_FirstInitial_Professor_Section_ModelName.gcode``.
-
 At the Printer
---------------
+==============
 
 With your G-code file ready on the USB drive:
 
@@ -220,9 +136,6 @@ After Your Print
 Starting Your First Print
 =========================
 
-.. TODO:
-   Add images for the printers, spools, etc so students can have a visual walk-through and reference as well. This
-   is vital.
 
 Your first print is exciting, and following these steps will set you up for success:
 
