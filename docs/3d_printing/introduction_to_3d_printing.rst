@@ -4,19 +4,6 @@
 Introduction to 3D Printing
 ***************************
 
-..
-  [Drafted Outline]
-  - **what-is-3d-printing**
-    - What is 3D printing?
-    - Real-world applications
-    - Additive vs. subtractive manufacturing
-  - **types-of-3d-printers**
-    - FDM vs. SLA vs. SLS (focus on FDM)
-    - The USF 3D printers - what we use & why
-  - **anatomy-of-a-3d-printer**
-    - Extruder, hotend, heated bed, stepper motors, etc.
-    - Basic operation cycle
-
 Welcome to the world of 3D printing! In this section, you'll explore the fundamentals of the technology, its various types, and the anatomy of a typical 3D printer. This knowledge serves as a foundation for your hands-on experiences in the lab.
 
 What is 3D Printing?
