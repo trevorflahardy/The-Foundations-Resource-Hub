@@ -78,7 +78,7 @@ html_theme_options = {
 
 html_extra_path = [examples_path]
 
-html_logo = "_static/the_arduino_guide.png"
+html_logo = "_static/foundations_resource_hub.png"
 
 html_static_path = ["_static", "images"]
 

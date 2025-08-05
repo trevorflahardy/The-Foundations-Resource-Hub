@@ -1,4 +1,4 @@
-![The Foundations Resource Hub Header](./docs/_static/the_arduino_guide.png)
+![The Foundations Resource Hub Header](./docs/_static/foundations_resource_hub.png)
 
 # The Foundations Resource Hub
 
