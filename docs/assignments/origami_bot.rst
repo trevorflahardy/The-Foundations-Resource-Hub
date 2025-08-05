@@ -213,7 +213,7 @@ For additional resources on building the Origami Bot, refer to the following:
 - Dr. Freidkes's **Building the Origami Robot** `YouTube video <https://www.youtube.com/watch?v=yOe0VYiVKno>`_.
 - `Dr. Schlaf's video <https://youtu.be/j6D9-GKhAyc?si=DjsJl7CnlX8HYTyr&t=959>`_ demonstrating how to use the h-bridge motor controller, you may start watching from ``15.59" - end``.
 - The :ref:`Origami Bot Code <origami_bot_code>` below.
-- The :ref:`H-Bridge Control Example <h_bridge>` in The Arduino Guide for more information on controlling DC motors with an H-Bridge.
+- The :ref:`H-Bridge Control Example <h_bridge>` in this handbook for more information on controlling DC motors with an H-Bridge.
 
 
 .. _origami_bot_code:
@@ -222,7 +222,7 @@ Origami Bot Code
 ----------------
 
 An updated version of the Origami Bot code is provided below. This has been expanded to include
-additional comments about what the code is doing, as well as align with The Arduino Guide's
+additional comments about what the code is doing, as well as align with this handbook's
 standards.
 
 Upload the code to your Arduino, and then test your robot using its power supply to check if it is working correctly. You do not need to keep the Arduino plugged into your computer to test the robot.

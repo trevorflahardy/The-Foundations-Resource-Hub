@@ -17,7 +17,7 @@ sys.path.append(os.path.abspath("extensions"))
 examples_path = os.path.abspath("../examples")
 sys.path.append(examples_path)
 
-project = "The Arduino Guide"
+project = "The EGN 3000L Handbook"
 copyright = "2025, Trevor Flahardy, Jason Shaw"
 author = "Trevor Flahardy, Jason Shaw"
 release = "1.0.0"
@@ -84,10 +84,10 @@ html_static_path = ["_static", "images"]
 
 # The name for this set of Sphinx documents.  If None, it defaults to
 # "<project> v<release> documentation".
-html_title = "The Arduino Guide"
+html_title = "The EGN 3000L Handbook"
 
 # A shorter title for the navigation bar.  Default is the same as html_title.
-html_short_title = "Arduino Guide"
+html_short_title = "EGN 3000L Handbook"
 
 
 html_favicon = "_static/favicon.ico"
@@ -101,9 +101,9 @@ arduino_style = "arduino"
 latex_documents = [
     (
         "index",
-        "arduino_tutorial.tex",
-        "The Arduino Guide",
-        "Arduino Tutorial",
+        "egn3000l_handbook.tex",
+        "The EGN 3000L Handbook",
+        "Engineering Lab Tutorial",
         "manual",
     ),
 ]

@@ -1,9 +1,9 @@
 .. _introduction:
 
-Introduction to Arduino
-=======================
+Introduction to Arduino Programming
+===================================
 
-This section will introduce you to the Arduino programming language and the Arduino platform. You'll learn what a programming language is, why it's important, and how it relates to Arduino and what you'll be doing in the Engineering Lab course. By the end of this section, you'll have a solid understanding of the fundamentals of Arduino programming and be ready to dive into more advanced topics.
+This section introduces the Arduino programming language and the Arduino platform used throughout the course. You'll learn what a programming language is, why it's important, and how it fits alongside the circuit design and fabrication work you'll be doing in the Engineering Lab. By the end of this section, you'll have a solid understanding of the fundamentals of Arduino programming and be ready to integrate them into more advanced topics.
 
 What is a Programming Language?
 -------------------------------
@@ -13,10 +13,10 @@ In many ways, programming languages are similar to human languages. They have ru
 
 Programming languages serve various purposes, from automating repetitive tasks to building complex systems like websites, games, and embedded devices. Arduino's programming language is designed to simplify communication with "hardware" (the physical components of a computer or electronic system that you can see and touch, like circuit boards, wires, and sensors), allowing you to control electronic components like LEDs, motors, and sensors with ease.
 
-Think of a programming language as a bridge between your ideas and a machine's capabilities. By learning the Arduino programming language, you'll gain the tools to turn your ideas into functional, tangible projects.
+Think of a programming language as a bridge between your ideas and a machine's capabilities. By learning the Arduino programming language, you'll gain the tools to turn your ideas into functional, tangible projects that interact with the circuits and parts you create.
 
-Introduction to Arduino
-------------------------
+Arduino Platform Overview
+-------------------------
 
 Arduino is an "open-source" (fancy word for publicly available and editable) platform that combines both hardware and software, making it a powerful tool for building electronic projects. It is widely used in education, prototyping, and hobbyist projects because of its simplicity and versatility. The hardware consists of microcontroller boards, which act as the "brains" of your projects, while the software provides the tools to write, upload, and run code on these boards.
 
