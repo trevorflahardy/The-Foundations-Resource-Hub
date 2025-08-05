@@ -37,6 +37,8 @@ The full list of DFX lab rules should be reviewed `here <http://www.eng.usf.edu/
 
 Failing to follow the lab's rules may result in consequences from both the lab and from us. These can include permanent banishment from the lab, fees, and/or a failing grade in the course.
 
+.. quizdown:: ../quizzes/responsible_printing_check.md
+
 .. _printing_workflow_at_usf:
 
 Printing Workflow Overview
@@ -249,6 +251,8 @@ Close-toed shoes are the only requirement for 3D printing, however if you're usi
 .. tip::
 
    If you have long hair, tie it back to prevent it from getting caught in moving parts. Loose clothing should also be avoided.
+
+.. quizdown:: ../quizzes/responsible_printing_quiz.md
 
 .. _consequences_violations:
 

@@ -55,6 +55,8 @@ Selective Laser Sintering (SLS)
 
 :term:`SLS<SLS (Selective Laser Sintering)>` employs a laser to sinter powdered material, typically nylon or other polymers, fusing the particles together to form a solid structure. SLS does not require support structures, allowing for the creation of complex geometries. It's commonly used in industrial applications for functional parts
 
+.. quizdown:: ../quizzes/intro_to_3d_printing_check.md
+
 The USF 3D Printers - What We Use & Why
 ---------------------------------------
 
@@ -86,6 +88,8 @@ Basic Operation Cycle
 #. **Slicing**: Convert the 3D model into layers and generate G-code using slicing software. See :ref:`preparing_to_print`.
 #. **Printing**: The printer reads the :term:`G-code` and deposits material layer by layer to build the object.
 #. **Post-Processing**: After printing, the object may require cleaning, support removal, or other finishing processes. See :ref:`removing_cleaning_prints`.
+
+.. quizdown:: ../quizzes/intro_to_3d_printing_quiz.md
 
 -----
 
