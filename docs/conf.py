@@ -17,7 +17,7 @@ sys.path.append(os.path.abspath("extensions"))
 examples_path = os.path.abspath("../examples")
 sys.path.append(examples_path)
 
-project = "The Arduino Guide"
+project = "The Foundations Resource Hub"
 copyright = "2025, Trevor Flahardy, Jason Shaw"
 author = "Trevor Flahardy, Jason Shaw"
 release = "1.0.0"
@@ -78,16 +78,16 @@ html_theme_options = {
 
 html_extra_path = [examples_path]
 
-html_logo = "_static/the_arduino_guide.png"
+html_logo = "_static/foundations_resource_hub.png"
 
 html_static_path = ["_static", "images"]
 
 # The name for this set of Sphinx documents.  If None, it defaults to
 # "<project> v<release> documentation".
-html_title = "The Arduino Guide"
+html_title = "The Foundations Resource Hub"
 
 # A shorter title for the navigation bar.  Default is the same as html_title.
-html_short_title = "Arduino Guide"
+html_short_title = "Foundations Hub"
 
 
 html_favicon = "_static/favicon.ico"
@@ -101,9 +101,9 @@ arduino_style = "arduino"
 latex_documents = [
     (
         "index",
-        "arduino_tutorial.tex",
-        "The Arduino Guide",
-        "Arduino Tutorial",
+        "the_foundations_resource_hub.tex",
+        "The Foundations Resource Hub",
+        "Engineering Lab Tutorial",
         "manual",
     ),
 ]

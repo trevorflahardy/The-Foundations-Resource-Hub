@@ -117,7 +117,7 @@ Example: Using the ``Servo`` Library
 Consider the `Servo Library
 Documentation <https://docs.arduino.cc/libraries/servo/>`__:
 
-.. figure:: ./images/servo_library_documentation.png
+.. figure:: ../images/servo_library_documentation.png
    :alt: Servo Library Documentation
 
    Servo Library Documentation
@@ -127,7 +127,7 @@ in the ``Servo`` library, such as ``attach()``, ``write()``, and
 ``detach()``. These functions allow you to control the position of a
 servo motor.
 
-.. figure:: ./images/servo_library_methods.png
+.. figure:: ../images/servo_library_methods.png
    :alt: Servo Library Methods
 
    Servo Library Methods
@@ -136,7 +136,7 @@ Each function dropdown details the parameters it takes, what it does,
 and how to use it. For example, the ``attach()`` function is used to
 connect the servo motor to a specific pin on the Arduino board.
 
-.. figure:: ./images/servo_library_method_closeup.png
+.. figure:: ../images/servo_library_method_closeup.png
    :alt: Servo Library Attach Method
 
    Servo Library Attach Method
@@ -144,4 +144,4 @@ connect the servo motor to a specific pin on the Arduino board.
 To see the use of the ``Servo`` library's methods, see :ref:`Servo Motor
 Control <servo_motor_control>`.
 
-.. quizdown:: quizzes/libraries_quiz.md
+.. quizdown:: ../quizzes/libraries_quiz.md

@@ -441,7 +441,7 @@ you want to control the built-in LED without specifying a pin number.
     These variables will be used extensively in your Arduino projects. Don't
     worry about memorizing them now; you'll become familiar with them over time.
 
-.. quizdown:: quizzes/variables_quiz.md
+.. quizdown:: ../quizzes/variables_quiz.md
 
 .. _variable_scope:
 

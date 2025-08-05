@@ -121,5 +121,5 @@ Here's the updated code:
    can see what was easily updated. You can keep the comments in your code
    to help you understand what each part does, if you wish.
 
-.. quizdown:: quizzes/second_program_quiz.md
+.. quizdown:: ../quizzes/second_program_quiz.md
 
