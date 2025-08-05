@@ -56,12 +56,28 @@ The Origami Bot uses the following electronic components:
 Electronic Schematic
 """""""""""""""""""""
 
-The schematic for the Origami Bot is shown below:
+The schematic for the Origami Bot is shown below. Understanding this schematic is crucial for successful assembly and troubleshooting.
 
 .. figure:: ../images/origami_bot_schematic.png
     :alt: Origami Bot Schematic
 
     The schematic for the Origami Bot. Follow the wire connections to connect the H-Bridge, Arduino, and motors together.
+
+**Reading the Schematic - Key Points:**
+
+.. important::
+    **Power Setup**: The circuit uses two power levels:
+    
+    - **5V**: Arduino control signals
+    - **6V**: Battery power for motors (more power = faster motors)
+    
+    **Critical Rule**: Always connect external power to Arduino's **VIN pin**, never the 5V pin!
+
+**Why 6V Battery Power Matters:**
+
+- Arduino pins can only provide ~20mA of current
+- Motors need 100-200mA to spin properly  
+- 6V battery pack provides the extra power motors need
 
 .. warning::
 
@@ -71,6 +87,10 @@ The schematic for the Origami Bot is shown below:
 
     - Supply the power and ground from the battery pack to the H-Bridge, noting that the power from the battery must be plugged into the ``12V`` terminal on the H-Bridge.
     - Supply power to the Arduino from the H-Bridge using the ``5V`` terminal on the H-Bridge into the ``VIN`` pin on the Arduino. This will power the Arduino.
+
+**Power Supply Calculations:**
+
+4 AA batteries = 4 × 1.5V = 6V total (more power than Arduino's 5V)
 
 .. important::
 
@@ -85,14 +105,13 @@ The H-bridge, however, can handle up to ``46V`` of power! In other words, the H-
 loves power! A higher supply of power means the motors can run faster and have more torque.
 So, by plugging the H-bridge and Arduino Uno into the breadboard, you can power the motors with ``6V`` of power instead of ``5V``.
 
+**Critical Wiring Rule:**
+
 .. important::
-
-    Because you are supplying ``6V`` of power into the Arduino, which **only runs off 5V**,
-    you must **plug in the power line from the breadboard to the VIN pin on the Arduino**.
-
-    The ``VIN`` pin on the Arduino is the input voltage pin. It can handle up to ``12V`` of power (the Arduino steps this voltage down for you automatically). This pin is what you want to use when supplying power to the Arduino from an external source.
-
-    If you plug more than ``5V`` into the ``5V`` pin, you can **damage the Arduino**. As a rule of thumb, always use the ``3.3V`` or ``5V`` pins to power other components, and power your Arduino using the ``VIN`` pin
+    **VIN vs 5V Pin**: Because you're using 6V batteries, you must connect power to Arduino's **VIN pin**, not the 5V pin.
+    
+    - **VIN pin**: Can handle 6-12V (has built-in voltage regulator)
+    - **5V pin**: Only for 5V - connecting 6V here will damage the Arduino!
 
 Plugging Wires into H-Bridge Screw Terminals
 """"""""""""""""""""""""""""""""""""""""""""
@@ -184,20 +203,34 @@ By switching the wires, you can change the direction of the motor's rotation. We
 FAQs
 ^^^^
 
-One Motor / Wheel Not Working or Both Not Working
-""""""""""""""""""""""""""""""""""""""""""""""""""
+**Simple Troubleshooting Steps**
 
-If one motor or wheel is not working, check the following:
+**If Motors Don't Work:**
 
-- **Check the wiring**. Make sure the wires are securely connected to the H-Bridge and motor.
-- **Check the motor**. If the motor is not working, check the wiring going to it. Try wiggling the wires and see if the motor starts spinning. This is a **very common** issue.
+1. **Check power**: Are batteries connected? Does Arduino LED light up?
+2. **Wiggle motor wires**: Loose connections are the #1 problem
+3. **Check motor wires**: Both motor wires must connect to same H-bridge side
+4. **Check grounds**: Arduino and H-bridge must share ground connection
 
-If both motors are not working, check the following:
+**If Motor Spins Wrong Direction:**
 
-- **Check the power**. Make sure the batteries are connected and have power. Even if you have your Arduino plugged into your computer, **the batteries must be connected**.
-- **Check the wiring**. Make sure the wires are securely connected to the H-Bridge and motors.
+Simply swap the two motor wires on the H-Bridge terminals - this is normal!
 
-If all else fails, **ask for help**. The Foundations TAs are here to help you troubleshoot and get your robot working.
+**When Motors Work Sometimes:**
+
+- Check battery voltage with multimeter (should read ~6V)
+- Tighten H-Bridge screw terminals
+- Re-seat breadboard connections
+
+**Still Not Working?**
+
+Ask TAs for help and mention:
+- Which troubleshooting steps you tried
+- Whether it affects one or both motors
+- What your multimeter shows for battery voltage
+
+.. seealso::
+    For detailed electrical troubleshooting: :ref:`Circuit Troubleshooting Guide <electrical_troubleshooting>`
 
 Can I Use a 3D Printer or Other Chassis Type?
 """""""""""""""""""""""""""""""""""""""""""""
@@ -214,7 +247,7 @@ For additional resources on building the Origami Bot, refer to the following:
 - `Dr. Schlaf's video <https://youtu.be/j6D9-GKhAyc?si=DjsJl7CnlX8HYTyr&t=959>`_ demonstrating how to use the h-bridge motor controller, you may start watching from ``15.59" - end``.
 - The :ref:`Origami Bot Code <origami_bot_code>` below.
 - The :ref:`H-Bridge Control Example <h_bridge>` in The Arduino Guide for more information on controlling DC motors with an H-Bridge.
-
+- :ref:`Circuit Troubleshooting Guide <electrical_troubleshooting>` for systematic debugging help.
 
 .. _origami_bot_code:
 

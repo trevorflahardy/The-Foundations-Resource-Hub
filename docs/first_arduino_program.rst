@@ -142,4 +142,14 @@ Congrats! You've just written and run your first Arduino program. This
 is a simple example, but it's a great starting point for learning more
 about programming and working with Arduino.
 
+**Next Steps: Circuit Work**
+
+Later assignments will involve building circuits with motors and sensors. When you're ready for that, you'll find these resources helpful:
+
+.. seealso::
+    **For Circuit Assignments:**
+    
+    - :ref:`Circuit Troubleshooting Guide <electrical_troubleshooting>` - Essential debugging reference
+    - :ref:`Origami Bot <origami_bot>` - Your first robot building assignment
+
 .. quizdown:: quizzes/first_program_quiz.md

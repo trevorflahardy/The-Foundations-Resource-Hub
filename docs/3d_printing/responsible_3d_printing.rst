@@ -190,7 +190,7 @@ Even experienced engineers expect to encounter failures occasionally. The key is
 - **Monitor closely**: Minor stringing, small layer shifts, or support issues that don't affect the main print
 - **Quick fixes**: Minor warping (press down gently), loose filament, or temperature fluctuations
 
-For detailed troubleshooting of specific issues like warping, layer shifts, and stringing, see the :ref:`iterating_design` page.
+For detailed troubleshooting of specific issues like warping, layer shifts, and stringing, see the iterating design page.
 
 .. _safety_first:
 
