@@ -69,7 +69,7 @@ In the images above, you can see orange and blue parts of a sliced model. Orange
 
 The left most side of the model starts with a 45 degree angle with each section decreasing the angle. It goes: ``45``, ``35``, ``25``, ``15``, then ``10`` degrees.
 
-Although the slicer can consider the 35 and 25 degrees "acceptable", these are in ideal conditions and are not garaunteed to print well. External factors like cooling, filament type, and printer settings can all affect the print quality. In your designs, stick with 45 degrees for the best results and go lower only if you have to.
+Although the slicer can consider the 35 and 25 degrees "acceptable", these are in ideal conditions and are not guaranteed to print well. External factors like cooling, filament type, and printer settings can all affect the print quality. In your designs, stick with 45 degrees for the best results and go lower only if you have to.
 
 There is a quick workaround for getting really low angle overhangs to print better; you can decrease layer height from the default ``0.20 mm`` to something lower like ``0.08 mm`` per layer.
 
