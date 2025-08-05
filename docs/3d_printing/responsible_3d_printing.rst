@@ -53,9 +53,7 @@ It's helpful to understand the process of 3D printing at USF. An overview of the
    Use the DFX Lab desktop stations, or your own personal computer, to slice your STL file into G-code. See :ref:`preparing_to_print` for details on slicing.
 
 #. **Request Print Permission**
-   The Foundations print lab staff must approve your G-code file before printing. Submit your G-code file, with other required materials, to the designated location and wait for confirmation.
-
-   .. todo:: Location needed.
+   The Foundations print lab staff must approve your G-code file before printing. Submit your G-code file, with other required materials, to the designated location and wait for confirmation. You can find where to submit your files on your Foundations Canvas modules page.
 
 #. **Start Your Print**
    Check everything (filament, bed, file) and begin your print, ensuring you stay nearby for the first few layers.
