@@ -173,7 +173,7 @@ Key Rules and Limitations
      int numbers[3] = {1, 2, 3};
     int invalidAccess = numbers[5]; // Not good! This array only has 3 elements.
 
-.. quizdown:: quizzes/arrays_quiz.md
+.. quizdown:: ../quizzes/arrays_quiz.md
 
 .. note::
 

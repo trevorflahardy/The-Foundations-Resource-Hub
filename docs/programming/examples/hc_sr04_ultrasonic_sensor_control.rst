@@ -18,5 +18,5 @@ Ultrasonic Sensor using an Arduino board.
 
 --------------
 
-.. whole-literal-include:: ../../examples/hc_sr04_ultrasonic_sensor.ino
+.. whole-literal-include:: ../../../examples/hc_sr04_ultrasonic_sensor.ino
     :language: cpp

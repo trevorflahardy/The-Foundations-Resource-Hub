@@ -11,5 +11,5 @@ This example walks through how to control an IR Sensor using an Arduino board. Y
     `Using an IR Sensor with the Arduino <https://youtu.be/vi4hkrrkwkY?si=efpiPUa83ZOBUJIc>`_
     , a guide developed specifically for USF students.
 
-.. whole-literal-include:: ../../examples/ir_sensor.ino
+.. whole-literal-include:: ../../../examples/ir_sensor.ino
     :language: cpp

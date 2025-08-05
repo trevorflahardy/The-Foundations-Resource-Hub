@@ -463,7 +463,7 @@ You can use ``continue`` and ``break`` with **both** ``for`` and ``while``
 loops. These statements give you more control over the flow of your
 loops, allowing you to fine-tune your code based on specific conditions.
 
-.. quizdown:: quizzes/loops_quiz.md
+.. quizdown:: ../quizzes/loops_quiz.md
 
 Loops vs. ``loop()``
 ~~~~~~~~~~~~~~~~~~~~

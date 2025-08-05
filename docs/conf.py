@@ -17,7 +17,7 @@ sys.path.append(os.path.abspath("extensions"))
 examples_path = os.path.abspath("../examples")
 sys.path.append(examples_path)
 
-project = "The EGN 3000L Handbook"
+project = "The Foundations Resource Hub"
 copyright = "2025, Trevor Flahardy, Jason Shaw"
 author = "Trevor Flahardy, Jason Shaw"
 release = "1.0.0"
@@ -84,10 +84,10 @@ html_static_path = ["_static", "images"]
 
 # The name for this set of Sphinx documents.  If None, it defaults to
 # "<project> v<release> documentation".
-html_title = "The EGN 3000L Handbook"
+html_title = "The Foundations Resource Hub"
 
 # A shorter title for the navigation bar.  Default is the same as html_title.
-html_short_title = "EGN 3000L Handbook"
+html_short_title = "Foundations Hub"
 
 
 html_favicon = "_static/favicon.ico"
@@ -101,8 +101,8 @@ arduino_style = "arduino"
 latex_documents = [
     (
         "index",
-        "egn3000l_handbook.tex",
-        "The EGN 3000L Handbook",
+        "the_foundations_resource_hub.tex",
+        "The Foundations Resource Hub",
         "Engineering Lab Tutorial",
         "manual",
     ),

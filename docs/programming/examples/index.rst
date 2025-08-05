@@ -1,11 +1,10 @@
-.. _additional_program_examples:
+.. _program_examples:
 
 
-Additional Program Examples
-===========================
+Program Examples
+================
 
-A collection of additional program examples has been created to help you
-learn how to use the Arduino board and the components in your project kit.
+A collection of program examples has been created to help you learn how to use the Arduino board and the components in your project kit.
 Each example walks through how to control a specific component using an
 Arduino board.
 

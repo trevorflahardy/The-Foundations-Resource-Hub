@@ -1,4 +1,4 @@
-.. _introduction:
+.. _programming_introduction:
 
 Introduction to Arduino Programming
 ===================================
@@ -73,7 +73,7 @@ Analog vs. PWM: What's the Difference?
 
 Consider the following image:
 
-.. image:: ./images/pwm_vs_analog.png
+.. image:: ../images/pwm_vs_analog.png
    :alt: PWM vs Analog Pins
    :align: center
 

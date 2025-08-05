@@ -18,5 +18,5 @@ control a Servo using an Arduino board.
 
 --------------
 
-.. whole-literal-include:: ../../examples/servo_motor.ino
+.. whole-literal-include:: ../../../examples/servo_motor.ino
     :language: cpp

@@ -7,5 +7,5 @@ This example details how to use a photocell with an Arduino board. Photocells ar
 
 --------------
 
-.. whole-literal-include:: ../../examples/photocell.ino
+.. whole-literal-include:: ../../../examples/photocell.ino
     :language: cpp

@@ -14,5 +14,5 @@ This example walks through how to control an H-Bridge using an Arduino board.  Y
 --------------
 
 
-.. whole-literal-include:: ../../examples/h_bridge.ino
+.. whole-literal-include:: ../../../examples/h_bridge.ino
     :language: cpp
