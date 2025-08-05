@@ -133,6 +133,9 @@ So we have covered both types of supports, normal and tree, but which one should
 Which to use depends on your model's geometry and the specific overhangs you need to support. As you gain experience, you'll develop a feel for which type works best in different situations. Always feel free to reach out for help if you are unsure!
 
 
+.. quizdown:: ../quizzes/3d_printing/preparing_to_print_check.md
+
+
 Layer Height
 ^^^^^^^^^^^^^
 
@@ -436,6 +439,8 @@ Once you're satisfied with your slicing settings and preview, it's time to expor
   Note this export is only for **one plate at a time**. If you have multiple plates, you'll need to export each one separately.
 
 Once your file is exported, you're ready to move to the printer. See :ref:`responsible_3d_printing` for on-printer steps and lab etiquette.
+
+.. quizdown:: ../quizzes/3d_printing/preparing_to_print_quiz.md
 
 -----
 

@@ -76,6 +76,8 @@ Insufficient support; nozzle temperature too high
 .. tip::
    Keep a simple log of each failed print: iteration number, slicer changes, and outcome. Over time you'll build a personal troubleshooting database.
 
+.. quizdown:: ../quizzes/3d_printing/iterating_design_check.md
+
 Design-Test-Repeat Mindset
 ==========================
 
@@ -100,6 +102,8 @@ Once you're comfortable with troubleshooting, explore turning 'working' designs 
 - In your CAD software, try adding features like fillets/chamfers, screw-holes for easier assembly, and more.
 
 3D printing makes it extremely easy to iterate your designs. Embracing this process will help you become a highly effective designer and printer. For examples to test your skills, see :ref:`project_examples_and_challenges`.
+
+.. quizdown:: ../quizzes/3d_printing/iterating_design_quiz.md
 
 .. rubric:: References
 
