@@ -24,7 +24,7 @@ Understanding different file formats is crucial for 3D printing:
 - :term:`STEP (Standard for the Exchange of Product Model Data)`: Used for sharing models between different CAD programs, preserving complex geometry and assembly information.
 - :term:`3MF (3D Manufacturing Format)`: A modern format that includes color, material, and other metadata, aiming to be a comprehensive solution for 3D printing needs.
 
-.. quizdown:: ../quizzes/design_for_printing_check.md
+.. quizdown:: ../quizzes/3d_printing/design_for_printing_check.md
 
 Design Thinking for Printing
 ============================
@@ -266,7 +266,7 @@ Once your design is complete in Tinkercad:
 #. **Choose the File Format**: Select .STL for 3D printing.
 #. **Download the File**: The file will be saved to your computer, ready to be imported into slicing software like OrcaSlicer.
 
-.. quizdown:: ../quizzes/design_for_printing_quiz.md
+.. quizdown:: ../quizzes/3d_printing/design_for_printing_quiz.md
 
 -----
 

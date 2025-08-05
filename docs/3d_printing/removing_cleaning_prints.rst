@@ -29,7 +29,7 @@ Improper removal can damage both your print and the USF 3D printers. It's import
 
    **Always put the plate back on the printer afterwards.** Do not walk away from the printer with the plate in hand. Warped, lost, or misplaced plates will result in revocation of your printing privileges, a replacement fee, and further consequences.
 
-.. quizdown:: ../quizzes/removing_cleaning_check.md
+.. quizdown:: ../quizzes/3d_printing/removing_cleaning_check.md
 
 Removing Supports
 =================
@@ -71,7 +71,7 @@ Final Cleanup & Lab Courtesy
 
 For tips on improving future prints, see :ref:`iterating_design`.
 
-.. quizdown:: ../quizzes/removing_cleaning_quiz.md
+.. quizdown:: ../quizzes/3d_printing/removing_cleaning_quiz.md
 
 .. rubric:: References
 
