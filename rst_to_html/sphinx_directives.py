@@ -10,7 +10,7 @@ from docutils.parsers.rst import Directive, directives
 
 
 class AdmonitionDirective(Directive):
-    """Handle admonition directives like note, tip, warning"""
+    """Handle admonition directives like note, tip, warning as blockquotes"""
 
     has_content: bool = True
     optional_arguments: int = 1
@@ -18,15 +18,13 @@ class AdmonitionDirective(Directive):
     option_spec: dict[str, object] = {}
 
     def run(self) -> list[nodes.Node]:
-        """Create properly styled admonition"""
+        """Create blockquote with bold title for Canvas compatibility"""
         admonition_type = self.name.lower()
 
-        # Create the admonition container
-        admonition = nodes.admonition()
-        admonition["classes"].append("admonition")
-        admonition["classes"].append(admonition_type)
+        # Create a blockquote container
+        blockquote = nodes.block_quote()
 
-        # Add title
+        # Create title mapping
         title_map = {
             "note": "Note",
             "tip": "Tip",
@@ -44,15 +42,50 @@ class AdmonitionDirective(Directive):
         if self.arguments:
             title_text = self.arguments[0]
 
-        title = nodes.title(title_text, title_text)
-        title["classes"].append("admonition-title")
-        admonition.append(title)
+        # Create the first paragraph with bold title
+        title_para = nodes.paragraph()
+        title_strong = nodes.strong()
+        title_strong += nodes.Text(f"{title_text}: ")
+        title_para += title_strong
 
-        # Add content
+        # If we have content, parse and add it
         if self.content:
-            self.state.nested_parse(self.content, self.content_offset, admonition)
+            # Parse the content into a temporary container
+            content_container = nodes.container()
+            self.state.nested_parse(
+                self.content, self.content_offset, content_container
+            )
 
-        return [admonition]
+            # If there's content, merge it properly
+            if content_container.children:
+                first_content = content_container.children[0]
+
+                # If the first content is a paragraph, merge with title
+                if isinstance(first_content, nodes.paragraph):
+                    # Add the content of the first paragraph to our title paragraph
+                    for child in first_content.children:
+                        title_para += child
+
+                    # Add the merged paragraph to blockquote
+                    blockquote += title_para
+
+                    # Add any remaining paragraphs/content
+                    for remaining in content_container.children[1:]:
+                        blockquote += remaining
+                else:
+                    # If first content is not a paragraph, add title paragraph first
+                    blockquote += title_para
+                    # Then add all content
+                    for content_node in content_container.children:
+                        blockquote += content_node
+            else:
+                # No content, just add the title
+                blockquote += title_para
+        else:
+            # No content, just add the title
+            blockquote += title_para
+
+        return [blockquote]
 
 
 class SilentDirective(Directive):
