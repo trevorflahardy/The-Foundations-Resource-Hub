@@ -27,19 +27,12 @@ from . import RSTConverter, Config
     default=Path("docs/_build_raw/html"),
     help="Output directory for HTML files (default: docs/_build_raw/html)",
 )
-@click.option(
-    "--css-dir",
-    type=click.Path(exists=True, file_okay=False, path_type=Path),
-    default=Path("docs/_build/html/_static"),
-    help="Directory containing CSS files to inline (default: docs/_build/html/_static)",
-)
 @click.option("--verbose", "-v", is_flag=True, help="Enable verbose output")
 @click.option("--no-canvas", is_flag=True, help="Disable Canvas LMS compatibility mode")
 @click.version_option(version="1.0.0", prog_name="rst-to-html")
 def main(
     source_dir: Path,
     output_dir: Path,
-    css_dir: Path,
     verbose: bool,
     no_canvas: bool,
 ) -> None:
@@ -67,7 +60,6 @@ def main(
         config = Config.from_args(
             source_dir=source_dir,
             output_dir=output_dir,
-            css_dir=css_dir,
             verbose=verbose,
             canvas_mode=not no_canvas,
         )
@@ -76,7 +68,6 @@ def main(
             click.echo("🔧 Configuration:")
             click.echo(f"   Source: {config.source_dir}")
             click.echo(f"   Output: {config.output_dir}")
-            click.echo(f"   CSS Dir: {config.css_dir}")
             click.echo(f"   Canvas Mode: {config.canvas_mode}")
             click.echo("")
 

@@ -16,7 +16,6 @@ class Config:
     # Input/Output paths
     source_dir: Path = Path("docs")
     output_dir: Path = Path("docs/_build_raw/html")
-    css_dir: Path = Path("docs/_build/html/_static")
 
     # Conversion settings
     input_encoding: str = "utf-8"
@@ -81,14 +80,12 @@ class Config:
         # Ensure paths are Path objects
         self.source_dir = Path(self.source_dir)
         self.output_dir = Path(self.output_dir)
-        self.css_dir = Path(self.css_dir)
 
     @classmethod
     def from_args(
         cls,
         source_dir: Path | str | None = None,
         output_dir: Path | str | None = None,
-        css_dir: Path | str | None = None,
         verbose: bool = False,
         canvas_mode: bool = True,
     ) -> Config:
@@ -102,8 +99,6 @@ class Config:
             config.source_dir = Path(source_dir)
         if output_dir:
             config.output_dir = Path(output_dir)
-        if css_dir:
-            config.css_dir = Path(css_dir)
 
         config.validate()
         return config

@@ -72,7 +72,7 @@ print(converter.get_conversion_summary(success_count, total_files))
 
 The `Config` class provides flexible configuration options:
 
-- **Paths**: `source_dir`, `output_dir`, `css_dir`
+- **Paths**: `source_dir`, `output_dir`
 - **Behavior**: `verbose`, `canvas_mode`, `aggressive_css_override`
 - **Docutils settings**: Encoding, header levels, syntax highlighting
 - **Static files**: Which directories to copy, which CSS files to include
