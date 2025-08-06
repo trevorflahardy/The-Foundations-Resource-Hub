@@ -18,6 +18,7 @@ This example shows how to control a servo motor using Arduino. Servo motors can 
 **Simple Troubleshooting:**
 - **Servo jitters**: Check power connections, may need external power supply
 - **Doesn't move**: Verify control wire is connected to correct pin
+
 .. seealso::
 
     For more information on the Servo motor, see the YouTube tutorial on
