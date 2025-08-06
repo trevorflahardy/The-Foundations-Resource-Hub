@@ -1,6 +1,6 @@
 # Contribution Guide
 
-Thank you for considering a contribution to **The Arduino Guide**. This folder contains guidelines for code style, documentation standards, and the development environment used to build and test the project.
+Thank you for considering a contribution to **The Foundations Resource Hub**. This folder contains guidelines for code style, documentation standards, and the development environment used to build and test the project.
 
 - [Code Style](code_style.md)
 - [Documentation Style](documentation_style.md)
