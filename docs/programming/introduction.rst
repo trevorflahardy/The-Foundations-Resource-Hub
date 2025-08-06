@@ -62,7 +62,7 @@ Arduino boards have different types of pins, each serving specific purposes. Und
 
 #. **Analog Pins**:
 
-Analog pins are used to read analog signals and convert them to digital values through a process called analog-to-digital conversion (ADC). These pins can detect a range of voltages (typically ``0-5V`` on most boards) and return a value between 0 and 1023.
+  Analog pins are used to read analog signals and convert them to digital values through a process called analog-to-digital conversion (ADC). These pins can detect a range of voltages (typically ``0-5V`` on most boards) and return a value between 0 and 1023.
 
 **When to Use Analog Pins:**
 
