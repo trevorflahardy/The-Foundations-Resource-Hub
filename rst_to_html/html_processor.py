@@ -232,6 +232,47 @@ class HTMLProcessor:
 
         return html_content
 
+    def style_whole_code_blocks(self, html_content: str) -> str:
+        """Style whole code blocks with green border and explanatory text"""
+        import re
+
+        # Look for the pattern: outer container div with inner highlight div and explanation div
+        pattern = r'<div class="docutils container">(.*?)<div class="docutils container">\s*<p>([^<]*whole code block[^<]*)</p>\s*</div>\s*</div>'
+
+        def convert_whole_code_block(match):
+            code_content = match.group(1).strip()
+            explanation_text = match.group(2).strip()
+
+            # Create the styled whole code block
+            styled_html = (
+                f'<div class="whole-code-block" style="'
+                f"border: 2px solid #22c55e; "
+                f"border-radius: 6px; "
+                f"margin: 1em 0; "
+                f"overflow: hidden; "
+                f'background-color: white;">'
+                f"{code_content}"
+                f'<div class="whole-code-block-explanation" style="'
+                f"background-color: #dcfce7; "
+                f"color: #166534; "
+                f"padding: 0.5em 1em; "
+                f"border-top: 1px solid #22c55e; "
+                f"font-size: 0.9em; "
+                f"font-family: Arial, sans-serif; "
+                f'margin: 0;">'
+                f'<p style="margin: 0;">{explanation_text}</p>'
+                f"</div>"
+                f"</div>"
+            )
+
+            return styled_html
+
+        html_content = re.sub(
+            pattern, convert_whole_code_block, html_content, flags=re.DOTALL
+        )
+
+        return html_content
+
     def process_html(self, html_content: str) -> str:
         """Apply all HTML processing steps"""
         html_content = self.clean_system_messages(html_content)
@@ -239,6 +280,7 @@ class HTMLProcessor:
         html_content = self.process_code_highlighting(html_content)
         html_content = self.process_ref_links(html_content)
         html_content = self.style_admonitions(html_content)
+        html_content = self.style_whole_code_blocks(html_content)
         html_content = self.wrap_tables(html_content)
 
         return html_content

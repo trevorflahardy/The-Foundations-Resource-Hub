@@ -138,6 +138,70 @@ def ref_role(name, rawtext, text, lineno, inliner, options=None, content=None):
         return [strong_node], []
 
 
+class WholeCodeBlockDirective(Directive):
+    """Handle whole-code-block directive with green border and explanatory text"""
+
+    has_content: bool = True
+    required_arguments: int = 1
+    optional_arguments: int = 0
+    final_argument_whitespace: bool = False
+    option_spec: dict[str, object] = {}
+
+    def run(self) -> list[nodes.Node]:
+        """Create a code block with green border and explanatory text"""
+        # Get the language from the first argument
+        language = self.arguments[0] if self.arguments else "text"
+
+        # Create the container div for the whole code block
+        container = nodes.container()
+        container.attributes["style"] = (
+            "border: 2px solid #22c55e; "
+            "border-radius: 6px; "
+            "margin: 1em 0; "
+            "overflow: hidden; "
+            "background-color: white;"
+        )
+
+        # Create the code block
+        code_content = "\n".join(self.content)
+
+        # Create a literal block (code block)
+        code_block = nodes.literal_block()
+        code_block.attributes["classes"] = ["code", language]
+        code_block.attributes["xml:space"] = "preserve"
+        code_block += nodes.Text(code_content)
+
+        # Add some styling to the code block to remove default margins
+        code_block.attributes["style"] = (
+            "margin: 0; " "border-radius: 0; " "border: none;"
+        )
+
+        container.append(code_block)
+
+        # Create the explanatory text div
+        explanation_div = nodes.container()
+        explanation_div.attributes["style"] = (
+            "background-color: #dcfce7; "
+            "color: #166534; "
+            "padding: 0.5em 1em; "
+            "border-top: 1px solid #22c55e; "
+            "font-size: 0.9em; "
+            "font-family: Arial, sans-serif;"
+        )
+
+        # Add the explanatory text
+        explanation_text = nodes.paragraph()
+        explanation_text.attributes["style"] = "margin: 0;"
+        explanation_text += nodes.Text(
+            "This is a whole code block. It can be copy pasted by itself in your Arduino IDE."
+        )
+
+        explanation_div.append(explanation_text)
+        container.append(explanation_div)
+
+        return [container]
+
+
 def register_sphinx_directives() -> None:
     """Register handlers for common Sphinx directives and roles"""
 
@@ -157,6 +221,9 @@ def register_sphinx_directives() -> None:
 
     for directive_name in admonition_directives:
         directives.register_directive(directive_name, AdmonitionDirective)
+
+    # Register the whole-code-block directive
+    directives.register_directive("whole-code-block", WholeCodeBlockDirective)
 
     # Register the ref role
     from docutils.parsers.rst import roles
