@@ -44,19 +44,6 @@ class FileUtils:
                 print(f"Copied {static_dir} to output directory")
 
     @staticmethod
-    def get_css_files(css_dir: Path, custom_css_files: List[str]) -> List[Path]:
-        """Find available custom CSS files"""
-        css_files = []
-
-        if css_dir.exists():
-            for css_name in custom_css_files:
-                css_path = css_dir / css_name
-                if css_path.exists():
-                    css_files.append(css_path)
-
-        return css_files
-
-    @staticmethod
     def ensure_output_dir(output_file: Path) -> None:
         """Ensure the output directory exists for a file"""
         output_file.parent.mkdir(parents=True, exist_ok=True)

@@ -11,7 +11,6 @@ from docutils.parsers.rst import Parser
 from docutils.writers.html5_polyglot import Writer
 
 from .config import Config
-from .css_manager import CSSManager
 from .file_utils import FileUtils
 from .html_processor import HTMLProcessor
 from .sphinx_directives import register_sphinx_directives
@@ -22,9 +21,6 @@ class RSTConverter:
 
     def __init__(self, config: Config):
         self.config = config
-        self.css_manager = CSSManager(
-            source_dir=config.source_dir, canvas_mode=config.canvas_mode
-        )
         self.file_utils = FileUtils()
         self.html_processor = HTMLProcessor()
 
@@ -60,9 +56,6 @@ class RSTConverter:
             # Process HTML content
             html_output = self.html_processor.process_html(html_output)
 
-            # Apply CSS inlining
-            html_output = self._apply_css_styling(html_output)
-
             # Write final HTML
             with open(output_file, "w", encoding="utf-8") as output_f:
                 output_f.write(html_output)
@@ -75,32 +68,6 @@ class RSTConverter:
         except Exception as e:
             print(f"Error converting {input_file}: {e}")
             return False
-
-    def _apply_css_styling(self, html_content: str) -> str:
-        """Apply CSS styling to HTML content"""
-        # Get available CSS files
-        css_files = self.file_utils.get_css_files(
-            self.config.css_dir, self.config.custom_css_files
-        )
-
-        # Generate complete CSS
-        css_content = self.css_manager.generate_complete_css(css_files)
-
-        # Remove external CSS links
-        html_content, removed_links = self.css_manager.remove_external_css_links(
-            html_content
-        )
-
-        if self.config.verbose:
-            print(f"DEBUG: Removed {removed_links} external CSS links")
-
-        # Inject CSS into HTML
-        html_content = self.css_manager.inject_css_into_html(html_content, css_content)
-
-        if self.config.verbose and css_content:
-            print("DEBUG: Added inlined CSS to HTML")
-
-        return html_content
 
     def convert_all_files(self) -> tuple[int, int]:
         """Convert all RST files in the source directory"""

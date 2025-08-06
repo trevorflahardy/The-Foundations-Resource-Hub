@@ -23,7 +23,7 @@ rst_to_html/
 ├── cli.py                # Command-line interface
 ├── config.py             # Configuration management
 ├── converter.py          # Main conversion logic
-├── css_manager.py        # CSS generation and inlining
+├── pygments_processor.py # Code highlighting with inline CSS
 ├── html_processor.py     # HTML post-processing utilities
 ├── sphinx_directives.py  # Sphinx directive handling
 ├── file_utils.py         # File system utilities

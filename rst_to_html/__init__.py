@@ -9,7 +9,6 @@ __version__ = "1.0.0"
 __author__ = "Arduino Guide Team"
 
 from .converter import RSTConverter
-from .css_manager import CSSManager
 from .config import Config
 
-__all__ = ["RSTConverter", "CSSManager", "Config"]
+__all__ = ["RSTConverter", "Config"]

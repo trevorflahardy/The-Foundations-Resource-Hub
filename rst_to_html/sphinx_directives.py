@@ -10,7 +10,7 @@ from docutils.parsers.rst import Directive, directives
 
 
 class AdmonitionDirective(Directive):
-    """Handle admonition directives like note, tip, warning as blockquotes"""
+    """Handle admonition directives like note, tip, warning as styled blockquotes"""
 
     has_content: bool = True
     optional_arguments: int = 1
@@ -18,11 +18,34 @@ class AdmonitionDirective(Directive):
     option_spec: dict[str, object] = {}
 
     def run(self) -> list[nodes.Node]:
-        """Create blockquote with bold title for Canvas compatibility"""
+        """Create blockquote with inline styles for Canvas compatibility"""
         admonition_type = self.name.lower()
 
-        # Create a blockquote container
+        # Create a blockquote container with inline styles
         blockquote = nodes.block_quote()
+
+        # Define styles for different admonition types
+        style_map = {
+            "note": "background-color: #e7f3ff; border-left: 4px solid #007bff; color: #004085;",
+            "tip": "background-color: #e8f5e8; border-left: 4px solid #28a745; color: #155724;",
+            "warning": "background-color: #fff8e1; border-left: 4px solid #ffc107; color: #856404;",
+            "caution": "background-color: #fef2e7; border-left: 4px solid #fd7e14; color: #7a3b0e;",
+            "danger": "background-color: #fce8e8; border-left: 4px solid #dc3545; color: #721c24;",
+            "important": "background-color: #f0e8ff; border-left: 4px solid #6610f2; color: #3a0845;",
+            "seealso": "background-color: #e8f7fa; border-left: 4px solid #17a2b8; color: #0c5460;",
+            "attention": "background-color: #fef2e7; border-left: 4px solid #fd7e14; color: #7a3b0e;",
+            "hint": "background-color: #e8f7fa; border-left: 4px solid #17a2b8; color: #0c5460;",
+            "error": "background-color: #fce8e8; border-left: 4px solid #dc3545; color: #721c24;",
+        }
+
+        base_style = "margin: 1em 0; padding: 12px; border-radius: 4px; font-family: Arial, sans-serif;"
+        admonition_style = base_style + style_map.get(
+            admonition_type,
+            "background-color: #f8f9fa; border-left: 4px solid #6c757d; color: #495057;",
+        )
+
+        # Add the style attribute to the blockquote
+        blockquote.attributes["style"] = admonition_style
 
         # Create title mapping
         title_map = {
@@ -39,16 +62,18 @@ class AdmonitionDirective(Directive):
         }
 
         title_text = title_map.get(admonition_type, admonition_type.title())
-        if self.arguments:
-            title_text = self.arguments[0]
 
         # Create the first paragraph with bold title
         title_para = nodes.paragraph()
+        title_para.attributes["style"] = "margin: 0 0 8px 0; font-weight: bold;"
         title_strong = nodes.strong()
-        title_strong += nodes.Text(f"{title_text}: ")
+        title_strong += nodes.Text(f"{title_text}:")
         title_para += title_strong
 
-        # If we have content, parse and add it
+        # Add the title paragraph to blockquote
+        blockquote += title_para
+
+        # If we have content, parse and add it as separate paragraphs
         if self.content:
             # Parse the content into a temporary container
             content_container = nodes.container()
@@ -56,34 +81,9 @@ class AdmonitionDirective(Directive):
                 self.content, self.content_offset, content_container
             )
 
-            # If there's content, merge it properly
-            if content_container.children:
-                first_content = content_container.children[0]
-
-                # If the first content is a paragraph, merge with title
-                if isinstance(first_content, nodes.paragraph):
-                    # Add the content of the first paragraph to our title paragraph
-                    for child in first_content.children:
-                        title_para += child
-
-                    # Add the merged paragraph to blockquote
-                    blockquote += title_para
-
-                    # Add any remaining paragraphs/content
-                    for remaining in content_container.children[1:]:
-                        blockquote += remaining
-                else:
-                    # If first content is not a paragraph, add title paragraph first
-                    blockquote += title_para
-                    # Then add all content
-                    for content_node in content_container.children:
-                        blockquote += content_node
-            else:
-                # No content, just add the title
-                blockquote += title_para
-        else:
-            # No content, just add the title
-            blockquote += title_para
+            # Add all content as separate nodes
+            for content_node in content_container.children:
+                blockquote += content_node
 
         return [blockquote]
 
