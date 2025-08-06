@@ -249,6 +249,7 @@ For additional resources on building the Origami Bot, refer to the following:
 - The :ref:`H-Bridge Control Example <h_bridge>` in The Arduino Guide for more information on controlling DC motors with an H-Bridge.
 - :ref:`Circuit Troubleshooting Guide <electrical_troubleshooting>` for systematic debugging help.
 
+
 .. _origami_bot_code:
 
 Origami Bot Code

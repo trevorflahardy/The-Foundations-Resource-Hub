@@ -59,6 +59,7 @@ _build/
 
 # VS Code
 .vscode/
+.history/
 dependabot.yml
 # Dev container can be committed
 # .devcontainer/
