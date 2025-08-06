@@ -202,6 +202,113 @@ class WholeCodeBlockDirective(Directive):
         return [container]
 
 
+class WholeLiteralIncludeDirective(Directive):
+    """Handle whole-literal-include directive to include external file content as a whole code block"""
+
+    has_content: bool = (
+        False  # This directive doesn't have content, it includes external files
+    )
+    required_arguments: int = 1  # The file path argument is required
+    optional_arguments: int = 0
+    final_argument_whitespace: bool = True
+    option_spec: dict[str, object] = {
+        "language": directives.unchanged,  # Language for syntax highlighting
+        "encoding": directives.encoding,  # File encoding
+    }
+
+    def run(self) -> list[nodes.Node]:
+        """Read external file and create a whole code block with its content"""
+        from pathlib import Path
+
+        # Get the file path from the first argument
+        include_file_path = self.arguments[0]
+
+        # Get options
+        language = self.options.get("language", "text")
+        encoding = self.options.get("encoding", "utf-8")
+
+        # Resolve the file path relative to the current document's directory
+        # The source is available in self.state.document.settings.env.srcdir for Sphinx,
+        # but we're using docutils directly, so we need to get it differently
+        source_dir = Path(self.state.document.attributes.get("source", ".")).parent
+        file_path = source_dir / include_file_path
+
+        try:
+            # Read the file content
+            with open(file_path, "r", encoding=encoding) as f:
+                file_content = f.read()
+
+            # Create the container div for the whole code block
+            container = nodes.container()
+            container.attributes["style"] = (
+                "border: 2px solid #22c55e; "
+                "border-radius: 6px; "
+                "margin: 1em 0; "
+                "overflow: hidden; "
+                "background-color: white;"
+            )
+
+            # Create a literal block (code block) with the file content
+            code_block = nodes.literal_block()
+            code_block.attributes["classes"] = ["code", language]
+            code_block.attributes["xml:space"] = "preserve"
+            code_block += nodes.Text(file_content)
+
+            # Add some styling to the code block to remove default margins
+            code_block.attributes["style"] = (
+                "margin: 0; " "border-radius: 0; " "border: none;"
+            )
+
+            container.append(code_block)
+
+            # Create the explanatory text div
+            explanation_div = nodes.container()
+            explanation_div.attributes["style"] = (
+                "background-color: #dcfce7; "
+                "color: #166534; "
+                "padding: 0.5em 1em; "
+                "border-top: 1px solid #22c55e; "
+                "font-size: 0.9em; "
+                "font-family: Arial, sans-serif;"
+            )
+
+            # Add the explanatory text
+            explanation_text = nodes.paragraph()
+            explanation_text.attributes["style"] = "margin: 0;"
+            explanation_text += nodes.Text(
+                "This is a whole code block. It can be copy pasted by itself in your Arduino IDE."
+            )
+
+            explanation_div.append(explanation_text)
+            container.append(explanation_div)
+
+            return [container]
+
+        except FileNotFoundError:
+            # If file not found, create an error message
+            error_msg = f"File not found: {include_file_path}"
+            error_para = nodes.paragraph()
+            error_para.attributes["style"] = "color: red; font-weight: bold;"
+            error_para += nodes.Text(error_msg)
+            return [error_para]
+
+        except UnicodeDecodeError as e:
+            # If file encoding error, create an error message
+            error_msg = f"Encoding error reading {include_file_path}: {str(e)}"
+            error_para = nodes.paragraph()
+            error_para.attributes["style"] = "color: red; font-weight: bold;"
+            error_para += nodes.Text(error_msg)
+            return [error_para]
+
+        except Exception as e:
+            # For any other error, create a general error message
+            error_msg = f"Error including {include_file_path}: {str(e)}"
+            error_para = nodes.paragraph()
+            error_para.attributes["style"] = "color: red; font-weight: bold;"
+            error_para += nodes.Text(error_msg)
+            return [error_para]
+
+
 def register_sphinx_directives() -> None:
     """Register handlers for common Sphinx directives and roles"""
 
@@ -224,6 +331,9 @@ def register_sphinx_directives() -> None:
 
     # Register the whole-code-block directive
     directives.register_directive("whole-code-block", WholeCodeBlockDirective)
+
+    # Register the whole-literal-include directive
+    directives.register_directive("whole-literal-include", WholeLiteralIncludeDirective)
 
     # Register the ref role
     from docutils.parsers.rst import roles
