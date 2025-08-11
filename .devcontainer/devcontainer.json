@@ -4,6 +4,9 @@
     "dockerfile": "Dockerfile",
     "context": ".."
   },
+  "remoteEnv": {
+    "OLLAMA_MODEL": "llama3.2"
+  },
   "customizations": {
     "vscode": {
       "extensions": [

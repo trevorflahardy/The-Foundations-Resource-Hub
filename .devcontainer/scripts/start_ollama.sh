@@ -16,6 +16,25 @@ start_ollama_server() {
   fi
 }
 
+pull_required_model() {
+  # Get model from env var or use default
+  local MODEL="${OLLAMA_MODEL:-llama3.2}"
+
+  log "Checking if model '$MODEL' is already available..."
+  if ! curl -s "${BASE_URL}/api/tags" | grep -q "\"${MODEL}\""; then
+    log "Model '$MODEL' not found. Pulling now (this may take a while)..."
+    curl -s "${BASE_URL}/api/pull" -d "{\"model\":\"${MODEL}\", \"stream\":false}"
+    if [ $? -eq 0 ]; then
+      log "✅ Model '$MODEL' successfully pulled"
+    else
+      log "⚠️ Failed to pull model '$MODEL'. You may need to pull it manually."
+      log "Try: curl http://localhost:11434/api/pull -d '{\"model\":\"${MODEL}\"}'"
+    fi
+  else
+    log "✅ Model '$MODEL' is already available"
+  fi
+}
+
 wait_for_server() {
   local retries=30
   local i=0
@@ -48,8 +67,12 @@ main() {
     exit 1
   }
 
+  # Pull the model needed for auto-descriptions
+  pull_required_model
+
   log "✅ Ollama is successfully running and ready to use"
-  log "You can use it with: curl http://localhost:11434/api/generate -d '{\"model\":\"llama3.2\",\"prompt\":\"Hello\"}'"
+  MODEL="${OLLAMA_MODEL:-llama3.2}"
+  log "You can use it with: curl http://localhost:11434/api/generate -d '{\"model\":\"${MODEL}\",\"prompt\":\"Hello\"}'"
 }
 
 main "$@"
