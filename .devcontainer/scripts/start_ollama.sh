@@ -5,15 +5,6 @@ BASE_URL="${OLLAMA_URL:-http://localhost:11434}"
 
 log() { echo "[ollama-startup] $*"; }
 
-# Check for GPU support
-if command -v nvidia-smi &> /dev/null; then
-  log "NVIDIA GPU detected"
-  nvidia-smi --query-gpu=name,memory.total --format=csv
-  log "GPU will be used by Ollama"
-else
-  log "No NVIDIA GPU detected, running in CPU mode"
-fi
-
 wait_for_server() {
   local retries=30
   local i=0

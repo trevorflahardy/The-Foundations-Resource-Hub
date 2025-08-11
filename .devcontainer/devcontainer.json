@@ -1,13 +1,9 @@
 {
   "name": "The Arduino Guide",
   "build": {
-    "dockerfile": "Dockerfile",
+    "dockerfile": "Dockerfile.fixed",
     "context": ".."
   },
-  // Enable NVIDIA GPU support if available on the host
-  "runArgs": [
-    "--gpus=all"
-  ],
   "customizations": {
     "vscode": {
       "extensions": [
@@ -31,5 +27,5 @@
     }
   },
   "postCreateCommand": "bash -c 'pip install --no-cache-dir -e .'",
-  "postStartCommand": "bash -c 'chmod +x ./.devcontainer/scripts/start_ollama.sh && chmod +x ./.devcontainer/scripts/check_gpu.sh && ./.devcontainer/scripts/start_ollama.sh && ./.devcontainer/scripts/check_gpu.sh'"
+  "postStartCommand": "bash -c 'chmod +x ./.devcontainer/scripts/start_ollama.sh && ./.devcontainer/scripts/start_ollama.sh'"
 }
