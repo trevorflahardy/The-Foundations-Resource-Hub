@@ -5,6 +5,17 @@ BASE_URL="${OLLAMA_URL:-http://localhost:11434}"
 
 log() { echo "[ollama-startup] $*"; }
 
+start_ollama_server() {
+  if ! pgrep -x "ollama" > /dev/null; then
+    log "Starting Ollama server..."
+    nohup ollama serve > /tmp/ollama.log 2>&1 &
+    sleep 2
+    log "Ollama server started in background"
+  else
+    log "Ollama server is already running"
+  fi
+}
+
 wait_for_server() {
   local retries=30
   local i=0
@@ -24,8 +35,21 @@ wait_for_server() {
 }
 
 main() {
-  wait_for_server || exit 1
-  log "Container is ready to use"
+  # First try to start the Ollama server
+  start_ollama_server
+
+  # Then wait for it to be ready
+  wait_for_server || {
+    log "Ollama server failed to start properly. Checking logs..."
+    if [ -f "/tmp/ollama.log" ]; then
+      log "Last 10 lines of Ollama logs:"
+      tail -n 10 /tmp/ollama.log
+    fi
+    exit 1
+  }
+
+  log "✅ Ollama is successfully running and ready to use"
+  log "You can use it with: curl http://localhost:11434/api/generate -d '{\"model\":\"llama3.2\",\"prompt\":\"Hello\"}'"
 }
 
 main "$@"
