@@ -18,12 +18,9 @@ RUN pip install --upgrade pip && \
 # Install Ollama (simple method for single container)
 RUN curl -fsSL https://ollama.com/install.sh | sh
 
-# Create a script to start Ollama
-RUN echo '#!/bin/bash \n\
-echo "Starting Ollama server" \n\
-ollama serve &>/tmp/ollama.log & \n\
-echo "Ollama server started" \n\
-exec "$@"' > /usr/local/bin/entrypoint.sh && chmod +x /usr/local/bin/entrypoint.sh
+# Copy the Ollama startup script
+COPY .devcontainer/scripts/start_ollama.sh /usr/local/bin/start_ollama.sh
+RUN chmod +x /usr/local/bin/start_ollama.sh
 
-ENTRYPOINT ["/usr/local/bin/entrypoint.sh"]
+# No custom entrypoint - will use the default CMD
 CMD ["bash"]

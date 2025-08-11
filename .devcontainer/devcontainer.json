@@ -30,5 +30,5 @@
     }
   },
   "postCreateCommand": "bash -c 'pip install --no-cache-dir -r requirements.txt'",
-  "postStartCommand": "bash -c 'chmod +x ./.devcontainer/scripts/start_ollama.sh && ./.devcontainer/scripts/start_ollama.sh'"
+  "postStartCommand": "bash -c '/usr/local/bin/start_ollama.sh'"
 }
