@@ -1,0 +1,46 @@
+Quiz title: Preparing To Print
+Quiz description: This quiz is designed to test your knowledge of preparing to print with a 3D printer, specifically at USF. It covers various topics such as infill patterns, support types, layer height, and exporting G-code, among others, in an effort to assess your understanding of the printing process. With 21 questions, this quiz will challenge your expertise and help you refine your skills for successful printouts.
+shuffle answers: true
+show correct answers: true
+
+1.  Which infill pattern is commonly used at USF for a balance of strength and speed?
+a)  Gyroid
+*b)  Grid
+... Grid infill offers a good mix of strength and efficiency for most prints.
+c)  Rectilinear
+
+2.  Tree supports are especially useful when?
+a)  Your model has a large flat overhang
+*b)  Your model has complex geometry with small, non-planar overhangs
+... Tree supports use branched structures that support intricate shapes efficiently.
+c)  You want the smoothest surface on a large flat bottom
+
+3.  If your model features a wide, flat overhang and surface quality is critical, which support type should you choose?
+*a)  Normal supports
+... Normal supports provide better surface finish for broad planar overhangs.
+b)  Tree supports
+c)  No supports
+
+4.  What does layer height primarily affect?
+*a)  Print quality and speed
+... Thinner layers improve detail but increase print time.
+b)  Only the color of the filament
+c)  The size of the build plate
+
+5.  When exporting G-code at USF, which file name follows the required format?
+a)  Model.gcode
+*b)  Smith_J_Doe_SEC1_Gear.gcode
+... Files must include last name, first initial, professor, section, and model name.
+c)  Print1.gcode
+
+6.  Why is previewing your sliced model before exporting helpful?
+a)  It changes the filament color
+*b)  It allows you to spot missing supports or adhesion issues before printing
+... Previewing catches problems early, saving time and material.
+c)  It automatically starts the print
+
+7.  The slicer created a second plate automatically when you imported multiple models. What does this usually indicate?
+*a)  The parts cannot fit on one plate with the current orientation
+... Multiple plates are generated when models exceed the build area together.
+b)  The slicer malfunctioned
+c)  You have too much infill

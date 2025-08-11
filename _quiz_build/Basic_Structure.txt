@@ -1,0 +1,21 @@
+Quiz title: Basic Structure
+Quiz description: This quiz tests your knowledge of the basic structure of an Arduino sketch, covering essential concepts such as commenting, function requirements, and serial output. With a total of seven questions, you'll have the opportunity to demonstrate your understanding of fundamental programming principles in Arduino. By completing this quiz, you'll gain a solid foundation for more advanced topics and projects.
+shuffle answers: true
+show correct answers: true
+
+1.  Which character begins a single-line comment in Arduino?
+*a)  //
+... Correct. Double slashes begin a comment.
+b)  /**
+c)  <!--
+
+2.  Which two functions must be present in every Arduino sketch?
+... These functions define what happens once and what repeats.
+____
+
+3.  What does this sketch print to the Serial Monitor?
+a)  It prints nothing.
+*b)  It prints "Hi" once.
+... `Serial.println` in `setup()` executes a single time.
+c)  It prints "Hi" repeatedly.
+d)  It prints "HiHi".

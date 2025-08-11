@@ -1,0 +1,22 @@
+Quiz title: Second Program
+Quiz description: This program is designed to test your understanding of fundamental programming concepts through a series of nine questions. The quiz focuses on identifying key functions and operators in a simple program, as well as evaluating the outcome of basic arithmetic operations. By completing this quiz, you will demonstrate your knowledge of essential programming principles.
+shuffle answers: true
+show correct answers: true
+
+1.  Which function continuously repeats during program execution?
+a)  setup()
+*b)  loop()
+... `loop()` runs over and over after setup completes.
+c)  start()
+
+2.  Which operator increments a variable by one?
+*a)  ++
+... `++` increases the value by one.
+b)  +=2
+c)  --
+
+3.  What value does `x` hold after this code runs?
+*a)  2
+... `x` is incremented twice before being printed.
+b)  1
+c)  0

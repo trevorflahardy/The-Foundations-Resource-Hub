@@ -1,0 +1,46 @@
+Quiz title: Iterating Design
+Quiz description: This 21-question quiz delves into common design issues in 3D printing, focusing on print problems such as lifted corners, layer misalignment, and stringing between features. It also covers troubleshooting strategies for addressing these issues, including iteration cycles, print settings adjustments, and post-print analysis. By the end of the quiz, learners will have a solid understanding of how to identify and resolve common design-related problems in 3D printing.
+shuffle answers: true
+show correct answers: true
+
+1.  What print issue is indicated when the corners of your model lift off the bed?
+*a)  Warping
+... Warping occurs when poor adhesion or temperature differences lift corners.
+b)  Stringing
+c)  Layer shifting
+
+2.  Layers misaligned horizontally during a print are usually a sign of?
+a)  Warping
+*b)  Layer shifts
+... Layer shifts can be caused by excessive speed or movement of the printer.
+c)  Over-extrusion
+
+3.  To reduce stringing between features, which adjustment is a good first step?
+*a)  Lower the nozzle temperature slightly
+... Reducing temperature or checking support settings can cut down on stringing.
+b)  Increase bed temperature
+c)  Disable retraction
+
+4.  Which step starts the iteration cycle for improving a 3D print?
+*a)  Design
+... You begin by modeling or adjusting your design.
+b)  Evaluate
+c)  Repeat
+
+5.  What information should you record in a troubleshooting log for failed prints?
+a)  Only the filament color
+*b)  Iteration number, changes made, and results
+... Detailed logs help track what works and what doesn't.
+c)  Nothing; logs aren't useful
+
+6.  After addressing warping, your next print still fails the same way. What should you do?
+a)  Keep reprinting without changes
+*b)  Re-analyze the problem and adjust design or settings again
+... Each failure is data—use it to refine your approach.
+c)  Give up on the design
+
+7.  Even after lowering print speed, layer shifts persist. What else might you check?
+*a)  Ensure the printer rack wheels are locked to prevent movement
+... A moving printer can cause layers to misalign.
+b)  Increase nozzle temperature
+c)  Remove all supports

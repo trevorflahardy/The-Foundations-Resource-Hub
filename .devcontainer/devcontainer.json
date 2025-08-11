@@ -4,6 +4,10 @@
     "dockerfile": "Dockerfile",
     "context": ".."
   },
+  // Enable NVIDIA GPU support if available on the host
+  "runArgs": [
+    "--gpus=all"
+  ],
   "customizations": {
     "vscode": {
       "extensions": [
@@ -25,5 +29,7 @@
         "ritwickdey.LiveServer"
       ]
     }
-  }
+  },
+  "postCreateCommand": "bash -c 'pip install --no-cache-dir -e .'",
+  "postStartCommand": "bash -c 'chmod +x ./.devcontainer/scripts/start_ollama.sh && chmod +x ./.devcontainer/scripts/check_gpu.sh && ./.devcontainer/scripts/start_ollama.sh && ./.devcontainer/scripts/check_gpu.sh'"
 }

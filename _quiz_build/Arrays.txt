@@ -1,0 +1,26 @@
+Quiz title: Arrays
+Quiz description: This quiz focuses on arrays in JavaScript, testing your knowledge of accessing elements within an array, declaring arrays with specific sizes, and understanding indexing conventions. The 10-question quiz will challenge you to apply your understanding of arrays to various scenarios, helping you reinforce your skills in working with this fundamental data structure.
+shuffle answers: true
+show correct answers: true
+
+1.  How do you access the second element of an array named `values`?
+... Remember that C-style arrays are zero indexed.
+a)  values(1);
+*b)  values[1];
+... Square brackets with index 1 retrieve the second element.
+c)  values<1>;
+
+2.  Which line declares an array of five integers named `readings`?
+... Specify the type, then the name with a size in brackets.
+a)  readings int[5];
+*b)  int readings[5];
+... Correct syntax uses `int readings[5];`.
+c)  int[5] readings;
+d)  array<int,5> readings;
+
+3.  What index is used for the first element of an array?
+... Arrays in Arduino start counting from this number.
+*a)  0
+... Index 0 refers to the first element.
+b)  1
+c)  It varies
