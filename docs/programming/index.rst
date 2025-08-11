@@ -19,6 +19,7 @@ This section covers the programming concepts used throughout EGN 3000L.  It begi
    second_arduino_program
    loops
    libraries
-   advanced_topics
    examples/index
+   final_quiz
+   advanced_topics
 

@@ -28,3 +28,4 @@ Table of Contents
    iterating_design
    project_examples_and_challenges
    resources
+   final_quiz
