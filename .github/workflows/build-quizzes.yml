@@ -1,0 +1,45 @@
+name: Build QTI quizzes
+
+on:
+  push:
+    paths:
+      - "docs/quizzes/**"
+  workflow_dispatch: {}
+
+jobs:
+  build:
+    runs-on: macos-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install -r requirements.txt
+
+      - name: Build quizzes to QTI
+        run: |
+          python -m quiz_to_qti batch --root docs/quizzes --out _quiz_build
+
+      - name: Upload QTI artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: qti-quizzes
+          path: _quiz_build/*.zip
+
+      - name: Commit _quiz_build changes (if any)
+        if: ${{ github.event_name == 'push' }}
+        run: |
+          git config user.name "github-actions"
+          git config user.email "github-actions@github.com"
+          git add _quiz_build
+          if ! git diff --cached --quiet; then
+            git commit -m "chore(qti): update built quizzes"
+            git push
+          fi

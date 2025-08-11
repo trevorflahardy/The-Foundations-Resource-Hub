@@ -1,3 +1,5 @@
 sphinx
 furo
 git+https://github.com/bonartm/sphinxcontrib-quizdown
+click
+text2qti

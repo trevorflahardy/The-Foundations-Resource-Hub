@@ -7,6 +7,7 @@ from __future__ import annotations
 import re
 from docutils import nodes
 from docutils.parsers.rst import Directive, directives
+from docutils.statemachine import ViewList
 
 
 class AdmonitionDirective(Directive):
@@ -136,6 +137,35 @@ def ref_role(name, rawtext, text, lineno, inliner, options=None, content=None):
         strong_node = nodes.strong()
         strong_node += nodes.Text(text)
         return [strong_node], []
+
+
+def term_role(name, rawtext, text, lineno, inliner, options=None, content=None):
+    """Handle :term: role by outputting bold text without links.
+
+    Supports both forms:
+    - :term:`Display Text <target>` -> strong(Display Text)
+    - :term:`target` -> strong(target)
+    """
+    if options is None:
+        options = {}
+    if content is None:
+        content = []
+
+    # Parse `Display Text <target>` or `target`
+    match = re.match(r"^([^<>]*?)(?:\s*<([^<>]+)>)?$", text.strip())
+    if match:
+        display = match.group(1).strip()
+        target = match.group(2)
+        if not display:
+            display = target if target else text
+
+        strong_node = nodes.strong()
+        strong_node += nodes.Text(display)
+        return [strong_node], []
+    # Fallback
+    strong_node = nodes.strong()
+    strong_node += nodes.Text(text)
+    return [strong_node], []
 
 
 class WholeCodeBlockDirective(Directive):
@@ -335,10 +365,11 @@ def register_sphinx_directives() -> None:
     # Register the whole-literal-include directive
     directives.register_directive("whole-literal-include", WholeLiteralIncludeDirective)
 
-    # Register the ref role
+    # Register the ref and term roles
     from docutils.parsers.rst import roles
 
     roles.register_local_role("ref", ref_role)
+    roles.register_local_role("term", term_role)
 
     # Register silent directives for other Sphinx-specific directives
     sphinx_directives = [
@@ -347,7 +378,6 @@ def register_sphinx_directives() -> None:
         "download",
         "numref",
         "eq",
-        "term",
         "abbr",
         # UI elements
         "guilabel",
@@ -394,3 +424,120 @@ def register_sphinx_directives() -> None:
 
     for directive_name in sphinx_directives:
         directives.register_directive(directive_name, SilentDirective)
+
+    # Register a custom glossary directive to render a styled grid of terms
+    directives.register_directive("glossary", GlossaryDirective)
+
+
+class GlossaryDirective(Directive):
+    """Render a beautiful glossary as a grid of term cards (Canvas-friendly).
+
+    Expected content format (typical Sphinx glossary):
+
+    Term One
+      Definition paragraph 1
+
+    Term Two
+      Definition paragraph...
+    """
+
+    has_content: bool = True
+    optional_arguments: int = 0
+    final_argument_whitespace: bool = False
+    option_spec: dict[str, object] = {}
+
+    def run(self) -> list[nodes.Node]:
+        # Outer grid container
+        grid = nodes.container(
+            classes=["glossary-grid"]
+        )  # class retained for possible future hooks
+        grid.attributes["style"] = (
+            "display: grid; "
+            "grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); "
+            "gap: 12px; "
+            "margin: 1em 0;"
+        )
+
+        lines = list(self.content)
+        i = 0
+        n = len(lines)
+
+        def is_term_line(s: str) -> bool:
+            return bool(s.strip()) and not s.startswith(" ") and not s.startswith("\t")
+
+        # Parse term/definition blocks
+        while i < n:
+            # Skip blank lines
+            while i < n and not lines[i].strip():
+                i += 1
+            if i >= n:
+                break
+
+            if not is_term_line(lines[i]):
+                # If malformed, skip this line
+                i += 1
+                continue
+
+            term_text = lines[i].strip()
+            i += 1
+
+            # Collect indented definition lines until next term
+            def_lines: list[str] = []
+            while i < n and (
+                not lines[i].strip()
+                or lines[i].startswith(" ")
+                or lines[i].startswith("\t")
+            ):
+                def_lines.append(lines[i])
+                i += 1
+
+            # Build the card
+            card = nodes.container(classes=["glossary-item"])
+            card.attributes["style"] = (
+                "border: 1px solid #e2e8f0; "
+                "border-radius: 8px; "
+                "background-color: white; "
+                "overflow: hidden;"
+            )
+
+            # Term header
+            header = nodes.paragraph()
+            header.attributes["style"] = (
+                "margin: 0; padding: 8px 12px; "
+                "background-color: #f8fafc; "
+                "border-bottom: 1px solid #e2e8f0; "
+                "font-weight: 700;"
+            )
+            strong = nodes.strong()
+            strong += nodes.Text(term_text)
+            header += strong
+            card += header
+
+            # Definition body
+            body = nodes.container()
+            body.attributes["style"] = (
+                "padding: 8px 12px; margin: 0; background-color: white;"
+            )
+
+            # Dedent up to 2 leading spaces (typical glossary formatting)
+            vl = ViewList()
+            for raw in def_lines:
+                if raw.startswith("  "):
+                    vl.append(raw[2:], source="<glossary>")
+                elif raw.startswith("\t"):
+                    vl.append(raw[1:], source="<glossary>")
+                else:
+                    vl.append(raw, source="<glossary>")
+
+            if len(vl) == 0:
+                # Ensure there's at least an empty paragraph to keep layout consistent
+                para = nodes.paragraph()
+                para += nodes.Text("")
+                body += para
+            else:
+                self.state.nested_parse(vl, self.content_offset, body)
+
+            card += body
+            grid += card
+
+        return [grid]

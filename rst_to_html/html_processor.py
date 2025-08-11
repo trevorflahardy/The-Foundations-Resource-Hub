@@ -66,6 +66,26 @@ class HTMLProcessor:
 
         return html_content
 
+    def process_term_roles(self, html_content: str) -> str:
+        """Convert any remaining :term:`...` patterns to bold text.
+
+        Supports :term:`Display <target>` and :term:`target` by outputting
+        <strong>Display</strong> or <strong>target</strong> respectively.
+        """
+        # :term:`Display <target>` -> <strong>Display</strong>
+        html_content = re.sub(
+            r":term:`([^<>`]+?)\s*<[^<>`]*>`",
+            lambda m: f"<strong>{m.group(1).strip()}</strong>",
+            html_content,
+        )
+        # :term:`target` -> <strong>target</strong>
+        html_content = re.sub(
+            r":term:`([^<>`]+?)`",
+            lambda m: f"<strong>{m.group(1).strip()}</strong>",
+            html_content,
+        )
+        return html_content
+
     def wrap_tables(self, html_content: str) -> str:
         """Wrap tables in centering divs for better layout"""
         # Find tables and wrap them
@@ -287,6 +307,7 @@ class HTMLProcessor:
         html_content = self.remove_head_title(html_content)
         html_content = self.process_code_highlighting(html_content)
         html_content = self.process_ref_links(html_content)
+        html_content = self.process_term_roles(html_content)
         html_content = self.style_admonitions(html_content)
         html_content = self.style_whole_code_blocks(html_content)
         html_content = self.wrap_tables(html_content)
