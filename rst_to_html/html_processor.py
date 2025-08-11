@@ -44,6 +44,12 @@ class HTMLProcessor:
 
         return html_content
 
+    def remove_head_title(self, html_content: str) -> str:
+        """Remove the <title> tag from the HTML head for Canvas compatibility."""
+        # Remove any <title>...</title> in the document head
+        # Use a robust, case-insensitive, dotall regex and trim trailing whitespace
+        return re.sub(r"(?is)<title[^>]*>.*?</title>\s*", "", html_content)
+
     def process_ref_links(self, html_content: str) -> str:
         """Convert remaining :ref: patterns to bold text"""
         # Pattern 1: :ref:`Link Text <target>`
@@ -277,6 +283,8 @@ class HTMLProcessor:
         """Apply all HTML processing steps"""
         html_content = self.clean_system_messages(html_content)
         html_content = self.normalize_code_elements(html_content)
+        # Remove <title> tag before further processing (Canvas doesn't need it)
+        html_content = self.remove_head_title(html_content)
         html_content = self.process_code_highlighting(html_content)
         html_content = self.process_ref_links(html_content)
         html_content = self.style_admonitions(html_content)
