@@ -1,7 +1,7 @@
 {
   "name": "The Arduino Guide",
   "build": {
-    "dockerfile": "Dockerfile.fixed",
+    "dockerfile": "Dockerfile",
     "context": ".."
   },
   "customizations": {
