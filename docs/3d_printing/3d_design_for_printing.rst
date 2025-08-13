@@ -24,7 +24,8 @@ Understanding different file formats is crucial for 3D printing:
 - :term:`STEP (Standard for the Exchange of Product Model Data)`: Used for sharing models between different CAD programs, preserving complex geometry and assembly information.
 - :term:`3MF (3D Manufacturing Format)`: A modern format that includes color, material, and other metadata, aiming to be a comprehensive solution for 3D printing needs.
 
-.. ! NOTE: Add detail here about which file format students will be using.
+.. note::
+   For this course, students should export and submit their 3D models in the :term:`STL (Stereolithography)` file format, as it is the standard and most widely supported format for 3D printing.
 
 Design Thinking for Printing
 ============================

@@ -132,11 +132,6 @@ So we have covered both types of supports, normal and tree, but which one should
 
 Which to use depends on your model's geometry and the specific overhangs you need to support. As you gain experience, you'll develop a feel for which type works best in different situations. Always feel free to reach out for help if you are unsure!
 
-.. ! NOTE: Keep walking through the following list items and making them their own section, using the Bambu Labs wiki as reference
-.. ! for images, content, and flow of document.
-
-[TODO]: Walk through bambu labs and make these their own section:
-
 - **Layer Height**
   The thickness of each printed layer. Smaller layer heights = smoother details but longer print times.
 

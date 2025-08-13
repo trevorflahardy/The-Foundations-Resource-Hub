@@ -92,6 +92,9 @@ The schematic for the Origami Bot is shown below. Understanding this schematic i
 
 4 AA batteries = 4 × 1.5V = 6V total (more power than Arduino's 5V)
 
+.. note::
+    **Real-World Battery Voltage:** While AA batteries are rated at a nominal 1.5V each (for a total of 6V), fresh alkaline AA batteries actually provide about 1.6V each (for a total of 6.4V). This voltage decreases as the batteries are used. Keep this in mind when measuring or troubleshooting your circuit—your battery pack may provide more than 6V when new, and less as it discharges.
+
 .. important::
 
     This schematic shows the use of the ``6V`` power supply. You can also use a ``9V`` battery and the included adapter in your Project kit.
@@ -248,7 +251,6 @@ For additional resources on building the Origami Bot, refer to the following:
 - The :ref:`Origami Bot Code <origami_bot_code>` below.
 - The :ref:`H-Bridge Control Example <h_bridge>` in The Arduino Guide for more information on controlling DC motors with an H-Bridge.
 - :ref:`Circuit Troubleshooting Guide <electrical_troubleshooting>` for systematic debugging help.
-
 
 .. _origami_bot_code:
 
