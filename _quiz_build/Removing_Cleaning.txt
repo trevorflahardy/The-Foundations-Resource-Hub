@@ -1,0 +1,46 @@
+Quiz title: Removing Cleaning
+Quiz description: This quiz focuses on essential steps in the 3D printing process, covering critical considerations for safe and efficient print removal, post-print cleaning, and tool usage. With a total of 21 questions, participants will learn key best practices to ensure successful prints and minimize potential issues. By completing this quiz, users will gain a comprehensive understanding of the necessary procedures to optimize their 3D printing experience.
+shuffle answers: true
+show correct answers: true
+
+1.  Why should you wait for the build plate to cool before removing a print?
+*a)  The part releases more easily and avoids deformation
+... Cooling allows the plastic to stiffen and detach naturally.
+b)  It speeds up the next print
+c)  The printer will not restart otherwise
+
+2.  If your print is stuck to the flexible build plate, what is the recommended action?
+*a)  Gently flex the plate to pop the print loose
+... Flexing the magnetic plate helps release prints without damage.
+b)  Pry it off with a screwdriver
+c)  Pull on the filament
+
+3.  Why must the build plate be returned immediately after removing a print?
+*a)  To prevent damage or loss and keep the printer ready for others
+... Missing plates halt printing for everyone and can incur fees.
+b)  To cool your print faster
+c)  To reset the printer's settings
+
+4.  Which tool is recommended for cutting away large support structures?
+*a)  Flush-cutters
+... Flush-cutters safely remove big support sections.
+b)  Hammer
+c)  Sandpaper
+
+5.  Where should leftover filament scraps be disposed?
+a)  In the recycling bin
+*b)  In the designated filament/plastic bin
+... This keeps the lab clean and safe.
+c)  Leave them on the printer
+
+6.  Why inspect your print under bright light after cleanup?
+*a)  To check for imperfections like layer shifts or missing details
+... Good lighting reveals issues you might miss otherwise.
+b)  To heat the plastic for bending
+c)  To dry the filament
+
+7.  After removing supports and cleaning up, what is the courteous next step?
+a)  Leave tools on the table for the next person
+*b)  Return tools and ensure the build plate is reinstalled
+... A tidy work area keeps the lab ready for others.
+c)  Start another print immediately

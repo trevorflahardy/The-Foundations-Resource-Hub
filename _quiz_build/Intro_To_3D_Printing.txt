@@ -1,0 +1,46 @@
+Quiz title: Intro To 3D Printing
+Quiz description: Quiz on Intro To 3D Printing containing 21 questions.
+shuffle answers: true
+show correct answers: true
+
+1.  Which 3D printing technology extrudes melted filament through a nozzle?
+*a)  FDM
+... Correct. FDM printers melt and extrude filament layer by layer.
+b)  SLA
+c)  SLS
+
+2.  For a part with many small overhangs and no need for support material, which printer type is most suitable?
+a)  FDM
+b)  SLA
+*c)  SLS
+... SLS fuses powder and doesn't require supports, making it ideal for complex geometries.
+
+3.  You need a dental model with a very smooth surface finish. Which technology should you choose and why?
+a)  FDM
+*b)  SLA
+... SLA's laser-cured resin yields high-resolution prints with smooth surfaces, perfect for detailed dental models.
+c)  SLS
+
+4.  What is a key advantage of additive manufacturing over subtractive methods?
+*a)  Reduced material waste
+... Additive manufacturing builds objects layer by layer, minimizing scrap.
+b)  Faster machining speeds
+c)  Easier material removal
+
+5.  Which component ensures precise positioning of the printer's axes?
+a)  Hotend
+*b)  Stepper motors
+... Stepper motors move the axes and extruder with precision.
+c)  Cooling fans
+
+6.  During the basic operation cycle, which step converts a 3D model into G-code?
+a)  Printing
+*b)  Slicing
+... Slicing translates the model into layer-by-layer instructions.
+c)  Post-processing
+
+7.  Why are FDM printers a good fit for educational environments like USF?
+a)  They require hazardous materials
+*b)  They are reliable, affordable, and easy to use
+... These traits make FDM printers accessible for students while teaching core concepts.
+c)  They produce the highest-resolution prints

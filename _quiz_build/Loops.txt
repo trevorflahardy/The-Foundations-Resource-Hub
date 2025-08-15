@@ -1,0 +1,26 @@
+Quiz title: Loops
+Quiz description: This quiz focuses on loops in programming, specifically exploring their usage and characteristics. It delves into the differences between various loop types, including identifying which one is best suited for iterating a known number of times, understanding how to stop a loop immediately, and analyzing the output of specific loop iterations. The 10-question quiz provides an opportunity to test knowledge on these essential programming concepts.
+shuffle answers: true
+show correct answers: true
+
+1.  Which loop is best for iterating a known number of times?
+... Use this loop when you know exactly how many iterations you need.
+*a)  for loop
+... Correct. `for` loops handle a fixed count.
+b)  while loop
+c)  loop()
+... `loop()` is the main Arduino function, not a counting loop.
+
+2.  Which statement stops a loop immediately?
+... Think about prematurely ending the loop.
+a)  continue
+*b)  break
+... `break` exits the loop immediately.
+c)  next
+
+3.  What numbers does this loop print?
+*a)  1 2 3
+... The loop begins at 1 and stops after printing 3.
+b)  0 1 2
+c)  0 1 2 3
+d)  2 3 4

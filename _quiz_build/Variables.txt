@@ -1,0 +1,24 @@
+Quiz title: Variables
+Quiz description: This quiz focuses on variables in programming, covering key concepts such as constant variables, declaring integer variables, and choosing the best data type for decimal numbers. The quiz consists of 10 questions designed to test your understanding of these fundamental topics. By completing this quiz, you'll assess your knowledge of variable management and data storage in programming.
+shuffle answers: true
+show correct answers: true
+
+1.  Which keyword defines a constant variable?
+a)  var
+*b)  const
+... Use `const` to make a variable read-only.
+c)  static
+
+2.  How do you declare an integer variable named `count` with an initial value of 0?
+... Variables use the format `<type> <name> = <value>;`.
+*a)  int count = 0;
+... Correct. This declares and initializes `count`.
+b)  int = 0; count
+c)  count int = 0;
+d)  int count;
+
+3.  Which data type is best for storing decimal numbers?
+*a)  float
+... `float` holds values with fractional parts.
+b)  int
+c)  char

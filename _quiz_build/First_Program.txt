@@ -1,0 +1,20 @@
+Quiz title: First Program
+Quiz description: This quiz is designed to test your understanding of basic Arduino programming concepts, focusing on the initial setup of an Arduino program. The six-question quiz will cover topics such as the startup function, pin mode settings, and the behavior of built-in components like LEDs in a simple program. By completing this quiz, you'll demonstrate your grasp of fundamental Arduino programming principles.
+shuffle answers: true
+show correct answers: true
+
+1.  Which function runs once at the start of your Arduino program?
+... This function is called before `loop()`.
+*a)  setup()
+... Correct. `setup()` runs a single time.
+b)  loop()
+c)  main()
+
+2.  Where should you set `pinMode()` calls?
+____
+
+3.  What will the built-in LED do in this program?
+*a)  It turns on and stays on.
+... `digitalWrite` sets the LED HIGH and `loop()` does nothing else.
+b)  It blinks forever.
+c)  It never turns on.

@@ -1,0 +1,23 @@
+Quiz title: Control Structures
+Quiz description: This quiz focuses on control structures in programming, specifically in Arduino, and tests understanding of logical operators, decision-making statements, and code execution. The nine-question quiz assesses knowledge of key concepts such as logical AND, decision-making keywords, and code behavior. It is designed to evaluate a programmer's grasp of fundamental control structure principles.
+shuffle answers: true
+show correct answers: true
+
+1.  Which operator represents logical AND in Arduino?
+... This operator ensures both expressions are true.
+a)  ||
+*b)  &&
+... `&&` returns true only if both sides are true.
+c)  !
+
+2.  Which keyword begins a decision-making statement?
+*a)  if
+... `if` checks a condition before running code.
+b)  loop
+c)  goto
+
+3.  What will this code print when `x` is 3?
+*a)  yes
+... 3 is greater than 2, so the `if` branch runs.
+b)  no
+c)  It prints nothing.

@@ -55,6 +55,7 @@ out/
 
 # Sphinx documentation
 docs/_build/
+_build/
 
 # VS Code
 .vscode/
@@ -95,3 +96,9 @@ _.py
 
 # Mac OS Image Metadata Files
 .DS_Store
+
+# VSCode history extension files
+.history/
+
+# Custom Conversions for Canvas
+docs/_build_raw

@@ -1,0 +1,46 @@
+Quiz title: Design For Printing
+Quiz description: This quiz focuses on design for printing, covering various aspects of CAD modeling and 3D printing, including file formats, geometry, material metadata, and print settings. The 21-question quiz will test your knowledge of how to prepare models for successful FDM printing, from choosing the right file format to optimizing overhangs and bridge designs.
+shuffle answers: true
+show correct answers: true
+
+1.  Which file format supports color and texture information?
+a)  STL
+*b)  OBJ
+... OBJ files can include color and texture data.
+c)  STEP
+
+2.  You want to share a complex assembly with another CAD program while keeping precise geometry. Which format should you use?
+a)  STL
+*b)  STEP
+... STEP preserves detailed geometry and assembly information for CAD tools.
+c)  OBJ
+
+3.  If your model needs to include material and manufacturing metadata, which file type is best?
+a)  STL
+b)  OBJ
+*c)  3MF
+... 3MF stores color, material, and other data useful for 3D printing.
+
+4.  Why are overhangs below roughly 45° a problem for FDM printing?
+*a)  The filament can droop without support
+... Low-angle overhangs lack underlying material, causing sagging.
+b)  They always require more infill
+c)  Printers cannot move at that angle
+
+5.  If you must print a 20° overhang and want to improve the result without supports, what setting might you adjust?
+a)  Increase layer height
+*b)  Decrease layer height
+... Thinner layers reduce sag on shallow angles.
+c)  Remove infill
+
+6.  You need a press fit between a 10 mm peg and hole. What clearance should you design for?
+*a)  0.1 mm
+... A 0.1 mm clearance gives a snug press fit.
+b)  0.2 mm
+c)  0.3 mm
+
+7.  A bridge in your model spans 25 mm of open air. What is the best design adjustment?
+a)  Leave it as-is; bridges work at any length
+*b)  Add supports or redesign to shorten the span
+... Bridges are most reliable at ~20 mm or less; longer spans need support or redesign.
+c)  Increase wall count only

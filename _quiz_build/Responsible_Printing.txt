@@ -1,0 +1,46 @@
+Quiz title: Responsible Printing
+Quiz description: This quiz focuses on responsible printing practices in the DFX lab, covering essential safety protocols, equipment usage guidelines, and best practices for print operations. The 21-question quiz assesses students' understanding of lab rules and regulations, including training requirements, emergency procedures, and post-print verification processes. By completing this quiz, students will demonstrate their knowledge of responsible printing habits in the DFX lab.
+shuffle answers: true
+show correct answers: true
+
+1.  Why must you complete the DFX lab safety training before using the printers?
+*a)  It ensures you understand necessary safety protocols
+... Training prevents accidents and is required for lab access.
+b)  It grants free filament
+c)  It unlocks advanced printer settings
+
+2.  Which of the following is allowed in the DFX lab?
+a)  Storing personal projects without permission
+b)  Bringing food and drink near the printers
+*c)  Reporting missing tools to staff immediately
+... Notifying staff keeps the lab safe and organized.
+
+3.  If you witness a water leak or equipment problem, what should you do?
+a)  Ignore it and continue printing
+*b)  Report it to TSS staff right away
+... Prompt reporting prevents further damage or safety issues.
+c)  Try to fix it yourself
+
+4.  Why should you stay near the printer for the first few layers?
+*a)  Most print failures happen early and can be stopped quickly
+... Early monitoring prevents wasted time and material.
+b)  The printer requires constant manual control
+c)  The filament changes color after three layers
+
+5.  Before starting a print, which of the following should you verify?
+*a)  Filament levels, clean bed, and correctly named file
+... These checks prevent common issues and cancellations.
+b)  Only the color of the nozzle
+c)  That the printer is connected to Wi-Fi
+
+6.  The printer runs out of filament during a print. What is the appropriate response?
+a)  Replace the spool yourself immediately
+*b)  Pause the print and ask a TA or staff member for assistance
+... Staff manage filament changes to protect equipment.
+c)  Ignore it and let the print continue
+
+7.  What consequence might result from damaging equipment through rule violations?
+a)  Nothing, accidents happen
+*b)  Financial responsibility and potential loss of printing privileges
+... Breaking rules can lead to fees and revoked access.
+c)  You get more filament as compensation

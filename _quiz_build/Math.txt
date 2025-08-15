@@ -1,0 +1,23 @@
+Quiz title: Math
+Quiz description: This math quiz focuses on basic arithmetic operations, including division and multiplication, as well as a simple programming concept using Serial.println in a coding context. The quiz consists of nine questions that test your understanding of these concepts, with an emphasis on practical application. By completing this quiz, you'll assess your proficiency in fundamental math skills and coding basics.
+shuffle answers: true
+show correct answers: true
+
+1.  Which operator returns the remainder of a division?
+... Think of modulo arithmetic.
+a)  /
+b)  *
+*c)  %
+... `%` gives the remainder.
+
+2.  What is the result of `2 * 3 + 1`?
+a)  5
+*b)  7
+... Multiplication happens before addition.
+c)  9
+
+3.  What does `Serial.println(4 / 2 + 1);` output?
+a)  2
+*b)  3
+... Division happens before addition: 4 / 2 = 2, then +1 makes 3.
+c)  5

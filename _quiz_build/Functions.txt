@@ -1,0 +1,25 @@
+Quiz title: Functions
+Quiz description: This quiz focuses on functions in programming, covering key concepts such as return types, exit keywords, and function definitions. The quiz consists of 10 multiple-choice questions that test your understanding of these fundamental topics. By completing this quiz, you'll demonstrate your knowledge of how to write effective functions in a programming language.
+shuffle answers: true
+show correct answers: true
+
+1.  What does a function's return type specify?
+... It appears before the function name.
+a)  The function's name
+*b)  The type of value it returns
+... The return type tells callers what value will come back.
+c)  The number of parameters
+
+2.  Which keyword exits a function and provides a value?
+*a)  return
+... `return` stops the function and optionally sends data back.
+b)  break
+c)  continue
+
+3.  Which line correctly defines a function named `blink` that takes no parameters and returns nothing?
+... In Arduino, the return type comes first.
+*a)  void blink() {}
+... `void` indicates no return value.
+b)  blink() void {}
+c)  int blink(void);
+d)  void blink;

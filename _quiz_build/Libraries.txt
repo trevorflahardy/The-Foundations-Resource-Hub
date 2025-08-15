@@ -1,0 +1,24 @@
+Quiz title: Libraries
+Quiz description: This quiz is designed to test your knowledge of libraries in Arduino programming, covering essential topics such as including libraries in sketches, installing new libraries from within the IDE, and adding library dependencies. With 10 questions, you'll have a chance to demonstrate your understanding of these critical concepts. From basic installation to advanced library management, this quiz will help you assess your skills in working with libraries in Arduino programming.
+shuffle answers: true
+show correct answers: true
+
+1.  What keyword is used to include a library in your sketch?
+*a)  #include
+... `#include` tells the preprocessor to pull in a header file.
+b)  import
+c)  using
+
+2.  Where do you typically install new libraries from inside the Arduino IDE?
+... This tool lets you search online packages.
+*a)  Library Manager
+... The Library Manager downloads and installs libraries.
+b)  Serial Monitor
+c)  Board Manager
+
+3.  Which statement adds the `Wire` library to your sketch?
+*a)  #include <Wire.h>
+... Angle brackets include standard libraries like Wire.
+b)  import Wire
+c)  include "Wire"
+d)  using Wire;

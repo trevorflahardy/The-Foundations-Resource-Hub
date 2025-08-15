@@ -1,0 +1,130 @@
+Quiz title: Track 2 Final Quiz: Programming
+Quiz description: This final quiz for programming covers essential concepts and terminology related to Arduino programming, including file extensions, microcontrollers, functions, data types, control structures, loops, serial communication, and more. The 21-question quiz assesses students' understanding of key concepts and their ability to apply them in a practical setting. It is designed to evaluate students' knowledge at the end of the course and provide a comprehensive assessment of their programming skills.
+shuffle answers: true
+show correct answers: true
+
+1.  Which file extension do Arduino sketches use?
+a)  .cpp
+*b)  .ino
+... Arduino saves code in sketch files that end with the .ino extension.
+c)  .exe
+
+2.  Which microcontroller board is used in this course?
+*a)  Arduino Uno
+... The guide uses the Arduino Uno because it is beginner friendly and well supported.
+b)  Raspberry Pi Pico
+c)  ESP32
+
+3.  Which function runs once when your board starts?
+*a)  setup()
+... The setup() function executes a single time at startup for initialization.
+b)  loop()
+c)  start()
+
+4.  Which function contains code that repeats forever?
+a)  setup()
+*b)  loop()
+... Code inside loop() runs continuously after setup() finishes.
+c)  repeat()
+
+5.  Which character ends most lines of Arduino code?
+*a)  ;
+... A semicolon terminates statements in the Arduino language.
+b)  :
+c)  ,
+
+6.  How do you write a single-line comment?
+*a)  // comment
+... Two forward slashes mark the start of a single-line comment.
+b)  <!-- comment -->
+c)  /* comment */
+
+7.  Which data type stores whole numbers like 42?
+*a)  int
+... The int type holds integer values.
+b)  float
+c)  char
+
+8.  Which data type holds true or false values?
+a)  int
+b)  float
+*c)  bool
+... Boolean variables store either true or false.
+
+9.  Why would you use an array in your sketch?
+*a)  To store a collection of related values under one name
+... Arrays keep grouped data organized and accessible.
+b)  To run code repeatedly
+c)  To comment multiple lines at once
+
+10.  What index accesses the first element of an array?
+*a)  0
+... Arduino arrays are zero-indexed, so the first element uses index 0.
+b)  1
+c)  2
+
+11.  How do you reference the third element of `values`?
+*a)  values[2];
+... Index 2 retrieves the third element because arrays start counting at 0.
+b)  values(3);
+c)  values<2>;
+
+12.  Which keyword sends a value back from a function?
+*a)  return
+... The return keyword passes data back to the caller.
+b)  send
+c)  break
+
+13.  Which operator yields the remainder of a division?
+a)  /
+*b)  %
+... The modulus operator % returns the remainder.
+c)  *
+
+14.  Which control structure is ideal for checking many discrete cases of a variable?
+*a)  switch
+... A switch statement branches based on specific constant values.
+b)  if
+c)  while
+
+15.  Which loop is best for repeating an action a set number of times?
+*a)  for loop
+... A for loop combines initialization, condition, and update for fixed iterations.
+b)  while loop
+c)  if-else chain
+
+16.  Which loop always executes its body at least once?
+a)  while loop
+*b)  do...while loop
+... A do...while loop evaluates its condition after the first iteration.
+c)  for loop
+
+17.  Which function initializes serial communication at 9600 bps?
+*a)  Serial.begin(9600);
+... Serial.begin sets up the serial port speed.
+b)  Serial.print(9600);
+c)  Serial.open(9600);
+
+18.  On the Arduino Uno, which pin is connected to the onboard LED used in the second program?
+a)  7
+*b)  13
+... Pin 13 controls the built-in LED on the Uno.
+c)  A0
+
+19.  Which directive adds an external library to your sketch?
+*a)  #include <Servo.h>
+... The #include directive pulls in library code for use in your program.
+b)  import Servo;
+c)  using Servo;
+
+20.  According to the code disclaimer, why might a snippet fail if pasted directly into the IDE?
+*a)  It may omit setup(), loop(), or other required parts
+... Many examples focus on concepts and leave out surrounding boilerplate code.
+b)  The IDE blocks copied code
+c)  Arduino boards cannot run pasted code
+
+21.  Which toolbar button verifies code without uploading it?
+*a)  The checkmark/Verify button
+... Verify compiles your sketch to check for errors without uploading.
+b)  The Upload arrow
+c)  The serial monitor icon
