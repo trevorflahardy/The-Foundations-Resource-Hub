@@ -327,62 +327,55 @@ Slicing Settings
 
 With your model loaded and positioned, it's time to configure the slicing settings. Orca Flashforge provides intelligent defaults, but understanding the key parameters helps you optimize for your specific needs.
 
-Accessing Slicing Settings
-^^^^^^^^^^^^^^^^^^^^^^^^^^
+To start, download the USF default profile :download:`here </3d_printing/projects/main_student_template.3mf>`
 
-The main slicing parameters are located in the left panel of the interface:
+Confirming Slicing Settings
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Your default print profile should already be set for the USF defaults. The main slicing parameters are located in the left panel of the interface:
 
 - **Printer Settings** - Machine-specific parameters (already set for Adventurer 5M)
 - **Filament Settings** - Temperature and material properties.
 - **Print Settings** - Controls layer height, infill, and supports. This is where you'll spend most of your time.
 
-.. image:: /images/3d_printing/slicing/settings_panel.png
-   :align: center
-   :scale: 50%
-   :alt: Slicing settings panel in Orca Flashforge.
+To confirm you are using the USF default profile, view all the altered settings below. An orange highlight indicates a setting that has been changed from the default. **Ensure your settings match the recommended values**:
 
-Key Settings to Review
-^^^^^^^^^^^^^^^^^^^^^^
+On the **Speed** tab:
 
-For most prints at USF, you'll want to check these essential settings:
+.. image:: /images/3d_printing/slicing/settings_1.png
+  :align: center
+  :alt: Print settings panel in Orca Flashforge.
+  :scale: 50%
 
-.. list-table::
-  :header-rows: 1
+On the **Speed** tab:
 
-  * - Setting
-    - Which Tab to Find It On
-    - What it Does
-    - Recommended value
-  * - Layer Height
-    - Dropdown bar
-    - Controls the thickness of each layer.
-    - ``0.20mm Standard`` for most prints, ``0.12mm Fine`` for detailed models, ``0.28mm Draft`` for faster prints
-  * - Wall loops
-    - Strength tab
-    - Controls the number of loops for the outer wall.
-    - ``2`` loops for most prints, ``4`` for high-strength parts only.
-  * - Infill
-    - Strength tab
-    - Controls the internal pattern and density.
-    - ``15%`` for most functional parts.
-  * - Infill Pattern
-    - Strength tab
-    - Controls the internal pattern used for infill.
-    - ``Grid`` for most prints, ``Gyroid`` for complex shapes, ``Adaptive Cubic`` for large models.
-  * - Enable supports
-    - Supports tab
-    - Controls whether supports are generated
-    - Toggle "Enable Support"
-  * - Support Type
-    - Supports tab
-    - Controls the type of supports used.
-    - ``Tree (auto)`` for complex models, ``Normal (auto)`` for large flat overhangs.
-  * - Brim Type
-    - Others tab
-    - Controls the type of brim used for bed adhesion.
-    - ``Auto`` for most prints, ``None`` for models with good bed adhesion (large flat bases).
+.. image:: /images/3d_printing/slicing/settings_2.png
+  :align: center
+  :alt: Print settings panel in Orca Flashforge.
+  :scale: 50%
 
-**Reorient and Re-Arrange your build plates after changing settings.**
+On the **Speed** tab:
+
+.. image:: /images/3d_printing/slicing/settings_3.png
+  :align: center
+  :alt: Print settings panel in Orca Flashforge.
+  :scale: 50%
+
+On the **Support** tab:
+
+.. image:: /images/3d_printing/slicing/settings_4.png
+  :align: center
+  :alt: Print settings panel in Orca Flashforge.
+  :scale: 50%
+
+On the **Others** tab:
+
+.. image:: /images/3d_printing/slicing/settings_5.png
+  :align: center
+  :alt: Print settings panel in Orca Flashforge.
+  :scale: 50%
+
+**Reorient and Re-Arrange your build plates after changing any settings.**
 
 Preview Before Slicing
 ^^^^^^^^^^^^^^^^^^^^^^
