@@ -111,7 +111,7 @@ cd docs
 make html
 
 # Generate standalone HTML (alternative format)
-python -m rst_to_html docs/_build_raw/html
+python -m rst_to_html --output-dir=docs/_build_raw/html
 
 # Build quizzes for Canvas
 python -m quiz_to_qti batch --auto-desc
