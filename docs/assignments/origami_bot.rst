@@ -60,30 +60,15 @@ The schematic for the Origami Bot is shown below:
 
 .. figure:: ../images/origami_bot_schematic.png
     :alt: Origami Bot Schematic
+    :figwidth: 80%
+    :align: center
 
     The schematic for the Origami Bot. Follow the wire connections to connect the H-Bridge, Arduino, and motors together.
 
-.. warning::
-
-    The **Origami Bot PDF** on Canvas does **not** use this schematic. Instead, it removes the breadboard by supplying power directly from the battery pack to the H-Bridge. The H-Bridge then supplies power to the Arduino.
-
-    This is a more advanced setup, you can use whichever schematic/setup you prefer. The Foundations TAs can help you with either setup. To remove the breadboard, do the following:
-
-    - Supply the power and ground from the battery pack to the H-Bridge, noting that the power from the battery must be plugged into the ``12V`` terminal on the H-Bridge.
-    - Supply power to the Arduino from the H-Bridge using the ``5V`` terminal on the H-Bridge into the ``VIN`` pin on the Arduino. This will power the Arduino.
-
 .. important::
 
-    This schematic shows the use of the ``6V`` power supply. You can also use a ``9V`` battery and the included adapter in your Project kit.
+    This schematic shows the use of the ``9V`` battery. You can also use a ``6V`` battery pack (``4 AA`` batteries) to power the robot. The ``9V`` battery is more consistent in power delivery, it is not advised to use the ``6V`` battery pack as it struggles to supply enough current to the motors.
 
-    Additionally, you can power the robot using the USB cable connected to your computer. However, this requires you to change the wiring on your circuit. The Foundations TAs can help you with this if needed, but the ``6V`` or ``9V`` power supply is recommended.
-
-Note how the H-bridge and Arduino power and ground are connected to the breadboard. An Arduino Uno
-can only supply ``5V`` of power. But, the four ``AA`` batteries can supply 6V of power (``1.5V * 4V = 6V``).
-
-The H-bridge, however, can handle up to ``46V`` of power! In other words, the H-bridge
-loves power! A higher supply of power means the motors can run faster and have more torque.
-So, by plugging the H-bridge and Arduino Uno into the breadboard, you can power the motors with ``6V`` of power instead of ``5V``.
 
 .. important::
 
