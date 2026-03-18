@@ -4,7 +4,7 @@
 Responsible 3D Printing
 ========================
 
-Many things go into 3D printing, so proper knowledge of the protocols is pivotal to producing quality prints. Additionally, 3D printers are sophisticated, delicate machines, and as such need to be treated with the utmost care.
+Many things go into 3D printing, so proper knowledge of the protocols is essential for producing quality prints. Additionally, 3D printers are sophisticated, delicate machines and need to be treated with the utmost care.
 
 This guide details the rules, expectations, and best practices you'll need to follow when 3D printing for ``EGN 3000L``.
 
@@ -15,17 +15,17 @@ DFX Lab
 
    You **must** complete the DFX lab safety training before using any equipment in the lab, including our 3D printers. Find a time and sign up for the training here: `see the training page <http://www.eng.usf.edu/dfx/labtrainings.html>`_.
 
-The Foundations of Engineering Lab administration are not employees or representatives of the DFX lab, but, the courses' 3D printers are located there. So, in addition to the rules outlined in this guide, you **must** follow the DFX lab's rules and expectations as well. These are **non-negotiable** in the lab for your safety.
+The Foundations of Engineering Lab administration are not employees or representatives of the DFX lab, but the course's 3D printers are located there. So, in addition to the rules outlined in this guide, you **must** follow the DFX lab's rules and expectations as well. These are **non-negotiable** in the lab for your safety.
 
 .. note::
 
    **Engineering Lab Course Printers vs. DFX Lab Printers**
 
-   Foundations operates its own 3D printers within the DFX lab space. These course printers are **only for students enrolled in the Foundations course** and cannot be used by other students not enrolled in the course, including all DFX lab users.
+   Foundations operates its own 3D printers within the DFX lab space. These course printers are **only for students enrolled in the Foundations course** and cannot be used by other students, including general DFX lab users.
 
    If you want to use the DFX lab's own 3D printers, you'll need to complete DFX's dedicated 3D printer training, and can sign up using the `DFX lab's training page <http://www.eng.usf.edu/dfx/labtrainings.html>`_.
 
-The full list of DFX lab rules should be reviewed `here <http://www.eng.usf.edu/dfx/labrules.html>`_, but these are some of the most important ones to keep in mind:
+The full list of DFX lab rules can be reviewed `here <http://www.eng.usf.edu/dfx/labrules.html>`_, but these are some of the most important ones to keep in mind:
 
 - General operating hours are **Monday through Friday 8am to 5pm** when the University is normally open.
 - **No food or drink** is allowed in this lab except for the designated storage areas.
@@ -35,7 +35,7 @@ The full list of DFX lab rules should be reviewed `here <http://www.eng.usf.edu/
 - Report any equipment problem, messes left by others, water leaks, missing items, or any unusual events to a TSS staff immediately. Tool or facilities modifications to equipment should not be done unless approved by the Lab Manager.
 - You **must be trained and certified to use the tools in this lab**. Please see the NREC Office for monthly training sessions offered or card access rights to this lab.
 
-Failing to follow the lab's rules may result in consequences from both the lab and from us. These can include permanent banishment from the lab, fees, and/or a failing grade in the course.
+Failing to follow the lab's rules may result in consequences from both the lab and from the course. These can include permanent removal from the lab, fees, and/or a failing grade in the course.
 
 .. quizdown:: ../quizzes/3d_printing/responsible_printing_check.md
 
@@ -44,7 +44,7 @@ Failing to follow the lab's rules may result in consequences from both the lab a
 Printing Workflow Overview
 ==========================
 
-It's helpful to understand the process of 3D printing at USF. An overview of the workflow is as follows, but further sections will go into further detail:
+It is helpful to understand the full process of 3D printing at USF. An overview of the workflow is as follows, with further sections providing additional detail:
 
 #. **Prepare Your Design**
    Ensure your CAD model is ready and export it as an STL file. Double-check dimensions and make sure your design is optimized for 3D printing. See :ref:`3d_design_for_printing`.
@@ -104,7 +104,7 @@ Before You Start
 
 - Start a print without checking filament levels
 - Pause, cancel, or touch someone else's active print without permission.
-- Leave prints unattended for at least several minutes after starting them.
+- Leave prints unattended for the first several minutes after starting them.
 - Bump, jostle, or unlock the wheels of the printer racks.
 
 During Your Print
@@ -112,7 +112,7 @@ During Your Print
 
 ✅ **DO:**
 
-- Monitor the first few layers closely - most failures happen early.
+- Monitor the first few layers closely -- most failures happen early.
 - Check on longer prints periodically (every 2-3 hours for prints over 4 hours).
 - Take photos of any problems if you plan on requesting troubleshooting help.
 - Keep the area around the printer clean and organized.
@@ -216,22 +216,22 @@ What NOT to Touch
 Mechanical Cautions
 -------------------
 
-- Don't force any moving parts - they should move smoothly.
+- Do not force any moving parts -- they should move smoothly.
 - Never try to "help" the printer by pushing or pulling parts during operation.
 - Keep fingers, hair, and loose clothing away from moving components.
-- Don't attempt to clear jams or clogs, just stop the print and ask for help.
-- The filament spool should not be touched or removed. All printers have a filament sensor that will stop the print if the filament runs out or is removed. If this happens, let a TA or staff member know to refill the spool and continue your print. Do not try and refill the spool yourself.
+- Do not attempt to clear jams or clogs; just stop the print and ask for help.
+- The filament spool should not be touched or removed. All printers have a filament sensor that will stop the print if the filament runs out or is removed. If this happens, let a TA or staff member know so they can refill the spool and continue your print. Do not try to refill the spool yourself.
 
 If Something Goes Wrong
 -----------------------
 
-In case of critical issues follow these steps in order:
+In case of critical issues, follow these steps in order:
 
 #. **Stop the Print**: Attempt to stop the print using the screen. The job should stop immediately, and the extruder will return to the home position.
 
 #. **Power Off**: If the screen on the printer is unresponsive, use the printer power switch, located on the back of the printer near its power cable.
 
-#. **Get Help Immediately**: Contact a TA or DFX staff member right away. Don't try to fix electrical or mechanical issues yourself.
+#. **Get Help Immediately**: Contact a TA or DFX staff member right away. Do not try to fix electrical or mechanical issues yourself.
 
 #. **Document the Issue**: Take photos if safe to do so - this helps staff diagnose problems and understand what went wrong.
 
@@ -240,7 +240,7 @@ Emergency Contacts
 
 - **For immediate safety concerns**: Call campus security or 911.
 - **For equipment issues**: Contact DFX lab staff or your TA immediately.
-- **Never attempt repairs yourself** - this can break printers or cause further issues.
+- **Never attempt repairs yourself** -- this can damage printers or cause further issues.
 
 .. note::
 
@@ -248,7 +248,7 @@ Emergency Contacts
 
 Personal Safety Gear
 ---------------------
-Close-toed shoes are the only requirement for 3D printing, however if you're using other tools in the DFX lab you may need specialized safety gear. Always reference the DFX lab's safety guidelines for the specific tools you're using.
+Close-toed shoes are the only requirement for 3D printing. However, if you are using other tools in the DFX lab, you may need specialized safety gear. Always reference the DFX lab's safety guidelines for the specific tools you're using.
 
 .. tip::
 

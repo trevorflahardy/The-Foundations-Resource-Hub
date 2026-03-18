@@ -38,20 +38,20 @@ Designing with this in mind ensures structural integrity and printability.
 Orientation / Overhangs
 -----------------------
 
-There's nothing wrong with having to use supports in your designs, sometimes there's no workaround or design choices that can avoid supports and supports will be absolutely necessary, but that isn't to say there aren't downsides. That is,
+There is nothing wrong with using supports in your designs. Sometimes there is no workaround or design choice that can avoid them, and supports will be absolutely necessary. That said, supports do have downsides:
 
 - Wasted filament
 - Wasted time and effort needed to remove supports
 - Longer print times
-- Supported sections have generally lesser quality.
-- Supported sections are more likely to fail, relative to non-supported sections.
+- Supported sections generally have lower surface quality.
+- Supported sections are more likely to fail than non-supported sections.
 
 This does not mean you should avoid supports at all costs, but rather that you should be aware of the downsides and design to avoid them when possible.
 
 'Bad' Overhangs and the Power of 45
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-An :term:`overhang <Overhang>` is a section of a print that extends outward without any support beneath it. This often causes the filament to droop, leading to not only a visual quality issue but also a function one.
+An :term:`overhang <Overhang>` is a section of a print that extends outward without any support beneath it. This often causes the filament to droop, leading to not only a visual quality issue but also a functional one.
 
 Often, future layers depend on the overhangs, but if the overhangs droop, the future layers may not have anything to attach to. This often leads to print failures. The best rule of thumb is to keep any angles (that would cause an overhang) at **45 degrees**.
 
@@ -65,13 +65,13 @@ Here's an example model that shows what the slicer considers a 'bad' overhang:
   :align: center
   :alt: Bad Overhang Example 2
 
-In the images above, you can see orange and blue parts of a sliced model. Orange sections indicate normal **Outer Walls** that will print in good quality while blue sections indicate **Overhang Walls** that are highly likely to droop and have quality issues.
+In the images above, you can see orange and blue parts of a sliced model. Orange sections indicate normal **Outer Walls** that will print in good quality, while blue sections indicate **Overhang Walls** that are highly likely to droop and have quality issues.
 
-The left most side of the model starts with a 45 degree angle with each section decreasing the angle. It goes: ``45``, ``35``, ``25``, ``15``, then ``10`` degrees.
+The leftmost side of the model starts with a 45-degree angle, with each section decreasing the angle. It goes: ``45``, ``35``, ``25``, ``15``, then ``10`` degrees.
 
 Although the slicer can consider the 35 and 25 degrees "acceptable", these are in ideal conditions and are not guaranteed to print well. External factors like cooling, filament type, and printer settings can all affect the print quality. In your designs, stick with 45 degrees for the best results and go lower only if you have to.
 
-There is a quick workaround for getting really low angle overhangs to print better; you can decrease layer height from the default ``0.20 mm`` to something lower like ``0.08 mm`` per layer.
+There is a quick workaround for getting really low-angle overhangs to print better: you can decrease the layer height from the default ``0.20 mm`` to something lower like ``0.08 mm`` per layer.
 
 The same model with 0.08 mm layer height now looks like this when sliced:
 
@@ -88,7 +88,7 @@ Keep in mind, though, that everything has a tradeoff. Lowering the layer height 
 Bridges are the Best
 ^^^^^^^^^^^^^^^^^^^^
 
-FDM Printers generally can't print on thin air, but they are able to create bridges over the air when there's something to support it on both sides. At short lengths, at or under ``20mm``, bridges are very reliable and visually print well. If you need to print over air, without supports, make sure it's a bridge.
+FDM printers generally cannot print on thin air, but they are able to create bridges over gaps when there is something to support the filament on both sides. At short lengths, at or under ``20mm``, bridges are very reliable and visually print well. If you need to print over air, without supports, make sure it's a bridge.
 
 Here are some examples of bridges being used to add details to models; the light blue sections are the bridges.
 
@@ -104,7 +104,7 @@ Sliced:
   :align: center
   :alt: Bridge Example 2
 
-The yellow section is the part of the model that's touching the print bed. You can see the light blue section is not touching the print bed and even the darker blue sections that are deemed 'bad' overhangs print okay because they're so small they act like bridges.
+The yellow section is the part of the model touching the build plate. You can see the light blue section is not touching the build plate, and even the darker blue sections that are deemed 'bad' overhangs print okay because they are so small that they act like bridges.
 
 
 Choose the Bottom of Your Model Right Away
@@ -117,9 +117,9 @@ When starting to design a model, choose the face of the model that will be attac
 Bed Adhesion
 ------------
 
-Brims are always useful for creating more bed adhesion for thin or small parts, but it is good practice to avoid them (covered more later on). Creating good bed adhesion mostly means designing the bottoms of your prints to have a good sized connection to the build plate and avoiding having long, thin sections.
+Brims are always useful for creating more bed adhesion for thin or small parts, but it is good practice to avoid them when possible (covered more later on). Creating good bed adhesion mostly means designing the bottoms of your prints to have a good-sized connection to the build plate and avoiding long, thin sections.
 
-Here are some examples of good sized bottom sections for bed adhesion:
+Here are some examples of good-sized bottom sections for bed adhesion:
 
 .. image:: /images/3d_printing/bed_adhesion_1.png
   :align: center
@@ -129,7 +129,7 @@ Here are some examples of good sized bottom sections for bed adhesion:
   :align: center
   :alt: Bed Adhesion Example 2
 
-Thus, if you're not seeing any bottom surface sections then it's not a good sign.
+Thus, if you are not seeing any bottom surface sections, it is not a good sign.
 
 Here's an example where the bed adhesion is on the line of being unreliable:
 
@@ -156,9 +156,9 @@ Generally, you would consider this circled area too small and thin for good bed 
 Dimensional Accuracy and Fitment / Tolerance
 ------------------------------------------------
 
-Did you know that if you print a 10 mm cube and plan to put it inside a 10 mm square hole, it won't fit! Either the hole will be too small or the cube will be too big, maybe even both!
+Did you know that if you print a 10 mm cube and plan to put it inside a 10 mm square hole, it will not fit? Either the hole will be too small or the cube will be too big -- maybe even both!
 
-As plastics cool they shrink. So, if you print a 10 mm cube, it may actually be 9.8 mm or 10.2 mm. This is called **shrinkage** and is a common issue in 3D printing. The amount of shrinkage can depend on a lot of factors, including the type of plastic, the temperature of the print bed, and the ambient temperature. The amount of shrinkage can also depend on the size of the model; larger models tend to shrink more than smaller models.
+As plastics cool, they shrink. So, if you print a 10 mm cube, it may actually be 9.8 mm or 10.2 mm. This is called **shrinkage** and is a common issue in 3D printing. The amount of shrinkage depends on many factors, including the type of plastic, the temperature of the build plate, and the ambient temperature. Shrinkage can also depend on the size of the model; larger models tend to shrink more than smaller ones.
 
 Luckily, there are ways to account for this shrinkage in your designs. The most common way is to add **clearance** between the two parts that need to fit together. This clearance is the amount of space between the two parts and is usually measured in millimeters, also known as **tolerance**. The amount of clearance needed depends on the type of **fitment**, or the type of fit you want between the two parts.
 
@@ -168,7 +168,7 @@ For example, consider the following image:
   :align: center
   :alt: Fitment Example
 
-In the image above you can see a ``0.1mm`` clearance, where the inner square has ``0.1mm`` of space around it on all sides.
+In the image above, you can see a ``0.1mm`` clearance, where the inner square has ``0.1mm`` of space around it on all sides.
 
 If the clearance between two parts is too small, the parts will be too tight to fit together (or won't fit together at all). Conversely, if the clearance is too large, the parts will be too loose and may not stay together. Finding the right balance is key to ensuring a successful fit.
 
@@ -184,7 +184,7 @@ As a rule of thumb for your designs, fitment can be classified into three catego
       - Parts are designed to fit tightly together, requiring force to assemble. Ideal for permanent joints.
       - ``0.1 mm``
     * - Slip Fit
-      - Parts can slide together easily but may not stay together without additional support. Useful for temporary assemblies, i.e. snap joints or assemblies that may need to be disassembled.
+      - Parts can slide together easily but may not stay together without additional support. Useful for temporary assemblies, e.g., snap joints or assemblies that may need to be disassembled.
       - ``0.2 mm``
     * - Clearance (Loose) Fit
       - Parts have a gap between them, allowing for easy movement or assembly. Suitable for loose joints.
@@ -200,9 +200,9 @@ What you choose to do depends on the design of your model. Generally speaking, i
 Z-Height and Z-Accuracy
 ^^^^^^^^^^^^^^^^^^^^^^^^
 
-Let's say you are planning to print a model that is **exactly** ``0.50mm`` tall. You design your model, slice it, and send it off to be printed. After, you use calipers to measure the height of the model and find that it is actually ``0.4mm`` tall. Wait, what happened? You designed and sliced your model to be ``0.5mm`` tall, so why did it not print at that height?!
+Let's say you are planning to print a model that is **exactly** ``0.50mm`` tall. You design your model, slice it, and send it off to be printed. Afterward, you use calipers to measure the height of the model and find that it is actually ``0.4mm`` tall. Wait, what happened? You designed and sliced your model to be ``0.5mm`` tall, so why did it not print at that height?
 
-When the height of the model cannot be evenly divided by the layer height, a rounding algorithm will be used during slicing to confirm the number of layers required for the printing model. The slicer slices the 3D model layer by layer. When slicing to the top layer, it determines whether to round up or down based on the center Z height of the topmost line compared to the actual height of the model.
+When the height of the model cannot be evenly divided by the layer height, the slicer uses a rounding algorithm to determine the number of layers required. The slicer processes the 3D model layer by layer. When it reaches the top layer, it decides whether to round up or down based on the center Z height of the topmost line compared to the actual height of the model.
 
 .. list-table::
   :header-rows: 1
@@ -236,14 +236,14 @@ When the model height is 0.51mm, the center Z height of the third layer is ``0.5
   :align: center
   :alt: Z-Accuracy Example
 
-This is called **Z-accuracy**, and can be an annoying issue in 3D printing, and can affect the fitment of your model. If your model is not the correct height, and other parts depend on its accuracy, your assembly may not fit together or work as intended.
+This is called **Z-accuracy** and can be a frustrating issue in 3D printing that affects the fitment of your model. If your model is not the correct height and other parts depend on its accuracy, your assembly may not fit together or work as intended.
 
-When designing your models, you may need to keep in mind its **Z-height**. The Z-height is the height of your model in the Z-axis, or the vertical axis. So, what do I do about this? We're talking about the difference of ``0.1mm`` here, should I even care? Well, yes... and no.
+When designing your models, you may need to keep in mind their **Z-height**. The Z-height is the height of your model along the Z-axis (the vertical axis). So, what do you do about this? We are talking about a difference of ``0.1mm`` here -- should you even care? Well, yes and no.
 
-The difference of ``0.1mm`` may not seem like a lot, but if the model's Z-accuracy matters, that small difference may be a lot! So what do I do? You can either:
+The difference of ``0.1mm`` may not seem like a lot, but if the model's Z-accuracy matters, that small difference can be significant. So what do you do? You can either:
 
 - Design your parts to be divisible by the layer height. For example, if your layer height is ``0.20mm``, you can design your parts to be ``5.4mm``, ``5.6mm``, or ``5.8mm`` tall.
-- Use a different layer height. For example, if your model is ``5.5mm`` tall, you can use a layer height of ``0.11mm``. Note you should only change this if the Z-height is important to your model. If the Z-height is not important, which is the case for most models, you can use the default layer height of ``0.20mm``.
+- Use a different layer height. For example, if your model is ``5.5mm`` tall, you can use a layer height of ``0.11mm``. Note that you should only change this if the Z-height is important to your model. If the Z-height is not important, which is the case for most models, you can use the default layer height of ``0.20mm``.
 
 When designing, think to yourself: "Does the Z-height of my model matter?" If the answer is yes, then you need to be aware of the Z-height and Z-accuracy of your model. If the answer is no, then you can use the default layer height of ``0.20mm`` and not worry about it.
 
@@ -264,7 +264,7 @@ Once your design is complete in Tinkercad:
 
 #. **Click on "Export"**: Located in the upper-right corner of the Tinkercad interface.
 #. **Choose the File Format**: Select .STL for 3D printing.
-#. **Download the File**: The file will be saved to your computer, ready to be imported into slicing software like OrcaSlicer.
+#. **Download the File**: The file will be saved to your computer, ready to be imported into your slicing software (Orca Flashforge).
 
 .. quizdown:: ../quizzes/3d_printing/design_for_printing_quiz.md
 

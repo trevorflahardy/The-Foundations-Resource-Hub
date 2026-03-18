@@ -43,7 +43,7 @@ Fused Deposition Modeling (FDM)
 
 .. tip::
 
-  You will only be using a FDM-style 3D printer in the Foundations printing lab. The other types of 3D printers displayed below are merely for reference, comparison, and to help you understand the differences between the various types of 3D printing technologies.
+  You will only be using an FDM-style 3D printer in the Foundations printing lab. The other types of 3D printers described below are for reference and comparison, to help you understand the differences between the various 3D printing technologies.
 
 Stereolithography (SLA)
 -----------------------
@@ -53,7 +53,7 @@ Stereolithography (SLA)
 Selective Laser Sintering (SLS)
 -------------------------------
 
-:term:`SLS<SLS (Selective Laser Sintering)>` employs a laser to sinter powdered material, typically nylon or other polymers, fusing the particles together to form a solid structure. SLS does not require support structures, allowing for the creation of complex geometries. It's commonly used in industrial applications for functional parts
+:term:`SLS<SLS (Selective Laser Sintering)>` employs a laser to sinter powdered material, typically nylon or other polymers, fusing the particles together to form a solid structure. SLS does not require support structures, allowing for the creation of complex geometries. It's commonly used in industrial applications for functional parts.
 
 .. quizdown:: ../quizzes/3d_printing/intro_to_3d_printing_check.md
 

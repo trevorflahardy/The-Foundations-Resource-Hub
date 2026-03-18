@@ -4,26 +4,26 @@
 Preparing to Print
 ******************
 
-You now have a model, but now what? Before you can print, you need to prepare it using slicing software. This is where we turn your 3D model into instructions that the printer can understand.
+You now have a model -- but what next? Before you can print, you need to prepare it using slicing software. This is where you turn your 3D model into instructions that the printer can understand.
 
 .. _what_is_slicing:
 
 What is Slicing?
 ================
 
-:Slicing: is the process of turning your digital 3D model into printable instructions—layer by layer. These instructions are saved as a special file called :term:`G-code`, which your printer follows line by line.
+Slicing is the process of turning your digital 3D model into printable instructions -- layer by layer. These instructions are saved as a special file called :term:`G-code`, which your printer follows line by line.
 
 Think of it like converting a sculpture into instructions for a robot to carve it out—except instead of carving, it's building it up, one layer at a time!
 
 Understanding Key Slicing Concepts
 ----------------------------------
 
-Before we dive into using the software, let's cover some basic slicing terms. Don't worry if you don't get all the terms right away; you'll become familiar with them as you slice models and continue through this guide.
+Before diving into the software, let's cover some basic slicing terms. Don't worry if you don't understand all of them right away; you'll become familiar with them as you slice models and continue through this guide.
 
 Infill
 ^^^^^^^
 
-:term:`Infill` is the internal pattern that fills the inside of your model. Our model's cannot be hollow, can they? Of course, not, so infill gives our object **strength and stability**. You won't see it the inside of your model once it is done printing, but infill is crucial for making sure your print doesn't fall apart.
+:term:`Infill` is the internal pattern that fills the inside of your model. Our models cannot be hollow, can they? Of course not, so infill gives your object **strength and stability**. You will not see the inside of your model once it is done printing, but infill is crucial for making sure your print does not fall apart.
 
 There are several types of infill patterns you can use, each with their own strengths and weaknesses. Let's walk through the most common ones you'll encounter.
 
@@ -78,27 +78,27 @@ Supports
 
 When printing models with overhangs (parts that extend out without support underneath), you may need to add :term:`supports`. These are temporary structures printed alongside your model to hold up any parts that would otherwise sag or fall during printing.
 
-Supports come in many types, but the only you will be using at the USF print lab is the :term:`tree supports` and :term:`normal supports`.
+Supports come in many types, but the only ones you will be using at the USF print lab are :term:`tree supports` and :term:`normal supports`.
 
 Tree Supports
 """""""""""""
 
-:term:`Tree supports <tree supports>` samples the overhangs to get something called "nodes". Each node is represented as a circle, the nodes are propagated (joined) down to the heat bed. During propagation, the circles may be enlarged to get better strength and may be moved away from the object so the supports are less likely to collide with the object [#f2]_.
+:term:`Tree supports <tree supports>` sample the overhangs to identify points called "nodes." Each node is represented as a circle. The nodes are propagated (joined) down to the build plate. During propagation, the circles may be enlarged for better strength and may be moved away from the object so the supports are less likely to collide with it [#f2]_.
 
-But when do I use tree supports over normal supports? For objects with **complex structures** and most of the :term:`overhangs <Overhang>` are small, non-planar surfaces, tree supports give stronger support structure, less material, and less time cost, while keeping similar surface quality [#f2]_.
+When should you use tree supports over normal supports? For objects with **complex structures** where most of the :term:`overhangs <Overhang>` are small, non-planar surfaces, tree supports provide a stronger support structure with less material and shorter print times, while maintaining similar surface quality [#f2]_.
 
 .. image:: /images/3d_printing/supports/when_tree.png
   :align: center
   :alt: When to use Tree Supports
 
-How about non-complex structures? Tree supports are still useful for large overhangs, as they provide a strong support structure with less material used compared to normal supports. They also make it easier to remove the supports after printing.
+What about non-complex structures? Tree supports are still useful for large overhangs, as they provide a strong support structure with less material than normal supports. They also make it easier to remove supports after printing.
 
 Normal Supports
 """"""""""""""""
 
 :term:`Normal supports <normal supports>` are the traditional support structures that are printed directly under the :term:`overhangs <Overhang>`. They can be removed after printing, but they may leave marks on the model.
 
-But when do I use normal supports over tree supports? For **large planar overhang**, Normal supports usually give better surface quality than tree supports.
+When should you use normal supports over tree supports? For **large planar overhangs**, normal supports usually give better surface quality than tree supports.
 
 .. image:: /images/3d_printing/supports/when_normal_1.png
   :align: center
@@ -111,7 +111,7 @@ But when do I use normal supports over tree supports? For **large planar overhan
 
 Key Differences
 """""""""""""""
-So we have covered both types of supports, normal and tree, but which one should you use? It really depends on your model's geometry and the specific overhangs you need to support.
+Now that we have covered both types of supports, which one should you use? It depends on your model's geometry and the specific overhangs you need to support.
 
 - **Tree Supports**:
   - Best for complex structures with small, non-planar overhangs.
@@ -130,7 +130,7 @@ So we have covered both types of supports, normal and tree, but which one should
 
   - More material used.
 
-Which to use depends on your model's geometry and the specific overhangs you need to support. As you gain experience, you'll develop a feel for which type works best in different situations. Always feel free to reach out for help if you are unsure!
+As you gain experience, you will develop a feel for which type works best in different situations. Always feel free to reach out for help if you are unsure.
 
 
 .. quizdown:: ../quizzes/3d_printing/preparing_to_print_check.md
@@ -205,7 +205,7 @@ It is **recommended** to set the brim to **auto** for most prints, as it will au
 Getting Started with Orca Flashforge
 ====================================
 
-So we know *about* slicing now, but we need to get your slicing software ready to go! Orca Flashforge is a customized version of OrcaSlicer, built specifically for the FlashForge Adventurer 5M series that you'll be using in the lab.
+Now that you know about slicing, it is time to get your slicing software ready to go. Orca Flashforge is a customized version of OrcaSlicer, built specifically for the FlashForge Adventurer 5M series that you will be using in the lab.
 
 Installing Orca Flashforge
 --------------------------
@@ -227,10 +227,10 @@ Setup Wizard Walkthrough
 
 The first time you launch Orca Flashforge, you'll see a few friendly setup prompts:
 
-- **Login Region** - Simply pick your region (“North America”).
-- **Select Printer** - Choose the printer model you'll be using: ``Adventurer 5M``.
-- **Select Nozzle Size** - Pick the nozzle size available in the lab: ``0.4mm``.
-- **Select Filaments** - Choose the filaments you'll be printing with: ``PLA``.
+- **Login Region** -- Simply pick your region (“North America”).
+- **Select Printer** -- Choose the printer model you will be using: ``Adventurer 5M``.
+- **Select Nozzle Size** -- Pick the nozzle size available in the lab: ``0.4mm``.
+- **Select Filaments** -- Choose the filament you will be printing with: ``PLA``.
 
 That's it! You're now ready to load models and start slicing.
 
@@ -331,16 +331,16 @@ Slicing Settings
 
 With your model loaded and positioned, it's time to configure the slicing settings. Orca Flashforge provides intelligent defaults, but understanding the key parameters helps you optimize for your specific needs.
 
-To start, download the USF default profile :download:`here </3d_printing/projects/main_student_template.3mf>`
+To start, download the USF default profile :download:`here </3d_printing/projects/main_student_template.3mf>`.
 
 Confirming Slicing Settings
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Your default print profile should already be set for the USF defaults. The main slicing parameters are located in the left panel of the interface:
 
-- **Printer Settings** - Machine-specific parameters (already set for Adventurer 5M)
-- **Filament Settings** - Temperature and material properties.
-- **Print Settings** - Controls layer height, infill, and supports. This is where you'll spend most of your time.
+- **Printer Settings** -- Machine-specific parameters (already set for Adventurer 5M)
+- **Filament Settings** -- Temperature and material properties.
+- **Print Settings** -- Controls layer height, infill, and supports. This is where you will spend most of your time.
 
 To confirm you are using the USF default profile, view all the altered settings below. An orange highlight indicates a setting that has been changed from the default. **Ensure your settings match the recommended values**:
 
@@ -421,7 +421,7 @@ Once you're satisfied with your slicing settings and preview, it's time to expor
   :align: center
   :alt: Export G-code dialog in Orca Flashforge.
 
-#. **Choose Location**: Save the .gcode file to your USB drive. The file name should follow the following format:
+#. **Choose Location**: Save the .gcode file to your USB drive. The file name should follow this format:
 
     - **LastName_FirstInitial_Professor_Section_ModelName.gcode**
 
@@ -433,7 +433,7 @@ Once you're satisfied with your slicing settings and preview, it's time to expor
 
 .. note::
 
-  Note this export is only for **one plate at a time**. If you have multiple plates, you'll need to export each one separately.
+  This export is only for **one plate at a time**. If you have multiple plates, you will need to export each one separately.
 
 Once your file is exported, you're ready to move to the printer. See :ref:`responsible_3d_printing` for on-printer steps and lab etiquette.
 
@@ -460,7 +460,7 @@ In addition to exporting G-code for the printer, you must also submit a **sliced
 
 .. important::
 
-   This applies to Orca Flashforge, BambuStudio, OrcaSlicer, and similar slicer software that use the .3mf format. The key distinction is:
+   This applies to Orca Flashforge. The key distinction is:
 
    - **File > Save / Save As** = project file only (no slicing data) — **will be rejected**
    - **Export plate sliced file** (from the dropdown) = sliced file with print time, filament usage, and validation data — **this is what you must submit**
@@ -469,7 +469,7 @@ In addition to exporting G-code for the printer, you must also submit a **sliced
 
 .. note::
 
-   Like G-code export, this export is only for **one plate at a time**. If you have multiple plates, you'll need to export each one separately.
+   Like G-code export, this export is only for **one plate at a time**. If you have multiple plates, you will need to export each one separately.
 
 .. quizdown:: ../quizzes/3d_printing/preparing_to_print_quiz.md
 

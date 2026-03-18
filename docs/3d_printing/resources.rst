@@ -67,7 +67,7 @@ Glossary of 3D Printing Terms
     A file format used for sharing complex 3D models between different CAD programs.
 
   3MF (3D Manufacturing Format)
-    A modern file format that includes comprehensive data for 3D printing, such as color, material, and metadata. Note: in slicer software (Orca Flashforge, BambuStudio, OrcaSlicer), there are two types of .3mf files. A **project save** (``File > Save``) contains only your model and project settings but no slicing data. A **sliced .3mf** (exported via "Export plate sliced file") contains embedded print time, filament usage, and G-code data. Only sliced .3mf files are accepted by the Jotform submission system.
+    A modern file format that includes comprehensive data for 3D printing, such as color, material, and metadata. Note: in slicer software (Orca Flashforge), there are two types of .3mf files. A **project save** (``File > Save``) contains only your model and project settings but no slicing data. A **sliced .3mf** (exported via "Export plate sliced file") contains embedded print time, filament usage, and G-code data. Only sliced .3mf files are accepted by the Jotform submission system.
 
   Overhang
     A part of a 3D model that extends outward without support beneath, potentially requiring additional structures during printing.
