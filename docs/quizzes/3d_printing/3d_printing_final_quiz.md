@@ -19,7 +19,7 @@
 ### When naming your G-code file for submission at USF, which example follows the required format?
 1. [ ] Project1.gcode
 1. [x] Garcia_M_SEC2_Brace.gcode
-   > The required format is LastName_FirstInitial_ProfessorSection_Model.gcode.
+   > The required format is LastName_FirstInitial_Professor_Section_ModelName.gcode.
 1. [ ] gear.gcode
 
 ### Your .3mf submission was automatically rejected by the Jotform system. What is the most likely cause?
@@ -34,15 +34,15 @@
    > Previewing helps identify problems before you waste time and filament on a failed print.
 1. [ ] It changes the filament color
 
-### After a print completes, what is the first step before removing the part from the bed?
-1. [x] Allow the bed to cool to room temperature
+### After a print completes, what is the first step before removing the part from the build plate?
+1. [x] Allow the build plate to cool to room temperature
    > Cooling lets the plastic harden and release naturally, protecting both the print and the build plate.
 1. [ ] Flex the plate immediately while it's hot
 1. [ ] Turn off the printer and walk away
 
-### While printing, the corners of your part are lifting off the bed. What is the recommended first adjustment?
+### While printing, the corners of your part are lifting off the build plate. What is the recommended first adjustment?
 1. [x] Add a one-layer brim in the slicer
-   > A brim increases surface area on the bed, improving adhesion and reducing warping.
+   > A brim increases surface area on the build plate, improving adhesion and reducing warping.
 1. [ ] Switch to a metal filament
 1. [ ] Increase print speed by 50%
 

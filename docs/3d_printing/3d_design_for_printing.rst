@@ -110,7 +110,7 @@ The yellow section is the part of the model touching the build plate. You can se
 Choose the Bottom of Your Model Right Away
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-When starting to design a model, choose the face of the model that will be attached to the print bed. Knowing the orientation of your print from the start can help you more easily identify where you have 'bad' overhangs. This is helpful because it's easier to catch and fix 'bad' overhangs right away instead of when your model is nearing completion.
+When starting to design a model, choose the face of the model that will be attached to the build plate. Knowing the orientation of your print from the start can help you more easily identify where you have 'bad' overhangs. This is helpful because it's easier to catch and fix 'bad' overhangs right away instead of when your model is nearing completion.
 
 .. _bed_adhesion:
 
@@ -131,7 +131,7 @@ Here are some examples of good-sized bottom sections for bed adhesion:
 
 Thus, if you are not seeing any bottom surface sections, it is not a good sign.
 
-Here's an example where the bed adhesion is on the line of being unreliable:
+Here is an example where the bed adhesion is borderline unreliable:
 
 .. image:: /images/3d_printing/bed_adhesion_3.png
   :align: center

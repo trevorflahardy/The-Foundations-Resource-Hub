@@ -97,7 +97,7 @@ Before You Start
 ✅ **DO:**
 
 - Check that there's enough filament loaded for your print (look at the spool and estimate).
-- Verify the bed is clean and free of previous print residue.
+- Verify the build plate is clean and free of previous print residue.
 - Check that the build plate is properly installed and secure.
 
 ❌ **DON'T:**
@@ -130,7 +130,7 @@ After Your Print
 
 ✅ **DO:**
 
-- Let the bed cool completely before removing your print.
+- Let the build plate cool completely before removing your print.
 - Clean up any failed print material or support debris.
 - Return the build plate immediately after removing your print.
 - Report any issues or unusual printer behavior to staff.
@@ -161,7 +161,7 @@ Starting the Print
 #. **Start and Stay Close**
    Begin the print and **stay nearby for at least the first 10 minutes**. This is when most issues occur:
 
-   - Watch the first layer go down - it should stick well to the bed.
+   - Watch the first layer go down -- it should stick well to the build plate.
    - Listen for unusual sounds (grinding, clicking, or excessive noise).
    - Look for proper filament extrusion from the nozzle.
 
@@ -190,7 +190,7 @@ Even experienced engineers expect to encounter failures occasionally. The key is
 
 - **Cancel immediately**: Major bed adhesion failure, severe layer shifts, or filament jams
 - **Monitor closely**: Minor stringing, small layer shifts, or support issues that don't affect the main print
-- **Quick fixes**: Minor warping (press down gently), loose filament, or temperature fluctuations
+- **Quick fixes**: Minor warping (press down gently on the edges), loose filament, or temperature fluctuations
 
 For detailed troubleshooting of specific issues like warping, layer shifts, and stringing, see the :ref:`iterating_design` page.
 
@@ -263,19 +263,19 @@ Consequences for Rule Violations
 
 Violating the 3D printing rules of our course or the DFX lab will lead to serious consequences.
 
-- If you break a DFX lab rule and they choose to take action, we will also impose our own, separate consequences.
-- Breaking one of our course rules will result in our own punishment, but may not result in DFX lab consequences.
+- If you break a DFX lab rule and the lab chooses to take action, the course will also impose its own separate consequences.
+- Breaking a course rule will result in course-level consequences but may not result in DFX lab consequences.
 
 Consequences for rule violations are typically assessed on a case-by-case basis but can include:
 
 - **Academic:** Point deductions, failing assignments, or failing the course in severe cases.
 - **Lab Access:** The DFX lab may revoke entire-lab access if you violate their rules, but violating our course rules will not result in loss of access to the DFX lab.
-- **Printing Privileges:** You may lose the ability to use our 3D printers. If this happens it will be indefinitely.
+- **Printing Privileges:** You may lose the ability to use the course's 3D printers. If this happens, it will be indefinite.
 - **Financial:** All violations that damage equipment or require repairs will hold you responsible for the repair cost and possible extra fees. Financial reparations are the bare minimum, and are always accompanied by conventional consequences.
 
 **Common violations include:** Not cleaning up, damaging equipment, safety violations, or filament overuse.
 
-We will not hesitate to enforce the rules, regardless of if you're ignorant or simply choose to ignore them.
+The course will not hesitate to enforce the rules, regardless of whether you were unaware of them or simply chose to ignore them.
 
 ----
 

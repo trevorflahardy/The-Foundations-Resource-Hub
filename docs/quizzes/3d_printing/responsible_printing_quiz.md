@@ -5,14 +5,14 @@
 1. [ ] The filament changes color after three layers
 
 ### Before starting a print, which of the following should you verify?
-1. [x] Filament levels, clean bed, and correctly named file
+1. [x] Filament levels, clean build plate, and correctly named file
    > These checks prevent common issues and cancellations.
 1. [ ] Only the color of the nozzle
 1. [ ] That the printer is connected to Wi-Fi
 
 ### The printer runs out of filament during a print. What is the appropriate response?
 1. [ ] Replace the spool yourself immediately
-1. [x] Pause the print and ask a TA or staff member for assistance
+1. [x] Notify a TA or staff member for assistance
    > Staff manage filament changes to protect equipment.
 1. [ ] Ignore it and let the print continue
 

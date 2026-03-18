@@ -271,7 +271,7 @@ Once imported, your model will appear on the virtual build plate, ready for posi
 Orientation
 ^^^^^^^^^^^^^
 
-How your part is positioned on the print bed is called its orientation. A thoughtful orientation can save you time and plastic, while also giving the part extra strength.
+How your part is positioned on the build plate is called its orientation. A thoughtful orientation can save you time and plastic, while also giving the part extra strength.
 
 Auto Orient and Arrange
 """"""""""""""""""""""""""
@@ -314,7 +314,7 @@ In Orca Flashforge, the **plate** represents the printer's build area. You can s
 
 Use additional plates when:
 
-- Preparing multiple parts that won't fit on the bed all at once.
+- Preparing multiple parts that will not fit on the build plate all at once.
 - Sorting versions of a model that require different settings or filament colors.
 - Planning a larger project so it's ready to print plate by plate.
 

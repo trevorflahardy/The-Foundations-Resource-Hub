@@ -1,4 +1,4 @@
-### What print issue is indicated when the corners of your model lift off the bed?
+### What print issue is indicated when the corners of your model lift off the build plate?
 1. [x] Warping
    > Warping occurs when poor adhesion or temperature differences lift corners.
 1. [ ] Stringing
