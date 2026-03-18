@@ -22,6 +22,12 @@
    > The required format is LastName_FirstInitial_ProfessorSection_Model.gcode.
 1. [ ] gear.gcode
 
+### Your .3mf submission was automatically rejected by the Jotform system. What is the most likely cause?
+1. [x] You used File > Save instead of "Export plate sliced file" from the dropdown menu
+   > A regular project save does not contain slicing data. You must use "Export plate sliced file" to embed print time, filament usage, and validation data.
+1. [ ] You forgot to name the file correctly
+1. [ ] The model was too large for the build plate
+
 ### Why should you preview the sliced model before exporting the G-code?
 1. [ ] It automatically starts the print
 1. [x] To catch missing supports or adhesion issues ahead of time

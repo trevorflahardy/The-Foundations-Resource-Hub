@@ -16,6 +16,12 @@
    > Previewing catches problems early, saving time and material.
 1. [ ] It automatically starts the print
 
+### When exporting a .3mf file for Jotform submission, which method produces a valid sliced file?
+1. [ ] File > Save As and choose .3mf format
+1. [x] Click the dropdown arrow next to the export/print button and select "Export plate sliced file"
+   > Only "Export plate sliced file" embeds print time, filament usage, and validation data. A regular save does not include slicing data and will be rejected.
+1. [ ] Drag the model file from the slicer to your desktop
+
 ### The slicer created a second plate automatically when you imported multiple models. What does this usually indicate?
 1. [x] The parts cannot fit on one plate with the current orientation
    > Multiple plates are generated when models exceed the build area together.

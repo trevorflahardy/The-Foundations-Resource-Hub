@@ -14,4 +14,4 @@
 1. [ ] STL
 1. [ ] OBJ
 1. [x] 3MF
-   > 3MF stores color, material, and other data useful for 3D printing.
+   > 3MF stores color, material, and other data useful for 3D printing. Remember: when submitting a .3mf for printing, you must use "Export plate sliced file" — not File > Save — so the file includes slicing data.

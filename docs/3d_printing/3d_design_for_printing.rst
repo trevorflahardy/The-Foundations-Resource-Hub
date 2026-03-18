@@ -22,7 +22,7 @@ Understanding different file formats is crucial for 3D printing:
 - :term:`STL (Stereolithography)`: The most widely used format, representing models as a mesh of triangles. It doesn't support color or material information.
 - :term:`OBJ (Object File)`: Supports color and texture information, making it suitable for more detailed models.
 - :term:`STEP (Standard for the Exchange of Product Model Data)`: Used for sharing models between different CAD programs, preserving complex geometry and assembly information.
-- :term:`3MF (3D Manufacturing Format)`: A modern format that includes color, material, and other metadata, aiming to be a comprehensive solution for 3D printing needs.
+- :term:`3MF (3D Manufacturing Format)`: A modern format that includes color, material, and other metadata, aiming to be a comprehensive solution for 3D printing needs. Be aware that slicer software can produce two kinds of .3mf files: a **project save** (via ``File > Save``) that contains only models and settings, and a **sliced export** (via "Export plate sliced file") that also embeds print time, filament usage, and G-code data. For Jotform submission, you must use the sliced export — see :ref:`exporting_sliced_3mf`.
 
 .. quizdown:: ../quizzes/3d_printing/design_for_printing_check.md
 

@@ -264,6 +264,10 @@ To load a model, you can:
 
 Once imported, your model will appear on the virtual build plate, ready for positioning and orientation.
 
+.. note::
+
+   Importing a .3mf file into the slicer is **not** the same as exporting a sliced .3mf for submission. When you import a .3mf, you are loading a model or project. When you export a sliced .3mf (see :ref:`exporting_sliced_3mf`), you are saving a file that contains your slicing data for the Jotform submission system.
+
 Orientation
 ^^^^^^^^^^^^^
 
@@ -432,6 +436,40 @@ Once you're satisfied with your slicing settings and preview, it's time to expor
   Note this export is only for **one plate at a time**. If you have multiple plates, you'll need to export each one separately.
 
 Once your file is exported, you're ready to move to the printer. See :ref:`responsible_3d_printing` for on-printer steps and lab etiquette.
+
+.. _exporting_sliced_3mf:
+
+Exporting a Sliced .3mf for Jotform Submission
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+In addition to exporting G-code for the printer, you must also submit a **sliced .3mf file** through the Jotform submission system. This file contains embedded print time, filament usage, and validation data that the submission system uses to verify your print job.
+
+.. warning::
+
+   A regular project save (``File > Save`` or ``File > Save As``) produces a .3mf file that does **NOT** contain slicing data. This file will be **automatically rejected** by the submission system. You must use the "Export plate sliced file" option described below.
+
+**How to export a sliced .3mf file:**
+
+#. **Slice your model**: Click the **Slice Plate** button to slice your model with all current settings. Wait for slicing to complete.
+
+#. **Open the export dropdown**: After slicing completes, locate the export/print button (in the top right corner). Click the **dropdown arrow** next to this button — do **not** click the main button itself.
+
+#. **Select "Export plate sliced file"**: From the dropdown menu, choose **"Export plate sliced file"**. This is the only option that produces a .3mf with the required embedded data.
+
+#. **Save the file**: Save the resulting .3mf file to your computer. This is the file you must upload to the Jotform submission.
+
+.. important::
+
+   This applies to Orca Flashforge, BambuStudio, OrcaSlicer, and similar slicer software that use the .3mf format. The key distinction is:
+
+   - **File > Save / Save As** = project file only (no slicing data) — **will be rejected**
+   - **Export plate sliced file** (from the dropdown) = sliced file with print time, filament usage, and validation data — **this is what you must submit**
+
+   If you are unsure whether your file is correct, check the file size: a sliced .3mf will typically be significantly larger than an unsliced project save because it contains the full slicing data.
+
+.. note::
+
+   Like G-code export, this export is only for **one plate at a time**. If you have multiple plates, you'll need to export each one separately.
 
 .. quizdown:: ../quizzes/3d_printing/preparing_to_print_quiz.md
 

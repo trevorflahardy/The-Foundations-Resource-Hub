@@ -50,10 +50,14 @@ It's helpful to understand the process of 3D printing at USF. An overview of the
    Ensure your CAD model is ready and export it as an STL file. Double-check dimensions and make sure your design is optimized for 3D printing. See :ref:`3d_design_for_printing`.
 
 #. **Slice Your Model**
-   Use the DFX Lab desktop stations, or your own personal computer, to slice your STL file into G-code. See :ref:`preparing_to_print` for details on slicing.
+   Use the DFX Lab desktop stations, or your own personal computer, to slice your STL file into G-code. Then export both the G-code (for the printer) and a **sliced .3mf file** (for Jotform submission). See :ref:`preparing_to_print` for details on slicing and exporting.
 
 #. **Request Print Permission**
-   The Foundations print lab staff must approve your G-code file before printing. Submit your G-code file, with other required materials, to the designated location and wait for confirmation. You can find where to submit your files on your Foundations Canvas modules page.
+   The Foundations print lab staff must approve your files before printing. Submit your G-code file **and** your sliced .3mf file, along with other required materials, to the designated Jotform submission. You can find where to submit your files on your Foundations Canvas modules page.
+
+   .. warning::
+
+      Your .3mf file must be exported using **"Export plate sliced file"** from the dropdown menu in your slicer — not saved via ``File > Save``. A regular project save does not contain the required print time, filament usage, and validation data, and **will be automatically rejected** by the submission system. See :ref:`exporting_sliced_3mf` for detailed instructions.
 
 #. **Start Your Print**
    Check everything (filament, bed, file) and begin your print, ensuring you stay nearby for the first few layers.

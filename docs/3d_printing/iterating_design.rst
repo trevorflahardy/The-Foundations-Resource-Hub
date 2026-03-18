@@ -92,6 +92,10 @@ Iteration is the heart of 3D-printing success. Each cycle refines your part's fi
 #. **Repeat**
    Re-slice, re-print, and re-evaluate. Each loop should converge toward a reliable, high-quality part.
 
+   .. important::
+
+      Every time you re-slice, you must also re-export your sliced .3mf file using **"Export plate sliced file"** from the dropdown in your slicer before resubmitting to Jotform. Do **not** use ``File > Save`` — that produces a project file without slicing data and will be rejected. See :ref:`exporting_sliced_3mf`.
+
 Next Steps
 ==========
 
