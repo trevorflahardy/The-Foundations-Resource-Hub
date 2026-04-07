@@ -333,6 +333,10 @@ With your model loaded and positioned, it's time to configure the slicing settin
 
 To start, download the USF default profile :download:`here </3d_printing/projects/main_student_template.3mf>`.
 
+.. important::
+
+  Always use this 3MF file as your starting point. It contains **all the settings you need**. All you need to do is load your model into this file, orient and arrange it, and then slice. This ensures you are using the correct settings for the lab printers and that your print jobs will be accepted by the submission system.
+
 Confirming Slicing Settings
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
@@ -343,6 +347,10 @@ Your default print profile should already be set for the USF defaults. The main 
 - **Print Settings** -- Controls layer height, infill, and supports. This is where you will spend most of your time.
 
 To confirm you are using the USF default profile, view all the altered settings below. An orange highlight indicates a setting that has been changed from the default. **Ensure your settings match the recommended values**:
+
+.. important::
+
+  You may need to check the "Advanced" option in the top right corner of the settings panel to see all the tabs, and parameters, listed below!
 
 On the **Speed** tab:
 
